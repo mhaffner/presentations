@@ -36,7 +36,8 @@ Matthew Haffner
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* How these articles tie together</x-color>
 #+attr_html: :width 700px 
-<x-color><param>#66D9EF</param>[[~/Sync/projects/dissertation/proposal/figures/figure1.png]]</x-color>
+<x-color><param>#66D9EF</param>[[./figures/figure1.png]]</x-color>
+
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
 </x-color></x-bg-color>- The interpretations from article 1 will inform those in articles 2 and 3
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
