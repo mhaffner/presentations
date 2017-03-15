@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assessing the Validity of Location-based Social Media</title>
+<meta name="author" content="(Matthew Haffner)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/matt/git-repos/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/matt/git-repos/reveal.js/css/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="../css/theme/osu.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/git-repos/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<section id="slide-org60756f3">
+<h2 id="org60756f3">Assessing the validity of location based social media</h2>
+<p>
+Matthew Haffner
+(follow along here: github.com/mhaffner)
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge79b0ae">
+<h2 id="orge79b0ae">Introduction</h2>
+<ul>
+<li>Many studies have investigated VGI's <i>accuracy</i></li>
+<li>Few discuss its <i>validity</i></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Treating LBSM as a subset of VGI
+time these are conceptualized in the same way.</li>
+<li>There should be a difference in how we treat LBSM and VGI, but most treat the
+two very similarly</li>
+<li>Sources here?</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orga453584">
+<h2 id="orga453584">How these articles tie together</h2>
+
+<div class="figure">
+<p><img src="file:///home/matt/Sync/projects/dissertation/proposal/figures/figure1.png" alt="figure1.png" width="700px" />
+</p>
+</div>
+<aside class="notes">
+<ul>
+<li>The interpretations from article 1 will inform those in articles 2 and 3</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org4dcffff">
+<h2 id="org4dcffff">How these articles tie together</h2>
+<ul>
+<li>Article 1 : Users' demographics, behaviors, and perceptions</li>
+<li>Article 2 : Twitter activity (precise location), county scale</li>
+<li>Article 3 : Twitter activity (any location type), metropolitan scale</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Articles 2 and 3 will have similar methodologies but cover different</li>
+<li>Article 1: investigates practices of the heaviest users
+topics/geographic scales</li>
+<li>I can go into more detail about literature, specific variables, infrastructure
+and software, etc. I've dedicated the appendix for these items.</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org9ec2896">
+<h2 id="org9ec2896">Article 1 (survey)</h2>
+<ul>
+<li>Goal: to determine LBSM users' demographics and perceptions</li>
+<li>Target population: Oklahoma State University students</li>
+<li>Data: web-based survey taken by 253 students</li>
+
+</ul>
+<aside class="notes">
+nil
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgd823b16">
+<h2 id="orgd823b16">Article 1 (survey)</h2>
+<ul>
+<li>Methods:
+<ul>
+<li>Statistical tests for differences between groups</li>
+<li>Qualitative summaries of common responses</li>
+
+</ul></li>
+<li>Geographic themes: gender, race, place</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Differences between groups in terms of
+<ul>
+<li>Social media use</li>
+<li>LBSM use</li>
+<li>Perception (LBSM being a good way to socialize, privacy concerns)</li>
+<li>Estimating degree of concern based on users' characteristics</li>
+<li>Qualitative summaries of open-ended responses</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org0275571">
+<h2 id="org0275571">Article 2 (non-English tweets)</h2>
+<ul>
+<li>Goal: determine LBSM alignment with conventional data</li>
+<li>Study area: Harris County, Texas</li>
+<li>Data: all precisely-located tweets from users declaring a language other than
+English in their Twitter profile in Harris County from 10/20/15 - 11/26/16</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org968e4fc">
+<h2 id="org968e4fc">Article 2 (non-English tweets)</h2>
+<ul>
+<li>Methods:
+<ul>
+<li>Regression (OLS, spatial lag, spatial error, GWR)</li>
+<li>Ad hoc observation</li>
+
+</ul></li>
+<li>Geographic themes: urban geography, language, race/ethnicity</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Counting the number of non-English tweets (technically users) within each
+census tract</li>
+<li>Ad hoc observation: specific languages used (e.g. MEDINC had a + impact on
+NETU but - in other areas; which languages are being used in these locations?)</li>
+<li>Mobility of users</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org170f0ce">
+<h2 id="org170f0ce">Article 3 (BlackLivesMatter tweets)</h2>
+<ul>
+<li>Goal: determine LBSM alignment with conventional data</li>
+<li>Study area: metropolitan areas/municipalities areas in Texas and Louisiana</li>
+<li>Data: all geo-located tweets in Texas and Louisiana containing the text
+"BlackLivesMatter" and/or "AllLivesMatter" from 10/20/15 - 11/26/16</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Why Texas and Louisiana?
+<ul>
+<li>Originally I wanted to compare BLM/ALM along with tweets about AltonSterling
+and BlueLivesMatter, but this was just too much (5500+ words)</li>
+<li>Demographically, cities in these two states will work great nonetheless</li>
+<li>Not to mention that Texas (especially Houston) has a disproportionately
+large amount of Twitter activity</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org8c416b9">
+<h2 id="org8c416b9">Article 3 (BlackLivesMatter tweets)</h2>
+<ul>
+<li>Methods:
+<ul>
+<li>Regression (OLS, spatial lag, spatial error, GWR)</li>
+<li>Ad hoc observation</li>
+
+</ul></li>
+<li>Geographic themes: urban geography, race</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Comparison of profile references to text references (support vs. attention)</li>
+<li>Analysis of individuals (those in Cove, TX), what they are actually discussing</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgb4e4262">
+<h2 id="orgb4e4262">Timeline</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Item</th>
+<th scope="col" class="org-left">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Submit article 1</td>
+<td class="org-left">November 2016</td>
+</tr>
+
+<tr>
+<td class="org-left">Completion of coursework</td>
+<td class="org-left">December 2016</td>
+</tr>
+
+<tr>
+<td class="org-left">Deliver proposal to committee</td>
+<td class="org-left">6 February 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Written comprehensive exams</td>
+<td class="org-left">13-17 February 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Oral comprehensive exam</td>
+<td class="org-left">3 March 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Dissertation proposal defense</td>
+<td class="org-left">17 March 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Submit article 2</td>
+<td class="org-left">June 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Submit article 3</td>
+<td class="org-left">December 2017</td>
+</tr>
+
+<tr>
+<td class="org-left">Dissertation defense</td>
+<td class="org-left">February 2018</td>
+</tr>
+
+<tr>
+<td class="org-left">Submit to Graduate College</td>
+<td class="org-left">March 2018</td>
+</tr>
+
+<tr>
+<td class="org-left">Anticipated Graduation</td>
+<td class="org-left">May 2018</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-org06fb2b0">
+<h2 id="org06fb2b0">Journal Submissions</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Article</th>
+<th scope="col" class="org-left">Journal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Article 1 (survey)</td>
+<td class="org-left">Geographical Review</td>
+</tr>
+
+<tr>
+<td class="org-left">Article 2 (non-English tweets)</td>
+<td class="org-left">Computers, Environment, and Urban Systems</td>
+</tr>
+
+<tr>
+<td class="org-left">Article 3 (BlackLivesMatter tweets)</td>
+<td class="org-left">Geoforum</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-org47380e0">
+<h2 id="org47380e0">Conclusion</h2>
+<ul>
+<li>These articles will focus on VGI/LBSM
+<ul>
+<li>Differentiating between LBSM and other VGI forms</li>
+<li>Using profile information</li>
+<li>Investigating multiple geographic scales</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>I want to highlight what makes this research unique
+<ul>
+<li>Especially profile information, general location</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org8fe0523">
+<h2 id="org8fe0523">Conclusion</h2>
+<ul>
+<li>Other geographic topics
+<ul>
+<li>Gender</li>
+<li>Race/ethnicity</li>
+<li>Language</li>
+<li>Urban geography</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org70549f3">
+<h2 id="org70549f3">Appendix</h2>
+</section>
+</section>
+<section>
+<section id="slide-org23bb1b3">
+<h2 id="org23bb1b3">Article 1</h2>
+<ul>
+<li>Literature
+<ul>
+<li>Goodchild (2007)</li>
+<li>Zickuhr (2013)</li>
+<li>Mathews et al. (2013)</li>
+<li>Stephens (2013)</li>
+<li>Wilson (2012)</li>
+<li>Evans (2015)</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org027446a">
+<h2 id="org027446a">Article 1</h2>
+<ul>
+<li>Statistical tests
+<ul>
+<li>Chi-square, Fisher's exact test</li>
+<li>Ordinal logistic regression</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Chi-square for differences between groups</li>
+<li>Fisher's exact test for type of location used on Twitter</li>
+<li>Ordinal logistic regression for Likert scale items</li>
+<li>Qualitative summaries emphasize the differences between males and females,
+especially with respect to privacy</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org06e6ec8">
+<h2 id="org06e6ec8">Article 2</h2>
+<ul>
+<li>Literature
+<ul>
+<li>Miller (2010)</li>
+<li>Crutcher and Zook (2009), Fekete (2015), Lee et al. (2016)</li>
+<li>Kent and Capello (2012), Griffin and Jiao (2015)</li>
+<li>Graham and Zook (2013), Leetaru et al. (2013)</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Graham and Zook - Exploring the geolinguistic contours of the web;
+user-generated content in Belgium, Canada, Israel/Palestine</li>
+<li>Kent and Capello - Horsethief Canyon fire</li>
+<li>Griffin and Jiao - Strava and census data</li>
+<li>Lee et al. (2016) - Twitter used to predict trips</li>
+<li>Abductive reasoning - C.S. Pierce</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org2684b02">
+<h2 id="org2684b02">Article 2</h2>
+<p>
+Independent Variables
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Variable Name</th>
+<th scope="col" class="org-left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Median Age</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent White</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Median Income</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Population</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent Foreign Born</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<ul>
+<li>Other variables: employment data? (other land use info)</li>
+<li>Still need to implement Box-Cox transformations</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgebad4f9">
+<h2 id="orgebad4f9">Article 3</h2>
+<ul>
+<li>Literature
+<ul>
+<li>Miller (2010)</li>
+<li>Crutcher and Zook (2009), Fekete (2015), Lee et al. (2016)</li>
+<li>Kent and Capello (2012), Griffin and Jiao (2015)</li>
+<li>Bonilla-Silva (2014)</li>
+<li>Massey and Denton (1998)</li>
+<li>Crutcher and Zook (2009), Fekete (2015)</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1f174d2">
+<h2 id="org1f174d2">Article 3</h2>
+<p>
+Independent Variables
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Variable Name</th>
+<th scope="col" class="org-left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Population</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Median Age</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent White</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Median Family Income</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent unemployed</td>
+<td class="org-left">2014 ACS (5-year estimate)</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>
+Other variables: employment data? (other land use info)
+</p>
+
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/git-repos/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/matt/git-repos/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:///home/matt/git-repos/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
