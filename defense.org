@@ -22,7 +22,7 @@ Text-Width: 80
 Matthew Haffner
 
 
-(follow along here: github.com/mhaffner)
+(follow along here: <x-color><param>#66D9EF</param>[[https://mhaffner.github.io/presentations/defense.html]]</x-color>)
 
 <x-color><param>#FD971F</param>* Introduction</x-color>
 - Many studies have investigated VGI's <italic>/accuracy/</italic>
