@@ -16,10 +16,11 @@ Text-Width: 80
 
 
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_COMMENT
-</x-color></x-bg-color>This is a comment?
+</x-color></x-bg-color>Title slide
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_COMMENT
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Assessing the validity of location based social media</x-color>
 Matthew Haffner
+
 
 (follow along here: github.com/mhaffner)
 
