@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Matthew Haffner)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="./css/theme/osu.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/git-repos/presentations/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<section id="slide-org911f1c8">
+<h2 id="org911f1c8">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<p>
+Matthew Haffner
+</p>
+
+<p>
+Department of Geography
+</p>
+
+<p>
+Oklahoma State University
+</p>
+
+<p>
+<a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org8425462">
+<h2 id="org8425462">Introduction</h2>
+<ul>
+<li>Motivation
+<ul>
+<li>Smoother NoSQL entry for geographers</li>
+<li>Reproducibility</li>
+<li>Collaboration and openness</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+nil
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org0c377c3">
+<h2 id="org0c377c3">Package details</h2>
+<ul>
+<li>Requires shapefile as an input</li>
+<li>Inserts/indexes records into a database</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Shapefile can come from census or local file</li>
+<li>Similar to shp2pgsql (and other similar tools)</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org1b417a2">
+<h2 id="org1b417a2">Package details</h2>
+<ul>
+<li>Written in Bash (4.4)</li>
+<li>Relies on
+<ul>
+<li><i>ogr2ogr (gdal)</i></li>
+<li><i>getopts</i></li>
+<li><i>Python</i></li>
+
+</ul></li>
+<li>Works with
+<ul>
+<li>Elasticsearch</li>
+<li>MongoDB</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+<p>
+Optional dependencies
+</p>
+<ul>
+<li>esbulk (multiprocessing utility written in go)</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org7e50cc2">
+<h2 id="org7e50cc2">Package details</h2>
+<ul>
+<li>Works on GNU/Linux systems</li>
+<li>License: GNU General Public License v. 3</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Tested on Arch Linux, Ubuntu, others?</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orga15df4f">
+<h2 id="orga15df4f">Elasticsearch</h2>
+</section>
+</section>
+<section>
+<section id="slide-orga81b1ba">
+<h2 id="orga81b1ba">MongoDB</h2>
+</section>
+</section>
+<section>
+<section id="slide-org6df5b13">
+<h2 id="org6df5b13">Examples</h2>
+<p>
+Insert mp4 here? Or gif?
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org833b037">
+<h2 id="org833b037">Project goals</h2>
+</section>
+</section>
+<section>
+<section id="slide-org8babd97">
+<h2 id="org8babd97">Questions/future directions</h2>
+<ul>
+<li>How to deal with alternative SRS?</li>
+<li>Error reporting?</li>
+<li>More intuitive option flags?</li>
+<li>Installation?</li>
+<li>Other databases?</li>
+<li>Long term goals?</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Publication outlets? Is this even publication worthy?</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org71e1396">
+<h2 id="org71e1396">Conclusion</h2>
+<ul>
+<li>Software package: <a href="https://github.com/mhaffner/shp2nosql">https://github.com/mhaffner/shp2nosql</a></li>
+<li>Presentation: <a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/git-repos/presentations/lib/js/head.min.js"></script>
+<script src="file:///home/matt/git-repos/presentations/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:///home/matt/git-repos/presentations/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
