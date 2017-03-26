@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/reveal.css"/>
+<link rel="stylesheet" href="./css/reveal.css"/>
 
-<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
 
 <link rel="stylesheet" href="./css/theme/osu.css"/>
 
@@ -19,7 +19,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'file:///home/matt/git-repos/presentations/css/print/pdf.css';
+        link.href = './css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-org911f1c8">
-<h2 id="org911f1c8">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<section id="slide-org3dc8307">
+<h2 id="org3dc8307">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
 <p>
 Matthew Haffner
 </p>
@@ -48,8 +48,8 @@ Oklahoma State University
 </section>
 </section>
 <section>
-<section id="slide-org8425462">
-<h2 id="org8425462">Introduction</h2>
+<section id="slide-orgd326ca8">
+<h2 id="orgd326ca8">Introduction</h2>
 <ul>
 <li>Motivation
 <ul>
@@ -66,8 +66,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org0c377c3">
-<h2 id="org0c377c3">Package details</h2>
+<section id="slide-orgba36e41">
+<h2 id="orgba36e41">Package details</h2>
 <ul>
 <li>Requires shapefile as an input</li>
 <li>Inserts/indexes records into a database</li>
@@ -84,8 +84,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org1b417a2">
-<h2 id="org1b417a2">Package details</h2>
+<section id="slide-org067ce69">
+<h2 id="org067ce69">Package details</h2>
 <ul>
 <li>Written in Bash (4.4)</li>
 <li>Relies on
@@ -116,8 +116,8 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org7e50cc2">
-<h2 id="org7e50cc2">Package details</h2>
+<section id="slide-org3015676">
+<h2 id="org3015676">Package details</h2>
 <ul>
 <li>Works on GNU/Linux systems</li>
 <li>License: GNU General Public License v. 3</li>
@@ -133,31 +133,31 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-orga15df4f">
-<h2 id="orga15df4f">Elasticsearch</h2>
+<section id="slide-org8900899">
+<h2 id="org8900899">Elasticsearch</h2>
 </section>
 </section>
 <section>
-<section id="slide-orga81b1ba">
-<h2 id="orga81b1ba">MongoDB</h2>
+<section id="slide-org56c0671">
+<h2 id="org56c0671">MongoDB</h2>
 </section>
 </section>
 <section>
-<section id="slide-org6df5b13">
-<h2 id="org6df5b13">Examples</h2>
+<section id="slide-orgb6ffdf2">
+<h2 id="orgb6ffdf2">Examples</h2>
 <p>
 Insert mp4 here? Or gif?
 </p>
 </section>
 </section>
 <section>
-<section id="slide-org833b037">
-<h2 id="org833b037">Project goals</h2>
+<section id="slide-orgfca08bf">
+<h2 id="orgfca08bf">Project goals</h2>
 </section>
 </section>
 <section>
-<section id="slide-org8babd97">
-<h2 id="org8babd97">Questions/future directions</h2>
+<section id="slide-orgddc22ad">
+<h2 id="orgddc22ad">Questions/future directions</h2>
 <ul>
 <li>How to deal with alternative SRS?</li>
 <li>Error reporting?</li>
@@ -177,8 +177,8 @@ Insert mp4 here? Or gif?
 </section>
 </section>
 <section>
-<section id="slide-org71e1396">
-<h2 id="org71e1396">Conclusion</h2>
+<section id="slide-org0b13e2d">
+<h2 id="org0b13e2d">Conclusion</h2>
 <ul>
 <li>Software package: <a href="https://github.com/mhaffner/shp2nosql">https://github.com/mhaffner/shp2nosql</a></li>
 <li>Presentation: <a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a></li>
@@ -188,8 +188,8 @@ Insert mp4 here? Or gif?
 </section>
 </div>
 </div>
-<script src="file:///home/matt/git-repos/presentations/lib/js/head.min.js"></script>
-<script src="file:///home/matt/git-repos/presentations/js/reveal.js"></script>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -219,11 +219,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'file:///home/matt/git-repos/presentations/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/git-repos/presentations/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///home/matt/git-repos/presentations/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
