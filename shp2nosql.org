@@ -63,8 +63,19 @@ Oklahoma State University
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Elasticsearch</x-color>
 <x-color><param>#FD971F</param>* MongoDB</x-color>
 <x-color><param>#FD971F</param>* Examples</x-color>
-Insert mp4 here? Or gif?
-<x-color><param>#FD971F</param>* Project goals</x-color>
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_SRC shell 
+</x-color></x-bg-color><x-color><param>#75715E</param><x-bg-color><param>#3E3D31</param><x-color><param>#F8F8F0</param># Elasticsearch
+</x-color></x-bg-color></x-color><x-bg-color><param>#3E3D31</param><x-color><param>#F8F8F0</param>shp2nosql -R -d elasticsearch -f state -i us_states -t state 
+
+<x-color><param>#75715E</param># an equivalent, more readable version with comments
+</x-color>shp2nosql <x-color><param>#E6DB74</param>\</x-color>
+-R <x-color><param>#AE81FF</param>`# remove the database if it exists`</x-color> <x-color><param>#E6DB74</param>\</x-color>
+-d elasticsearch <x-color><param>#AE81FF</param>`# database type`</x-color> <x-color><param>#E6DB74</param>\</x-color>
+-f state <x-color><param>#AE81FF</param>`# file to get from US Census TIGER files`</x-color> <x-color><param>#E6DB74</param>\</x-color>
+-i us_states <x-color><param>#AE81FF</param>`# index name`</x-color> <x-color><param>#E6DB74</param>\</x-color>
+-t state <x-color><param>#AE81FF</param>`# document type`</x-color>
+</x-color></x-bg-color><x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_SRC
+</x-color></x-bg-color><x-color><param>#FD971F</param>* Project goals</x-color>
 <x-color><param>#FD971F</param>* Questions/future directions</x-color>
 - How to deal with alternative SRS?
 - Error reporting?

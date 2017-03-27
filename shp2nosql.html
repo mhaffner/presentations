@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/reveal.css"/>
 
-<link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/git-repos/presentations/css/theme/black.css" id="theme"/>
 
 <link rel="stylesheet" href="./css/theme/osu.css"/>
 
@@ -19,7 +19,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './css/print/pdf.css';
+        link.href = 'file:///home/matt/git-repos/presentations/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-org3dc8307">
-<h2 id="org3dc8307">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<section id="slide-org1f63ce7">
+<h2 id="org1f63ce7">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
 <p>
 Matthew Haffner
 </p>
@@ -48,8 +48,8 @@ Oklahoma State University
 </section>
 </section>
 <section>
-<section id="slide-orgd326ca8">
-<h2 id="orgd326ca8">Introduction</h2>
+<section id="slide-org6388042">
+<h2 id="org6388042">Introduction</h2>
 <ul>
 <li>Motivation
 <ul>
@@ -66,8 +66,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgba36e41">
-<h2 id="orgba36e41">Package details</h2>
+<section id="slide-org5e4f599">
+<h2 id="org5e4f599">Package details</h2>
 <ul>
 <li>Requires shapefile as an input</li>
 <li>Inserts/indexes records into a database</li>
@@ -84,8 +84,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org067ce69">
-<h2 id="org067ce69">Package details</h2>
+<section id="slide-org9c640fa">
+<h2 id="org9c640fa">Package details</h2>
 <ul>
 <li>Written in Bash (4.4)</li>
 <li>Relies on
@@ -116,8 +116,8 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org3015676">
-<h2 id="org3015676">Package details</h2>
+<section id="slide-orga5beeda">
+<h2 id="orga5beeda">Package details</h2>
 <ul>
 <li>Works on GNU/Linux systems</li>
 <li>License: GNU General Public License v. 3</li>
@@ -133,31 +133,42 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org8900899">
-<h2 id="org8900899">Elasticsearch</h2>
+<section id="slide-org427af95">
+<h2 id="org427af95">Elasticsearch</h2>
 </section>
 </section>
 <section>
-<section id="slide-org56c0671">
-<h2 id="org56c0671">MongoDB</h2>
+<section id="slide-org5932c4d">
+<h2 id="org5932c4d">MongoDB</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgb6ffdf2">
-<h2 id="orgb6ffdf2">Examples</h2>
-<p>
-Insert mp4 here? Or gif?
-</p>
+<section id="slide-orgc240aa4">
+<h2 id="orgc240aa4">Examples</h2>
+<div class="org-src-container">
+
+<pre  class="src src-shell"><span style="color: #75715E;"># </span><span style="color: #75715E;">Elasticsearch</span>
+$ shp2nosql -R -d elasticsearch -f state -i us_states -t state 
+
+<span style="color: #75715E;"># </span><span style="color: #75715E;">an equivalent, more readable version with comments</span>
+$ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
+-R <span style="color: #AE81FF; font-weight: bold;">`# remove the database if it exists`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
+-d elasticsearch <span style="color: #AE81FF; font-weight: bold;">`# database type`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
+-f state <span style="color: #AE81FF; font-weight: bold;">`# file to get from US Census TIGER files`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
+-i us_states <span style="color: #AE81FF; font-weight: bold;">`# index name`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
+-t state <span style="color: #AE81FF; font-weight: bold;">`# document type`</span>
+</pre>
+</div>
 </section>
 </section>
 <section>
-<section id="slide-orgfca08bf">
-<h2 id="orgfca08bf">Project goals</h2>
+<section id="slide-org1f116c7">
+<h2 id="org1f116c7">Project goals</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgddc22ad">
-<h2 id="orgddc22ad">Questions/future directions</h2>
+<section id="slide-orgf48127b">
+<h2 id="orgf48127b">Questions/future directions</h2>
 <ul>
 <li>How to deal with alternative SRS?</li>
 <li>Error reporting?</li>
@@ -177,8 +188,8 @@ Insert mp4 here? Or gif?
 </section>
 </section>
 <section>
-<section id="slide-org0b13e2d">
-<h2 id="org0b13e2d">Conclusion</h2>
+<section id="slide-org059f934">
+<h2 id="org059f934">Conclusion</h2>
 <ul>
 <li>Software package: <a href="https://github.com/mhaffner/shp2nosql">https://github.com/mhaffner/shp2nosql</a></li>
 <li>Presentation: <a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a></li>
@@ -188,8 +199,8 @@ Insert mp4 here? Or gif?
 </section>
 </div>
 </div>
-<script src="./lib/js/head.min.js"></script>
-<script src="./js/reveal.js"></script>
+<script src="file:///home/matt/git-repos/presentations/lib/js/head.min.js"></script>
+<script src="file:///home/matt/git-repos/presentations/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -219,11 +230,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'file:///home/matt/git-repos/presentations/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/git-repos/presentations/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
