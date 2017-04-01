@@ -26,7 +26,7 @@ Oklahoma State University
 
 
 <x-color><param>#66D9EF</param>[[https://mhaffner.github.io/presentations/shp2nosql.html]]</x-color>
-<x-color><param>#FD971F</param>* Introduction</x-color>
+<x-color><param>#FD971F</param>* shp2nosql</x-color>
 - Motivation
   - Reproducibility
   - Smoother NoSQL entry for geographers
@@ -91,7 +91,8 @@ Oklahoma State University
 -i us_states <x-color><param>#AE81FF</param>`# index name`</x-color> <x-color><param>#E6DB74</param>\</x-color>
 -t state <x-color><param>#AE81FF</param>`# document type`</x-color>
 </x-color></x-bg-color><x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_SRC
-</x-color></x-bg-color><x-color><param>#FD971F</param>* Example in action?</x-color>
+</x-color></x-bg-color><x-color><param>#FD971F</param>* </x-color>
+<x-color><param>#66D9EF</param>[[./images/animated-example.gif]]</x-color>
 <x-color><param>#FD971F</param>* Project goals going forward</x-color>
 - Use and contribution by others
 - Support for other databases?
@@ -107,7 +108,7 @@ Oklahoma State University
   using geographic data is difficult, but understandably they are
   fairly young projects
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
-</x-color></x-bg-color><x-color><param>#FD971F</param>* Conclusion</x-color>
+</x-color></x-bg-color><x-color><param>#FD971F</param>* shp2nosql</x-color>
 - Software package:
 
   - <x-color><param>#66D9EF</param>https://github.com/mhaffner/shp2nosql</x-color>
