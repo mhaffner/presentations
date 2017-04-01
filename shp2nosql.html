@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-org1f7f74d">
-<h2 id="org1f7f74d">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<section id="slide-org45c4fc3">
+<h2 id="org45c4fc3">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
 <p>
 Matthew Haffner
 </p>
@@ -48,26 +48,32 @@ Oklahoma State University
 </section>
 </section>
 <section>
-<section id="slide-orga4b8e12">
-<h2 id="orga4b8e12">Introduction</h2>
+<section id="slide-orgfbca8e4">
+<h2 id="orgfbca8e4">Introduction</h2>
 <ul>
 <li>Motivation
 <ul>
-<li>Smoother NoSQL entry for geographers</li>
 <li>Reproducibility</li>
+<li>Smoother NoSQL entry for geographers</li>
 <li>Collaboration and openness</li>
 
 </ul></li>
 
 </ul>
 <aside class="notes">
-nil
+<ul>
+<li>Self-motivation</li>
+<li>Can't conduct geoqueries on Elasticsearch data that does not have
+spatial index</li>
+
+</ul>
+
 </aside>
 </section>
 </section>
 <section>
-<section id="slide-org80af6c0">
-<h2 id="org80af6c0">Package details</h2>
+<section id="slide-org7ccabd8">
+<h2 id="org7ccabd8">Package details</h2>
 <ul>
 <li>Requires shapefile as an input</li>
 <li>Inserts/indexes records into a database</li>
@@ -84,8 +90,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgeaead16">
-<h2 id="orgeaead16">Package details</h2>
+<section id="slide-org2d19010">
+<h2 id="org2d19010">Package details</h2>
 <ul>
 <li>Written in Bash (4.4)</li>
 <li>Relies on
@@ -116,16 +122,17 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-orga11c5e9">
-<h2 id="orga11c5e9">Package details</h2>
+<section id="slide-org39c99f6">
+<h2 id="org39c99f6">Package details</h2>
 <ul>
 <li>Works on GNU/Linux systems</li>
-<li>License: GNU General Public License v. 3</li>
+<li>License: GNU General Public License Version 3</li>
 
 </ul>
 <aside class="notes">
 <ul>
 <li>Tested on Arch Linux, Ubuntu, others?</li>
+<li>Details of GNU GPL: freedom to share, use, change, share changes</li>
 
 </ul>
 
@@ -133,25 +140,43 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org8ad383c">
-<h2 id="org8ad383c">Elasticsearch</h2>
+<section id="slide-org6f99ae1">
+<h2 id="org6f99ae1">Elasticsearch</h2>
+<ul>
+<li>Process
+<ul>
+<li>Get shapefile from U.S. Census (if necessary)</li>
+<li>Convert shapefile to GeoJSON</li>
+<li>Index one record</li>
+<li>Get the mapping of this record</li>
+<li>Delete the one record</li>
+<li>Modify mapping</li>
+<li>Create an empty index</li>
+<li>Index mapping</li>
+<li>Index documents</li>
+
+</ul></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Modify mapping is six sed commands</li>
+
+</ul>
+
+</aside>
 </section>
 </section>
 <section>
-<section id="slide-org02a03a5">
-<h2 id="org02a03a5">MongoDB</h2>
-</section>
-</section>
-<section>
-<section id="slide-org526cdbd">
-<h2 id="org526cdbd">Examples</h2>
+<section id="slide-orgd6b08c8">
+<h2 id="orgd6b08c8">Examples</h2>
 <div class="org-src-container">
 
-<pre  class="src src-shell"><span style="color: #75715E;"># </span><span style="color: #75715E;">Elasticsearch</span>
-shp2nosql -R -d elasticsearch -f state -i us_states -t state 
+<pre  class="src src-shell">shp2nosql -r -d elasticsearch -f state -i us_states -t state 
+
 <span style="color: #75715E;"># </span><span style="color: #75715E;">an equivalent, more readable version with comments</span>
 shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
--R <span style="color: #AE81FF; font-weight: bold;">`# remove the database if it exists`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
+-r <span style="color: #AE81FF; font-weight: bold;">`# remove the database if it exists`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
 -d elasticsearch <span style="color: #AE81FF; font-weight: bold;">`# database type`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
 -f state <span style="color: #AE81FF; font-weight: bold;">`# file to get from US Census TIGER files`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
 -i us_states <span style="color: #AE81FF; font-weight: bold;">`# index name`</span> <span style="color: #E6DB74; font-weight: bold;">\</span>
@@ -161,25 +186,37 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-org3ced8a9">
-<h2 id="org3ced8a9">Project goals</h2>
+<section id="slide-org854a8f6">
+<h2 id="org854a8f6">Example in action?</h2>
 </section>
 </section>
 <section>
-<section id="slide-org145b617">
-<h2 id="org145b617">Questions/future directions</h2>
+<section id="slide-orgda3bd09">
+<h2 id="orgda3bd09">Project goals going forward</h2>
+<ul>
+<li>Use and contribution by others</li>
+<li>Support for other databases</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6a38838">
+<h2 id="org6a38838">Questions/future directions</h2>
 <ul>
 <li>How to deal with alternative SRS?</li>
 <li>Error reporting?</li>
 <li>More intuitive option flags?</li>
 <li>Installation?</li>
-<li>Other databases?</li>
-<li>Long term goals?</li>
+<li>Long term viability?</li>
 
 </ul>
 <aside class="notes">
 <ul>
 <li>Publication outlets? Is this even publication worthy?</li>
+<li>Long term viability: this tool points out a flaw in these databases:
+using geographic data is difficult, but understandably they are
+fairly young projects</li>
 
 </ul>
 
@@ -187,11 +224,19 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-org3aa3d7d">
-<h2 id="org3aa3d7d">Conclusion</h2>
+<section id="slide-org251785b">
+<h2 id="org251785b">Conclusion</h2>
 <ul>
-<li>Software package: <a href="https://github.com/mhaffner/shp2nosql">https://github.com/mhaffner/shp2nosql</a></li>
-<li>Presentation: <a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a></li>
+<li>Software package:
+<ul>
+<li><a href="https://github.com/mhaffner/shp2nosql">https://github.com/mhaffner/shp2nosql</a></li>
+
+</ul></li>
+<li>Presentation:
+<ul>
+<li><a href="https://mhaffner.github.io/presentations/shp2nosql.html">https://mhaffner.github.io/presentations/shp2nosql.html</a></li>
+
+</ul></li>
 
 </ul>
 </section>

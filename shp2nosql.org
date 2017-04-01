@@ -1,5 +1,5 @@
 Content-Type: text/enriched
-Text-Width: 80
+Text-Width: 70
 
 #+REVEAL_THEME: black
 #+reveal_title_slide: nil
@@ -28,11 +28,14 @@ Oklahoma State University
 <x-color><param>#66D9EF</param>[[https://mhaffner.github.io/presentations/shp2nosql.html]]</x-color>
 <x-color><param>#FD971F</param>* Introduction</x-color>
 - Motivation
-  - Smoother NoSQL entry for geographers
   - Reproducibility
+  - Smoother NoSQL entry for geographers
   - Collaboration and openness 
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
-</x-color></x-bg-color><x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
+</x-color></x-bg-color>- Self-motivation
+- Can't conduct geoqueries on Elasticsearch data that does not have
+  spatial index 
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Package details</x-color>
 - Requires shapefile as an input
 - Inserts/indexes records into a database
@@ -56,36 +59,58 @@ Oklahoma State University
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Package details</x-color>
 - Works on GNU/Linux systems
-- License: GNU General Public License v. 3
+- License: GNU General Public License Version 3
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
 </x-color></x-bg-color>- Tested on Arch Linux, Ubuntu, others?
+- Details of GNU GPL: freedom to share, use, change, share changes
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Elasticsearch</x-color>
-<x-color><param>#FD971F</param>* MongoDB</x-color>
-<x-color><param>#FD971F</param>* Examples</x-color>
+- Process
+  - Get shapefile from U.S. Census (if necessary)
+  - Convert shapefile to GeoJSON
+  - Index one record
+  - Get the mapping of this record
+  - Delete the one record
+  - Modify mapping
+  - Create an empty index
+  - Index mapping
+  - Index documents
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
+</x-color></x-bg-color>- Modify mapping is six sed commands
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
+</x-color></x-bg-color><x-color><param>#FD971F</param>* Examples</x-color>
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_SRC shell 
-</x-color></x-bg-color><x-color><param>#75715E</param><x-bg-color><param>#3E3D31</param><x-color><param>#F8F8F0</param># Elasticsearch
-</x-color></x-bg-color></x-color><x-bg-color><param>#3E3D31</param><x-color><param>#F8F8F0</param>shp2nosql -R -d elasticsearch -f state -i us_states -t state 
+</x-color></x-bg-color><x-bg-color><param>#3E3D31</param><x-color><param>#F8F8F0</param>shp2nosql -r -d elasticsearch -f state -i us_states -t state 
+
 
 <x-color><param>#75715E</param># an equivalent, more readable version with comments
 </x-color>shp2nosql <x-color><param>#E6DB74</param>\</x-color>
--R <x-color><param>#AE81FF</param>`# remove the database if it exists`</x-color> <x-color><param>#E6DB74</param>\</x-color>
+-r <x-color><param>#AE81FF</param>`# remove the database if it exists`</x-color> <x-color><param>#E6DB74</param>\</x-color>
 -d elasticsearch <x-color><param>#AE81FF</param>`# database type`</x-color> <x-color><param>#E6DB74</param>\</x-color>
 -f state <x-color><param>#AE81FF</param>`# file to get from US Census TIGER files`</x-color> <x-color><param>#E6DB74</param>\</x-color>
 -i us_states <x-color><param>#AE81FF</param>`# index name`</x-color> <x-color><param>#E6DB74</param>\</x-color>
 -t state <x-color><param>#AE81FF</param>`# document type`</x-color>
 </x-color></x-bg-color><x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_SRC
-</x-color></x-bg-color><x-color><param>#FD971F</param>* Project goals</x-color>
+</x-color></x-bg-color><x-color><param>#FD971F</param>* Example in action?</x-color>
+<x-color><param>#FD971F</param>* Project goals going forward</x-color>
+- Use and contribution by others
+- Support for other databases?
 <x-color><param>#FD971F</param>* Questions/future directions</x-color>
 - How to deal with alternative SRS?
 - Error reporting?
 - More intuitive option flags?
 - Installation?
-- Other databases?
-- Long term goals?
+- Long term viability?
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
 </x-color></x-bg-color>- Publication outlets? Is this even publication worthy?
+- Long term viability: this tool points out a flaw in these databases:
+  using geographic data is difficult, but understandably they are
+  fairly young projects
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Conclusion</x-color>
-- Software package: <x-color><param>#66D9EF</param>https://github.com/mhaffner/shp2nosql</x-color>
-- Presentation: <x-color><param>#66D9EF</param>https://mhaffner.github.io/presentations/shp2nosql.html</x-color>
+- Software package:
+
+  - <x-color><param>#66D9EF</param>https://github.com/mhaffner/shp2nosql</x-color>
+- Presentation:
+
+  - <x-color><param>#66D9EF</param>https://mhaffner.github.io/presentations/shp2nosql.html</x-color>
