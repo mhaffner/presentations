@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-orge93ad16">
-<h2 id="orge93ad16">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<section id="slide-orgedde413">
+<h2 id="orgedde413">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
 <p>
 Matthew Haffner
 </p>
@@ -48,8 +48,8 @@ Oklahoma State University
 </section>
 </section>
 <section>
-<section id="slide-orgb343779">
-<h2 id="orgb343779">shp2nosql</h2>
+<section id="slide-org9eed6fb">
+<h2 id="org9eed6fb">shp2nosql</h2>
 <ul>
 <li>Motivation
 <ul>
@@ -72,8 +72,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-org46b1c6c">
-<h2 id="org46b1c6c">Package details</h2>
+<section id="slide-orgac3b7a2">
+<h2 id="orgac3b7a2">Package details</h2>
 <ul>
 <li>Requires shapefile as an input</li>
 <li>Inserts/indexes records into a database</li>
@@ -90,14 +90,14 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-orgef1c796">
-<h2 id="orgef1c796">Package details</h2>
+<section id="slide-org3d05500">
+<h2 id="org3d05500">Package details</h2>
 <ul>
 <li>Written in Bash (4.4)</li>
 <li>Relies on
 <ul>
-<li><i>ogr2ogr (gdal)</i></li>
-<li><i>getopts</i></li>
+<li><i>(GDAL)</i></li>
+<li><i>Curl</i></li>
 <li><i>Python</i></li>
 
 </ul></li>
@@ -114,6 +114,7 @@ spatial index</li>
 Optional dependencies
 </p>
 <ul>
+<li>Uses sed</li>
 <li>esbulk (multiprocessing utility written in go)</li>
 
 </ul>
@@ -122,16 +123,16 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org449d2fe">
-<h2 id="org449d2fe">Package details</h2>
+<section id="slide-orga90657e">
+<h2 id="orga90657e">Package details</h2>
 <ul>
 <li>Works on GNU/Linux systems</li>
-<li>License: GNU General Public License Version 3</li>
+<li>GNU General Public License Version 3</li>
 
 </ul>
 <aside class="notes">
 <ul>
-<li>Tested on Arch Linux, Ubuntu, others?</li>
+<li>Tested on Manjaro(Arch Linux)</li>
 <li>Details of GNU GPL: freedom to share, use, change, share changes</li>
 
 </ul>
@@ -140,8 +141,8 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org391c81e">
-<h2 id="org391c81e">Elasticsearch</h2>
+<section id="slide-org52f24b7">
+<h2 id="org52f24b7">Elasticsearch</h2>
 <ul>
 <li>Process
 <ul>
@@ -168,8 +169,8 @@ Optional dependencies
 </section>
 </section>
 <section>
-<section id="slide-org1d00956">
-<h2 id="org1d00956">Examples</h2>
+<section id="slide-org73336ca">
+<h2 id="org73336ca">Examples</h2>
 <div class="org-src-container">
 
 <pre  class="src src-shell">shp2nosql -r -d elasticsearch -f state -i us_states -t state 
@@ -186,8 +187,8 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-org78c3f38">
-<h2 id="org78c3f38"></h2>
+<section id="slide-orgb4a0e54">
+<h2 id="orgb4a0e54"></h2>
 
 <div class="figure">
 <p><img src="./images/animated-example.gif" alt="animated-example.gif" />
@@ -196,8 +197,8 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-orgc9363a5">
-<h2 id="orgc9363a5">Project goals going forward</h2>
+<section id="slide-org088547d">
+<h2 id="org088547d">Project goals going forward</h2>
 <ul>
 <li>Use and contribution by others</li>
 <li>Support for other databases?</li>
@@ -206,8 +207,8 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-orgb002da7">
-<h2 id="orgb002da7">Questions/future directions</h2>
+<section id="slide-org39d7c7a">
+<h2 id="org39d7c7a">Questions/future directions</h2>
 <ul>
 <li>How to deal with alternative SRS?</li>
 <li>Error reporting?</li>
@@ -229,8 +230,8 @@ fairly young projects</li>
 </section>
 </section>
 <section>
-<section id="slide-orgacae821">
-<h2 id="orgacae821">shp2nosql</h2>
+<section id="slide-orgbd39710">
+<h2 id="orgbd39710">shp2nosql</h2>
 <ul>
 <li>Software package:
 <ul>
