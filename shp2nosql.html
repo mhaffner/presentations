@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-org8c261ed">
-<h2 id="org8c261ed">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
+<section id="slide-org9a4ec56">
+<h2 id="org9a4ec56">The development of shp2nosql: Command line tools for spatial data and NoSQL databases</h2>
 <p>
 Matthew Haffner
 </p>
@@ -58,8 +58,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-orgf482961">
-<h2 id="orgf482961">shp2nosql</h2>
+<section id="slide-org8f007ac">
+<h2 id="org8f007ac">shp2nosql</h2>
 <ul>
 <li>Motivation
 <ul>
@@ -80,8 +80,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-orgd274c57">
-<h2 id="orgd274c57">Package details</h2>
+<section id="slide-orga519380">
+<h2 id="orga519380">Package details</h2>
 <ul>
 <li>Requires shapefile(s) as an input</li>
 <li>Converts the shapefile to GeoJSON</li>
@@ -99,8 +99,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-org91208f0">
-<h2 id="org91208f0">Package details</h2>
+<section id="slide-orgf35bbae">
+<h2 id="orgf35bbae">Package details</h2>
 <ul>
 <li>Written in <i>Bash</i> (4.4)</li>
 <li>Relies on
@@ -122,6 +122,7 @@ spatial index</li>
 <aside class="notes">
 <ul>
 <li>Bash -&gt; getopts</li>
+<li>GDAL installation is a challenge in Ubuntu</li>
 <li>I make extensive use of sed (GNU stream editor)</li>
 <li>Optional dependencies
 <ul>
@@ -135,8 +136,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-org0b64509">
-<h2 id="org0b64509">Package details</h2>
+<section id="slide-org564157d">
+<h2 id="org564157d">Package details</h2>
 <ul>
 <li>Works on GNU/Linux systems</li>
 <li>GNU General Public License Version 3</li>
@@ -153,8 +154,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-orga7da58f">
-<h2 id="orga7da58f">Elasticsearch</h2>
+<section id="slide-orgec0f069">
+<h2 id="orgec0f069">Elasticsearch</h2>
 <ul>
 <li>Process
 <ul>
@@ -175,6 +176,8 @@ spatial index</li>
 <ul>
 <li>Modify mapping is six sed commands</li>
 <li>You cannot take advantage of geo queries without a spatial index</li>
+<li>Herein lies a problem: my package should be used to treat a symptom
+-&gt; real problem lies in the databases</li>
 
 </ul>
 
@@ -182,8 +185,8 @@ spatial index</li>
 </section>
 </section>
 <section>
-<section id="slide-org20e6255">
-<h2 id="org20e6255">Examples</h2>
+<section id="slide-org4148c82">
+<h2 id="org4148c82">Examples</h2>
 <div class="org-src-container">
 
 <pre  class="src src-shell">shp2nosql -r -d elasticsearch -f state -i us_states -t state 
@@ -197,11 +200,20 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 -t state <span style="color: #AE81FF; font-weight: bold;">`# document type`</span>
 </pre>
 </div>
+
+<aside class="notes">
+<ul>
+<li>On the next slide I show an animated example using MongoDB and
+census tracts in Montana&#x2026;</li>
+
+</ul>
+
+</aside>
 </section>
 </section>
 <section>
-<section id="slide-orgbd5626a">
-<h2 id="orgbd5626a"></h2>
+<section id="slide-org37bf11d">
+<h2 id="org37bf11d"></h2>
 
 <div class="figure">
 <p><img src="./images/animated-example.gif" alt="animated-example.gif" />
@@ -210,25 +222,25 @@ shp2nosql <span style="color: #E6DB74; font-weight: bold;">\</span>
 </section>
 </section>
 <section>
-<section id="slide-org6385a26">
-<h2 id="org6385a26">Project goals going forward</h2>
+<section id="slide-org2ead499">
+<h2 id="org2ead499">Project goals going forward</h2>
 <ul>
 <li>Use, contribution, and modification by others</li>
-<li>Support for other databases?</li>
+<li>Support for other databases</li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-orgf6aeeeb">
-<h2 id="orgf6aeeeb">Questions/future directions</h2>
+<section id="slide-org8f2b738">
+<h2 id="org8f2b738">Questions/future directions</h2>
 <ul>
-<li>How to deal with alternative SRS?</li>
-<li>Error reporting?</li>
-<li>More intuitive option flags?</li>
-<li>Installation?</li>
-<li>MongoDB/Elasticsearch spatial data tutorials?</li>
-<li>Long term viability?</li>
+<li>Alternative CRS</li>
+<li>Error reporting</li>
+<li>More intuitive option flags</li>
+<li>Installation</li>
+<li>MongoDB/Elasticsearch spatial data tutorials</li>
+<li>Long term viability</li>
 
 </ul>
 <aside class="notes">
@@ -246,8 +258,8 @@ fairly young projects</li>
 </section>
 </section>
 <section>
-<section id="slide-orgda0a574">
-<h2 id="orgda0a574">shp2nosql</h2>
+<section id="slide-org5aede8f">
+<h2 id="org5aede8f">shp2nosql</h2>
 <ul>
 <li>Software package:
 <ul>

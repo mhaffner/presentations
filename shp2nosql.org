@@ -110,17 +110,17 @@ Oklahoma State University
   census tracts in Montana...
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* </x-color>
-[[./images/animated-example.gif]]
+<x-color><param>#66D9EF</param>[[./images/animated-example.gif]]</x-color>
 <x-color><param>#FD971F</param>* Project goals going forward</x-color>
 - Use, contribution, and modification by others
-- Support for other databases?
+- Support for other databases
 <x-color><param>#FD971F</param>* Questions/future directions</x-color>
-- How to deal with alternative SRS?
-- Error reporting?
-- More intuitive option flags?
-- Installation?
-- MongoDB/Elasticsearch spatial data tutorials?
-- Long term viability?
+- Alternative CRS
+- Error reporting
+- More intuitive option flags
+- Installation
+- MongoDB/Elasticsearch spatial data tutorials
+- Long term viability
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
 </x-color></x-bg-color>- GeoJSON specification
 - Limitations of getopts
