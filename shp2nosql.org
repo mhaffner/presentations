@@ -49,6 +49,13 @@ Oklahoma State University
 - Shapefile can come from census or local file
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Package details</x-color>
+- Works on GNU/Linux systems
+- GNU General Public License Version 3
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
+</x-color></x-bg-color>- Tested on Manjaro (Arch Linux)
+- Details of GNU GPL: freedom to share, use, change, share changes
+<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
+</x-color></x-bg-color><x-color><param>#FD971F</param>* Package details</x-color>
 - Written in <italic>/Bash/</italic> (4.4)
 - Relies on
   - <italic>/GDAL (2.1+)/</italic>
@@ -65,13 +72,6 @@ Oklahoma State University
 - I make extensive use of sed (GNU stream editor)
 - Optional dependencies
   - esbulk (multiprocessing utility written in go)
-<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
-</x-color></x-bg-color><x-color><param>#FD971F</param>* Package details</x-color>
-- Works on GNU/Linux systems
-- GNU General Public License Version 3
-<x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+BEGIN_NOTES
-</x-color></x-bg-color>- Tested on Manjaro (Arch Linux)
-- Details of GNU GPL: freedom to share, use, change, share changes
 <x-bg-color><param>#35331D</param><x-color><param>#75715E</param>#+END_NOTES
 </x-color></x-bg-color><x-color><param>#FD971F</param>* Elasticsearch</x-color>
 - Process
