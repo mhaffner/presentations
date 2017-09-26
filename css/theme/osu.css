@@ -24,22 +24,6 @@
 .reveal h4 {
     font-size: 1.5em; }
 
-/* TABLES */
-/*
-.reveal th {
-    text-align: left;
-    font-weight: bold;
-    color: orange;
-}
-
-.reveal td {
-    font-size: 0.75em;
-}
-
-.reveal table {
-    border-bottom: 5px;
-}
-*/
 .reveal th {
     font-weight: bold;
     color: #ffa64d;

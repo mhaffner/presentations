@@ -3,6 +3,7 @@
 #+Email: haffner.matthew.m@gmail.com
 
 #+REVEAL_THEME: black
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 #+reveal_title_slide: nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
 #+REVEAL_TRANS: linear
