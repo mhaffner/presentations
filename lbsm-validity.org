@@ -1,0 +1,133 @@
+#+Title: Assessing the Validity of Location-based Social Media 
+#+Author: Matthew Haffner
+#+Email: haffner.matthew.m@gmail.com
+
+#+REVEAL_THEME: black
+#+reveal_title_slide: nil
+#+OPTIONS: reveal_width:1200 reveal_height:800 reveal_rolling_links:t
+#+REVEAL_TRANS: none
+#+REVEAL_HLEVEL: 2
+#+REVEAL_MARGIN: 0.1
+#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil ^:nil
+#+REVEAL_EXTRA_CSS: ./css/theme/osu.css
+
+#+BEGIN_COMMENT
+Title slide
+#+END_COMMENT
+* VGI, Twitter, and Big Data
+Matthew Haffner \\
+matt.haffner@okstate.edu \\
+@geo_haffner \\
+https://mhaffner.github.io
+
+#+BEGIN_NOTES
+- This is part of my dissertation
+- Feel free to ask questions at any time
+#+END_NOTES
+* VGI, Twitter, and Big Data
+- Volunteered Geographic Information (VGI) – the act of contributing
+ information about one's location.
+  #+BEGIN_COMMENT
+#+ATTR_REVEAL: :frag appear
+#+END_COMMENT
+  - Voluntary (opt-in)
+  - Involuntary (opt-out)
+#+BEGIN_NOTES
+- Some have suggested "contributed" as a better title
+#+END_NOTES
+* VGI types
+- Citizen Science (eBird)
+* 
+[[./images/lbsm-validity/ebird.png]]
+* 
+[[./images/lbsm-validity/ebird2.png]]
+* 
+[[./images/lbsm-validity/ebird3.png]]
+* 
+[[./images/lbsm-validity/ebird4.png]]
+* VGI types
+- Citizen science (eBird)
+- Mapping projects (OSM)
+* 
+[[./images/lbsm-validity/osm1.png]]
+* 
+[[./images/lbsm-validity/osm2.png]]
+* 
+[[./images/lbsm-validity/osm3.png]]
+* 
+[[./images/lbsm-validity/osm4.png]]
+* 
+[[./images/lbsm-validity/osm5.png]]
+* 
+[[./images/lbsm-validity/osm6.png]]
+* VGI types
+- Citizen science (eBird)
+- Mapping projects (OSM)
+- Location-based social media (Twitter)
+  - http://ny.spatial.ly/
+* What is the significance of this research?
+- LBSM can be used
+  - In disaster situations
+  - To study social movements
+  - As a replacement for other data sources
+- But is it valid for studying spatial process?
+#+BEGIN_NOTES
+The tension between its representativeness for and its bias
+#+END_NOTES
+* Case studies
+- Project 1: Non-English Twitter activity in Houston, Texas
+- Project 2: Android vs. iOS activity in Atlanta, NYC, and Detroit
+#+BEGIN_NOTES
+- Project 1 goal: to test the relationship between percent white,
+  percent foreign born, income, unemployment, etc. on Non-English
+  Twitter activity
+- Project 2 goal: to evaluate whether or not iOS and Android users
+  produce significant spatial patterns and to test the relationship
+  between iOS/Android production and income
+#+END_NOTES
+* Workflow
+- Operating system: Manjaro (Arch Linux derivative)
+- Editors: Emacs/Vim
+- Scraping: Python
+- Version control: Git (GitLab and GitHub)
+- Database: ElasticSearch
+- Data management tools: Bash, Sed, Python
+- Spatial calculations: R and ElasticSearch
+- Spatial visualization and mapping: R and QGIS
+#+BEGIN_NOTES
+- Reproducibility
+- Efficiency
+- Freedom
+#+END_NOTES
+* 
+[[./images/lbsm-validity/one-tweet.png]]
+#+BEGIN_NOTES
+- 16% of the university's network resources
+#+END_NOTES
+* 
+#+attr_html: :width 700px 
+[[./images/lbsm-validity/harris-county-in-texas.png]]
+* 
+#+attr_html: :width 700px 
+[[./images/lbsm-validity/netu1.png]]
+* 
+#+attr_html: :width 700px 
+[[./images/lbsm-validity/netu2.png]]
+#+BEGIN_NOTES
+- Meaning; go back to ny.spatial.ly map
+#+END_NOTES
+* 
+#+attr_html: :width 800px 
+[[./images/lbsm-validity/atlanta.png]]
+* 
+#+attr_html: :width 900px 
+[[./images/lbsm-validity/nyc.png]]
+* 
+#+attr_html: :width 900px 
+[[./images/lbsm-validity/detroit.png]]
+
+* VGI, Twitter, and Big Data
+Matthew Haffner \\
+matt.haffner@okstate.edu \\
+@geo_haffner \\
+https://mhaffner.github.io
