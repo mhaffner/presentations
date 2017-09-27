@@ -18,6 +18,7 @@ Title slide
 Matthew Haffner \\
 matt.haffner@okstate.edu \\
 @geo_haffner \\
+https://mhaffner.github.io
 
 #+BEGIN_NOTES
 - This is part of my dissertation
