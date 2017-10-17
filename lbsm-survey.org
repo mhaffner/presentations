@@ -1,30 +1,58 @@
-#+Title: Assessing the Validity of Location-based Social Media 
-#+Author: Matthew Haffner
+#+Title: Location-based social media behavior and perceptions: Views of university students
+#+Author: Matthew Haffner \\ Adam J. Mathews
 #+Email: haffner.matthew.m@gmail.com
 
 #+REVEAL_THEME: black
 #+reveal_title_slide: nil
 #+OPTIONS: reveal_width:1200 reveal_height:800 reveal_rolling_links:t
-#+REVEAL_TRANS: none
+#+REVEAL_TRANS: cube
 #+REVEAL_HLEVEL: 2
 #+REVEAL_MARGIN: 0.1
-#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil ^:nil
+#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
 #+REVEAL_EXTRA_CSS: ./css/theme/osu.css
 
 #+BEGIN_COMMENT
 Title slide
 #+END_COMMENT
-* VGI, Twitter, and Big Data
-Matthew Haffner \\
-matt.haffner@okstate.edu \\
-@geo_haffner \\
+* Location-based social media behavior and perceptions: Views of university students
+Matthew Haffner^1, Adam J. Mathews^1, \\ 
+Emily Fekete^2, G. Allen Finchum^1  \\
+
+@@html: <font size=6>@@
+1 - Department of Geography, Oklahoma State University  \\
+2 - American Association of Geographers \\
 https://mhaffner.github.io
+@@html: </font>@@
 
 #+BEGIN_NOTES
+- This paper has already been published
 - This is part of my dissertation
-- Feel free to ask questions at any time
 #+END_NOTES
-* VGI, Twitter, and Big Data
+* VGI and LBSM
+- LBSM is the way that people share
+- Biases on platforms
+- The demographics of contributors has implications for analysis
+#+BEGIN_NOTES
+- Males are more active on OSM
+- Males are more likely to post geotagged photographs
+- Pew research studies?
+#+END_NOTES
+* Research focus
+- Demographics, usage patterns, and perceptions
+- Questions
+  - Are there differences in terms of gender, race, and academic standing?
+  - What are the implications?
+* Data
+- 
+* Methods
+* Results
+* Implications
+* Location-based social media behavior and perceptions: Views of university students
+[[./images/lbsm-survey/qr-code.jpg]] \\
+https://mhaffner.github.io
+
+
+* 
 - Volunteered Geographic Information (VGI) – the act of contributing
  information about one's location.
   #+ATTR_REVEAL: :frag appear
@@ -37,7 +65,7 @@ https://mhaffner.github.io
 - Citizen Science (eBird)
 * 
 [[./images/lbsm-validity/ebird.png]]
-* 
+** 
 [[./images/lbsm-validity/ebird2.png]]
 * 
 [[./images/lbsm-validity/ebird3.png]]
