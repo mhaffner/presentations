@@ -1,4 +1,4 @@
-#+Title: Assessing the Validity of Location-based Social Media 
+#+Title: Big data, spatial data science, and VGI 
 #+Author: Matthew Haffner
 #+Email: haffner.matthew.m@gmail.com
 
@@ -14,7 +14,7 @@
 #+BEGIN_COMMENT
 Title slide
 #+END_COMMENT
-* VGI, Twitter, and Big Data
+* Big data, spatial data science, and VGI
 Matthew Haffner \\
 matt.haffner@okstate.edu \\
 @geo_haffner \\
@@ -24,7 +24,20 @@ https://mhaffner.github.io
 - This is part of my dissertation
 - Feel free to ask questions at any time
 #+END_NOTES
-* VGI, Twitter, and Big Data
+* Big data
+- "Anything that cannot fit into an Excel spreadsheet."
+- "Volume, velocity, and variety"
+- ?
+* 
+[[./images/lbsm-validity/data-science1.png]]
+* 
+[[./images/lbsm-validity/data-science2.png]]
+* 
+[[./images/lbsm-validity/data-science3.png]]
+* 
+#+attr_html: :width 600px 
+[[./images/lbsm-validity/data-science4.jpeg]]
+* Big data, spatial data science, and VGI
 - Volunteered Geographic Information (VGI) – the act of contributing
  information about one's location.
   #+ATTR_REVEAL: :frag appear
@@ -124,7 +137,7 @@ The tension between its representativeness for and its bias
 #+attr_html: :width 900px 
 [[./images/lbsm-validity/detroit.png]]
 
-* VGI, Twitter, and Big Data
+* Big data, spatial data science, and VGI
 Matthew Haffner \\
 matt.haffner@okstate.edu \\
 @geo_haffner \\
