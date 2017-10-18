@@ -27,12 +27,15 @@ https://mhaffner.github.io
 #+BEGIN_NOTES
 - This paper has already been published
 - This is part of my dissertation
+- Started collecting Twitter, wanting to study all kinds of "interesting patterns"
+- Decided to take a step back and examine the contributors 
 #+END_NOTES
 * VGI and LBSM
-- LBSM is the way that people share
+- LBSM as a subset of VGI
 - Biases on platforms
-- The demographics of contributors has implications for analysis
+- Contributors' demographics have implications
 #+BEGIN_NOTES
+- LBSM is one the principal ways people share locational information online
 - Males are more active on OSM
 - Males are more likely to post geotagged photographs
 - Pew research studies?
@@ -42,118 +45,91 @@ https://mhaffner.github.io
 - Questions
   - Are there differences in terms of gender, race, and academic standing?
   - What are the implications?
+#+BEGIN_NOTES
+- Demographics, usage patterns, and perceptions of a group with high
+  rates of contribution
+- Questions
+  - Are there differences in terms of gender, race, and academic
+    standing in terms of both usage and perception?
+#+END_NOTES
 * Data
-- 
+- 46 question survey with 7 sections
+  - Demographics
+  - Mobile phone and tablet use
+  - Social media use
+  - Geotagging on social media
+  - Instagram use
+  - Twitter use
+  - LBSM perceptions
+- /n/ = 253
+#+BEGIN_NOTES
+- Added a section on Instagram use based on students' responses during
+  the pre-test
+- LBSM perceptions - likert scale perception questions, open-ended
+  responses
+- 5% response rate
+#+END_NOTES
 * Methods
+- Differences in use: Chi-square tests
+- Perception (Likert-scale items): Ordinal logistic regression
+- Open-ended items: Qualitative summaries
 * Results
+- Why do you choose to geotag social media posts?
+  - "Usually it's just to further emphasize the caption."
+  - "[B]ecause where I am is important to the post."
+  - "Because where I am is part of the story being told by my post."
+#+BEGIN_NOTES
+- Location as an important part of posts -- whether or not posts are geotagged
+#+END_NOTES
+* Results
+Why do you choose to geotag social media posts?
+ - "So that I can look back and remember where I was and what I was
+   doing at certain times."
+- "To remember where I was at the time of the post."
+- "So I can remember where and what I did in my life."
+#+BEGIN_NOTES
+- Six females (but zero males) mention using geotags as a type of
+  locational journal.
+#+END_NOTES
 * Implications
+- Twitter is reasonably representative
+- Users geotag content at places they visit infrequently
+#+BEGIN_NOTES
+- Twitter is reasonably representative of the general population,
+  albeit for this subset
+- Limitations
+  - Lack of an intersectionality dimension
+  - Shortage of responses by individual racial groups
+  - Did not differentiate between international and domestic
+#+END_NOTES
+* 
 * Location-based social media behavior and perceptions: Views of university students
 [[./images/lbsm-survey/qr-code.jpg]] \\
 https://mhaffner.github.io
 
-
-* 
-- Volunteered Geographic Information (VGI) – the act of contributing
- information about one's location.
-  #+ATTR_REVEAL: :frag appear
-  - Voluntary (opt-in)
-  - Involuntary (opt-out)
-#+BEGIN_NOTES
-- Some have suggested "contributed" as a better title
-#+END_NOTES
-* VGI types
-- Citizen Science (eBird)
-* 
-[[./images/lbsm-validity/ebird.png]]
-** 
-[[./images/lbsm-validity/ebird2.png]]
-* 
-[[./images/lbsm-validity/ebird3.png]]
-* 
-[[./images/lbsm-validity/ebird4.png]]
-* VGI types
-- Citizen science (eBird)
-- Mapping projects (OSM)
-* 
-[[./images/lbsm-validity/osm1.png]]
-* 
-[[./images/lbsm-validity/osm2.png]]
-* 
-[[./images/lbsm-validity/osm3.png]]
-* 
-[[./images/lbsm-validity/osm4.png]]
-* 
-[[./images/lbsm-validity/osm5.png]]
-* 
-[[./images/lbsm-validity/osm6.png]]
-* VGI types
-- Citizen science (eBird)
-- Mapping projects (OSM)
-- Location-based social media (Twitter)
-  - http://ny.spatial.ly/
-* What is the significance of this research?
-- LBSM can be used
-  - In disaster situations
-  - To study social movements
-  - As a replacement for other data sources
-- But is it valid for studying spatial process?
-#+BEGIN_NOTES
-The tension between its representativeness for and its bias
-#+END_NOTES
-* Case studies
-- Project 1: Non-English Twitter activity in Houston, Texas
-- Project 2: Android vs. iOS activity in Atlanta, NYC, and Detroit
-#+BEGIN_NOTES
-- Project 1 goal: to test the relationship between percent white,
-  percent foreign born, income, unemployment, etc. on Non-English
-  Twitter activity
-- Project 2 goal: to evaluate whether or not iOS and Android users
-  produce significant spatial patterns and to test the relationship
-  between iOS/Android production and income
-#+END_NOTES
-* Workflow
-- Operating system: Manjaro (Arch Linux derivative)
-- Editors: Emacs/Vim
-- Scraping: Python
-- Version control: Git (GitLab and GitHub)
-- Database: ElasticSearch
-- Data management tools: Bash, Sed, Python
-- Spatial calculations: R and ElasticSearch
-- Spatial visualization and mapping: R and QGIS
-#+BEGIN_NOTES
-- Reproducibility
-- Efficiency
-- Freedom
-#+END_NOTES
-* 
-[[./images/lbsm-validity/one-tweet.png]]
-#+BEGIN_NOTES
-- 16% of the university's network resources
-#+END_NOTES
-* 
-#+attr_html: :width 700px 
-[[./images/lbsm-validity/harris-county-in-texas.png]]
-* 
-#+attr_html: :width 700px 
-[[./images/lbsm-validity/netu1.png]]
-* 
-#+attr_html: :width 700px 
-[[./images/lbsm-validity/netu2.png]]
-#+BEGIN_NOTES
-- Meaning; go back to ny.spatial.ly map
-#+END_NOTES
-* 
-#+attr_html: :width 800px 
-[[./images/lbsm-validity/atlanta.png]]
-* 
-#+attr_html: :width 900px 
-[[./images/lbsm-validity/nyc.png]]
-* 
-#+attr_html: :width 900px 
-[[./images/lbsm-validity/detroit.png]]
-
-* VGI, Twitter, and Big Data
-Matthew Haffner \\
-matt.haffner@okstate.edu \\
-@geo_haffner \\
-https://mhaffner.github.io
+* Appendix
+* Survey respondents compared to the university
+#+BEGIN_SRC org
+| Category          | Item             | University | Our Sample |
+|-------------------+------------------+------------+------------|
+| Race/ethnicity    | White            |     72.52% |     73.02% |
+|                   | African American |      4.89% |      3.57% |
+|                   | Native American  |      4.78% |      4.37% |
+|                   | Hispanic         |      6.31% |      1.59% |
+|                   | Asian            |      1.87% |      4.76% |
+|                   | Pacific Islander |      0.12% |      0.40% |
+|                   | Muliracial       |      8.75% |     10.32% |
+|-------------------+------------------+------------+------------|
+| Minority status   | Minority         |     26.73% |     26.98% |
+|                   | Non-minority     |     73.27% |     73.02% |
+|-------------------+------------------+------------+------------|
+| Academic Standing | Freshman         |     19.22% |     20.24% |
+|                   | Sophomore        |     17.14% |     19.44% |
+|                   | Junior           |     20.43% |     17.06% |
+|                   | Senior           |     23.62% |     16.67% |
+|                   | Graduate student |     18.22% |     26.19% |
+|-------------------+------------------+------------+------------|
+| Gender            | Female           |     48.28% |     34.92% |
+|                   | Male             |     51.72% |     63.92% |
+|-------------------+------------------+------------+------------|
+#+END_SRC
