@@ -47,6 +47,7 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 - Demographics, usage patterns, and perceptions
 - Questions
   - Are there differences in terms of gender, race, and academic standing?
+  - Why do people contribute?
   - What are the implications?
 #+BEGIN_NOTES
 - Demographics, usage patterns, and perceptions of a group with high
@@ -66,8 +67,6 @@ Emily Fekete^2, G. Allen Finchum^1  \\
   - LBSM perceptions
 - /n/ = 253
 #+BEGIN_NOTES
-- Added a section on Instagram use based on students' responses during
-  the pre-test
 - LBSM perceptions - likert scale perception questions, open-ended
   responses
 - 5% response rate
@@ -83,6 +82,7 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 * 
 "Geotagging social media posts is a good way to let my friends and my
 followers know where I am and what I am up to."
+#+attr_html: :height 700px 
 [[./images/lbsm-survey/geotagging-is-good-image.png]]
 * Results
 [[./images/lbsm-survey/geotagging-is-good-table.png]]
@@ -114,6 +114,7 @@ Why do you choose to geotag social media posts?
 * Implications
 - Twitter is reasonably representative
 - Most differences are between males and females
+- Not all VGI principles apply to LBSM
 - Motivating factor: locational journaling
 - Users geotag content at places they visit infrequently
 #+BEGIN_NOTES
@@ -124,7 +125,9 @@ Why do you choose to geotag social media posts?
 - Limitations
   - Shortage of responses by individual racial groups
   - Lack of an intersectionality dimension
-  - Did not differentiate between international and domestic
+  - In terms of privacy, who are people concerned about sharing their
+    location with?
+- All of these limitations offer great avenues for future research!
 #+END_NOTES
 
 * 
