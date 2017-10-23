@@ -21,24 +21,27 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 @@html: <font size=6>@@
 1 - Department of Geography, Oklahoma State University  \\
 2 - American Association of Geographers \\
-https://mhaffner.github.io
 @@html: </font>@@
 
 #+BEGIN_NOTES
-- This paper has already been published
+- This paper has been published in the Geographical Review
 - This is part of my dissertation
 - Started collecting Twitter, wanting to study all kinds of "interesting patterns"
 - Decided to take a step back and examine the contributors 
 #+END_NOTES
 * VGI and LBSM
-- LBSM as a subset of VGI
-- Biases on platforms
+- VGI (Goodchild 2007)
+- Biases on platforms (Bartoshek and Kebler 2013; Stephens 2013;
+  Mathews et al. 2013; Zickuhr 2013; Greenwood, Perrin, and Duggan 2016)
 - Contributors' demographics have implications
 #+BEGIN_NOTES
-- LBSM is one the principal ways people share locational information online
+- LBSM in the larger context of VGI
 - Males are more active on OSM
 - Males are more likely to post geotagged photographs
+- Zickuhr finds more contributions by minorities and women
 - Pew research studies?
+- LBSM is one the principal ways people share locational information online
+- Contributors' demographics have implications for analysis
 #+END_NOTES
 * Research focus
 - Demographics, usage patterns, and perceptions
@@ -74,39 +77,65 @@ https://mhaffner.github.io
 - Perception (Likert-scale items): Ordinal logistic regression
 - Open-ended items: Qualitative summaries
 * Results
-- Why do you choose to geotag social media posts?
-  - "Usually it's just to further emphasize the caption."
-  - "[B]ecause where I am is important to the post."
-  - "Because where I am is part of the story being told by my post."
+[[./images/lbsm-survey/social-media-and-lbsm-use.png]]
+* Results
+[[./images/lbsm-survey/social-media-and-lbsm-tests.png]]
+* 
+"Geotagging social media posts is a good way to let my friends and my
+followers know where I am and what I am up to."
+[[./images/lbsm-survey/geotagging-is-good-image.png]]
+* Results
+[[./images/lbsm-survey/geotagging-is-good-table.png]]
+* 
+"I feel that geotagging infringes on my privacy."
+[[./images/lbsm-survey/geotagging-privacy-image.png]]
+* Results
+[[./images/lbsm-survey/geotagging-privacy-table.png]]
+* 
+Why do you choose to geotag social media posts?
+- "Usually it's just to further emphasize the caption."
+- "[B]ecause where I am is important to the post."
+- "Because where I am is part of the story being told by my post."
 #+BEGIN_NOTES
 - Location as an important part of posts -- whether or not posts are geotagged
 #+END_NOTES
-* Results
+* 
 Why do you choose to geotag social media posts?
  - "So that I can look back and remember where I was and what I was
    doing at certain times."
-- "To remember where I was at the time of the post."
-- "So I can remember where and what I did in my life."
+ - "To remember where I was at the time of the post."
+ - "So I can remember where and what I did in my life."
 #+BEGIN_NOTES
 - Six females (but zero males) mention using geotags as a type of
   locational journal.
 #+END_NOTES
+* 
+[[./images/lbsm-survey/why-geo-wordcloud.png]]
 * Implications
 - Twitter is reasonably representative
+- Most differences are between males and females
+- Motivating factor: locational journaling
 - Users geotag content at places they visit infrequently
 #+BEGIN_NOTES
 - Twitter is reasonably representative of the general population,
   albeit for this subset
+- 77% of users either agree or disagree with "I prefer to geotag from
+  home (apt., dorm, etc.)
 - Limitations
-  - Lack of an intersectionality dimension
   - Shortage of responses by individual racial groups
+  - Lack of an intersectionality dimension
   - Did not differentiate between international and domestic
 #+END_NOTES
+
 * 
-* Location-based social media behavior and perceptions: Views of university students
+Haffner, M., Mathews, A. J., Fekete, E., Finchum, G. A. 2017.
+Location-based social media behavior and perceptions: Views of
+university students. /Geographical Review/ doi: 10.1111/gere.12250. \\
+
 [[./images/lbsm-survey/qr-code.jpg]] \\
 https://mhaffner.github.io
 
+* References
 * Appendix
 * Survey respondents compared to the university
 #+BEGIN_SRC org
