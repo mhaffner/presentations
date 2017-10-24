@@ -8,7 +8,6 @@
 #+REVEAL_MARGIN: 0.1
 #+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
 #+REVEAL_EXTRA_CSS: ./css/theme/osu.css
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 
 #+BEGIN_COMMENT
 Title slide
@@ -29,7 +28,7 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 - Decided to take a step back and examine the contributors 
 #+END_NOTES
 * VGI and LBSM
-- VGI (Goodchild 2007)
+- Volunteered geographic information (VGI; Goodchild 2007)
 - Biases on platforms (Bartoshek and Kebler 2013; Stephens 2013;
   Mathews et al. 2013; Zickuhr 2013; Greenwood, Perrin, and Duggan 2016)
 - Contributors' demographics have implications
