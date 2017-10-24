@@ -1,6 +1,4 @@
 #+Title: Location-based social media behavior and perceptions: Views of university students
-#+Author: Matthew Haffner \\ Adam J. Mathews
-#+Email: haffner.matthew.m@gmail.com
 
 #+REVEAL_THEME: black
 #+reveal_title_slide: nil
@@ -10,6 +8,7 @@
 #+REVEAL_MARGIN: 0.1
 #+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
 #+REVEAL_EXTRA_CSS: ./css/theme/osu.css
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 
 #+BEGIN_COMMENT
 Title slide
@@ -73,8 +72,9 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 #+END_NOTES
 * Methods
 - Differences in use: Chi-square tests
-- Perception (Likert-scale items): Ordinal logistic regression
-- Open-ended items: Qualitative summaries
+- Perception:
+  - Likert-scale items: Ordinal logistic regression
+  - Open-ended items: Qualitative summaries
 * Results
 [[./images/lbsm-survey/social-media-and-lbsm-use.png]]
 * Results
@@ -82,7 +82,7 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 * 
 "Geotagging social media posts is a good way to let my friends and my
 followers know where I am and what I am up to."
-#+attr_html: :height 700px 
+#+attr_html: :height 600px 
 [[./images/lbsm-survey/geotagging-is-good-image.png]]
 * Results
 [[./images/lbsm-survey/geotagging-is-good-table.png]]
@@ -139,7 +139,25 @@ university students. /Geographical Review/ doi: 10.1111/gere.12250. \\
 https://mhaffner.github.io
 
 * References
-* Appendix
+@@html: <font size=6>@@
+- Bartoschek, T. and C. Kebler. 2013. VGI in Education: From K-12 to
+  Graduate Studies. In /Crowdsourcing Geographic Knowledge/, edited by
+  D. Sui, M. F. Goodchild, and S. Elwood, 341-360. Dordrecht,
+  Netherlands: Springer.
+- Goodchild, M. F. 2007. Citizens as Sensors: The World of Volunteered
+  Geography. /GeoJournal/ 39 (4): 211-221.
+- Greenwood, S., A. Perrin, and M. Duggan. 2016. /Social Media Update
+  2016/. Pew Research Center.
+  [http://www.pewinternet.org/2016/11/11/social-media-update-2016/]
+- Mathews, A., Y. Lu, M. Patton, N. Dede-Bamfo, and J. Chen. 2013.
+  College Students' Consumption, Contribution, and Risk Awareness
+  Related to Online Mapping Services and Social Media: Does Geography
+  and GIS Knowledge Matter? /GeoJournal/ 78 (4): 627-639.
+- Stephens, M. 2013. Gender and the GeoWeb: Divisions in the
+  Production of User-generated Cartographic Information. /GeoJournal/
+  78: 981-996.
+@@html: </font>@@
+* Appendix?
 * Survey respondents compared to the university
 #+BEGIN_SRC org
 | Category          | Item             | University | Our Sample |
