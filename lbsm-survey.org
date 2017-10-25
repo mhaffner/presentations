@@ -3,11 +3,12 @@
 #+REVEAL_THEME: black
 #+reveal_title_slide: nil
 #+OPTIONS: reveal_width:1200 reveal_height:800 reveal_rolling_links:t
-#+REVEAL_TRANS: cube
+#+REVEAL_TRANS: none
 #+REVEAL_HLEVEL: 2
 #+REVEAL_MARGIN: 0.1
 #+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
 #+REVEAL_EXTRA_CSS: ./css/theme/osu.css
+#+REVEAL_SLIDE_FOOTER: Location-based social media (LBSM) behavior and perceptions
 
 #+BEGIN_COMMENT
 Title slide
@@ -29,8 +30,10 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 #+END_NOTES
 * VGI and LBSM
 - Volunteered geographic information (VGI; Goodchild 2007)
-- Biases on platforms (Bartoshek and Kebler 2013; Stephens 2013;
-  Mathews et al. 2013; Zickuhr 2013; Greenwood, Perrin, and Duggan 2016)
+- Location-based social media (LBSM; see Evans 2015)
+- Platform (e.g. Facebook, OpenStreetMap) biases (Bartoshek and Kebler
+  2013; Stephens 2013; Mathews et al. 2013; Zickuhr 2013; Greenwood,
+  Perrin, and Duggan 2016)
 - Contributors' demographics have implications
 #+BEGIN_NOTES
 - LBSM in the larger context of VGI
@@ -55,7 +58,8 @@ Emily Fekete^2, G. Allen Finchum^1  \\
     standing in terms of both usage and perception?
 #+END_NOTES
 * Data
-- 46 question survey with 7 sections
+- Survey administered to 5000 random Oklahoma State students 
+- 46 questions with 7 sections
   - Demographics
   - Mobile phone and tablet use
   - Social media use
@@ -68,29 +72,49 @@ Emily Fekete^2, G. Allen Finchum^1  \\
 - LBSM perceptions - likert scale perception questions, open-ended
   responses
 - 5% response rate
+- Geotagging is the act of posting content on a social media site and
+  including geographical information about your current location. This
+  can be completed manually (for example, by "checking in" to a
+  location or writing where you are) or with the assistance of a
+  device's global positioning system (GPS) (for example, allowing your
+  device to automatically include your location on your post). Content
+  can be precise (a latitude-longituge point) or general (e.g.
+  Stillwater, OK or "Eskimo Joe's").
 #+END_NOTES
 * Methods
-- Differences in use: Chi-square tests
+- Differences in use: 
+  - Chi-square tests
 - Perception:
-  - Likert-scale items: Ordinal logistic regression
+  - Likert-scale items: Ordinal logistic regression (OLR)
   - Open-ended items: Qualitative summaries
-* Results
+* 
+Use of Social Media and LBSM
 [[./images/lbsm-survey/social-media-and-lbsm-use.png]]
-* Results
+* 
+Use of Social Media and LBSM
+#+attr_html: :height 550px 
+[[./images/lbsm-survey/social-media-and-lbsm-use-zoomed.png]]
+* 
+Chi-squared tests for use of social media and LBSM
 [[./images/lbsm-survey/social-media-and-lbsm-tests.png]]
+* 
+Chi-squared tests for use of social media and LBSM
+#+attr_html: :height 550px 
+[[./images/lbsm-survey/social-media-and-lbsm-tests-zoomed.png]]
 * 
 "Geotagging social media posts is a good way to let my friends and my
 followers know where I am and what I am up to."
-#+attr_html: :height 600px 
+#+attr_html: :height 550px 
 [[./images/lbsm-survey/geotagging-is-good-image.png]]
-* Results
+* 
 [[./images/lbsm-survey/geotagging-is-good-table.png]]
 * 
+#+attr_html: :height 600px 
 "I feel that geotagging infringes on my privacy."
 [[./images/lbsm-survey/geotagging-privacy-image.png]]
-* Results
-[[./images/lbsm-survey/geotagging-privacy-table.png]]
 * 
+[[./images/lbsm-survey/geotagging-privacy-table.png]]
+* The importance of place
 Why do you choose to geotag social media posts?
 - "Usually it's just to further emphasize the caption."
 - "[B]ecause where I am is important to the post."
@@ -98,7 +122,7 @@ Why do you choose to geotag social media posts?
 #+BEGIN_NOTES
 - Location as an important part of posts -- whether or not posts are geotagged
 #+END_NOTES
-* 
+* "Locational journaling"
 Why do you choose to geotag social media posts?
  - "So that I can look back and remember where I was and what I was
    doing at certain times."
@@ -109,6 +133,7 @@ Why do you choose to geotag social media posts?
   locational journal.
 #+END_NOTES
 * 
+Why do you choose to geotag social media posts?
 [[./images/lbsm-survey/why-geo-wordcloud.png]]
 * Implications
 - Twitter is reasonably representative
@@ -143,6 +168,8 @@ https://mhaffner.github.io
   Graduate Studies. In /Crowdsourcing Geographic Knowledge/, edited by
   D. Sui, M. F. Goodchild, and S. Elwood, 341-360. Dordrecht,
   Netherlands: Springer.
+- Evans, Leighton. 2015. /Locative Social Media: Place in the Digital
+  Age./ Baginstroke, U.K.: Palgrave-Macmillan.
 - Goodchild, M. F. 2007. Citizens as Sensors: The World of Volunteered
   Geography. /GeoJournal/ 39 (4): 211-221.
 - Greenwood, S., A. Perrin, and M. Duggan. 2016. /Social Media Update
@@ -156,29 +183,8 @@ https://mhaffner.github.io
   Production of User-generated Cartographic Information. /GeoJournal/
   78: 981-996.
 @@html: </font>@@
-* Appendix?
-* Survey respondents compared to the university
-#+BEGIN_SRC org
-| Category          | Item             | University | Our Sample |
-|-------------------+------------------+------------+------------|
-| Race/ethnicity    | White            |     72.52% |     73.02% |
-|                   | African American |      4.89% |      3.57% |
-|                   | Native American  |      4.78% |      4.37% |
-|                   | Hispanic         |      6.31% |      1.59% |
-|                   | Asian            |      1.87% |      4.76% |
-|                   | Pacific Islander |      0.12% |      0.40% |
-|                   | Muliracial       |      8.75% |     10.32% |
-|-------------------+------------------+------------+------------|
-| Minority status   | Minority         |     26.73% |     26.98% |
-|                   | Non-minority     |     73.27% |     73.02% |
-|-------------------+------------------+------------+------------|
-| Academic Standing | Freshman         |     19.22% |     20.24% |
-|                   | Sophomore        |     17.14% |     19.44% |
-|                   | Junior           |     20.43% |     17.06% |
-|                   | Senior           |     23.62% |     16.67% |
-|                   | Graduate student |     18.22% |     26.19% |
-|-------------------+------------------+------------+------------|
-| Gender            | Female           |     48.28% |     34.92% |
-|                   | Male             |     51.72% |     63.92% |
-|-------------------+------------------+------------+------------|
-#+END_SRC
+* Appendix
+* 
+Demographics of survey respondents
+#+attr_html: :height 600px 
+[[./images/lbsm-survey/survey-respondents.png]]
