@@ -114,14 +114,6 @@ followers know where I am and what I am up to."
 [[./images/lbsm-survey/geotagging-privacy-image.png]]
 * 
 [[./images/lbsm-survey/geotagging-privacy-table.png]]
-* The importance of place
-Why do you choose to geotag social media posts?
-- "Usually it's just to further emphasize the caption."
-- "[B]ecause where I am is important to the post."
-- "Because where I am is part of the story being told by my post."
-#+BEGIN_NOTES
-- Location as an important part of posts -- whether or not posts are geotagged
-#+END_NOTES
 * "Locational journaling"
 Why do you choose to geotag social media posts?
  - "So that I can look back and remember where I was and what I was
@@ -131,6 +123,14 @@ Why do you choose to geotag social media posts?
 #+BEGIN_NOTES
 - Six females (but zero males) mention using geotags as a type of
   locational journal.
+#+END_NOTES
+* The importance of place
+Why do you choose to geotag social media posts?
+- "Usually it's just to further emphasize the caption."
+- "[B]ecause where I am is important to the post."
+- "Because where I am is part of the story being told by my post."
+#+BEGIN_NOTES
+- Location as an important part of posts -- whether or not posts are geotagged
 #+END_NOTES
 * 
 Why do you choose to geotag social media posts?
