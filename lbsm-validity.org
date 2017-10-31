@@ -99,9 +99,9 @@ The tension between its representativeness for and its bias
 * Workflow
 - Operating system: Manjaro (Arch Linux derivative)
 - Editors: Emacs/Vim
-- Scraping: Python
+- Spatial data mining: Python
 - Version control: Git (GitLab and GitHub)
-- Database: ElasticSearch
+- Database (NoSQL): ElasticSearch
 - Data management tools: Bash, Sed, Python
 - Spatial calculations: R and ElasticSearch
 - Spatial visualization and mapping: R and QGIS
