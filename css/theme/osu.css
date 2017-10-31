@@ -10,6 +10,12 @@
     text-align: left;
 }
 
+/* Numbered items */
+.reveal ol {
+    color: #ffa64d;
+    text-align: left;
+}
+
 /* HEADERS */
 
 .reveal h1 {
