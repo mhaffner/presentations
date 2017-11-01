@@ -1,3 +1,13 @@
+.reveal .orange-bg {
+    background: #ffa64d;
+}
+
+.reveal .purple-bg {
+    color: #FEC923;
+    background: #41225E;
+   /* background: #592a8a */ /* lighter purple */
+}
+
 /* Centers items that aren't bulleted */
 .reveal p {
     color: #ffa64d; /* lighter orange than default */
@@ -10,19 +20,30 @@
     text-align: left;
 }
 
+/* Numbered items */
+.reveal ol {
+    color: #ffa64d;
+    text-align: left;
+}
+
 /* HEADERS */
 
 .reveal h1 {
-    font-size: 1.5em; }
+    font-size: 0.5em;
+    font-variant: small-caps;
+}
 
 .reveal h2 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+}
 
 .reveal h3 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+}
 
 .reveal h4 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+}
 
 .reveal th {
     font-weight: bold;
