@@ -1,472 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Location-based social media behavior in a GIScience context</title>
-<meta name="author" content="(Matthew Haffner)"/>
-<style type="text/css">
-.underline { text-decoration: underline; }
-</style>
-<link rel="stylesheet" href="./css/reveal.css"/>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Location-based Social Media in a GIScience Context</title>
+        <meta name="author" content="(Matthew Haffner)"/>
+        <style type="text/css">
+         .underline { text-decoration: underline; }
+        </style>
+        <link rel="stylesheet" href="./css/reveal.css"/>
+        <link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
+        <link rel="stylesheet" href="./css/theme/osu.css" id="osu"/>
+    </head>
 
-<link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-<link rel="stylesheet" href="./css/theme/osu.css"/>
+<!-- Title slide -->
+                <section data-background="./images/lbsm-giscience/detroit-filter.png">
+                    <h2>Location-based Social Media in a GIScience Context</h2>
+                    <p>
+                        Matthew Haffner <br />
+                        Department of Geography <br />
+                        Oklahoma State University
+                    </p>
+                    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                </section>
 
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = './css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
-</head>
-<body>
-<div class="reveal">
-<div class="slides">
-<section>
-<section id="slide-org35dda42" data-background="./images/lbsm-giscience/detroit-filter.png">
-<h2 id="org35dda42">Location-based social media in a GIScience Context</h2>
-<p>
-Matthew Haffner <br />
-Department of Geography <br />
-Oklahoma State University
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org427163c">
-<h2 id="org427163c">How location-based social media (LBSM) fits into a GIScience research program</h2>
-<ul>
-<li class="fragment appear">Spatial data mining/capture</li>
-<li class="fragment appear">Programming</li>
-<li class="fragment appear">GIS Cyberfrastructure</li>
-<li class="fragment appear">Spatial statistics</li>
-<li class="fragment appear">Cognition of geographic phenomena</li>
+<!-- Introduction -->
+                <section>
+                    <h2>How Location-based Social Media (LBSM) Fits Into a GIScience Research Program</h2>
+                    <ul>
+                        <li class="fragment appear">Spatial data mining/capture</li>
+                        <li class="fragment appear">Programming</li>
+                        <li class="fragment appear">GIS Cyberfrastructure</li>
+                        <li class="fragment appear">Spatial statistics</li>
+                        <li class="fragment appear">Cognition of geographic phenomena</li>
+                    </ul>
+                    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                </section>
 
-</ul>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section data-transition="cube">
-<section id="slide-orgcb7c85e" data-transition="cube">
-<h2 id="orgcb7c85e">Structure of this presentation</h2>
-<ol>
-<li class="fragment appear">Location-based social media behavior and perception: Views of
-university students</li>
-<li class="fragment appear">A (critical) spatial analysis on non-English Twitter activity in
-Houston, Texas</li>
-<li class="fragment appear">How this research fits into ECU, Greenville, and the surrounding region</li>
+                <section>
+                    <h2>Structure of This Presentation</h2>
+                    <ol>
+                        <li class="fragment appear">Location-based social media behavior and perception: Views of university students</li>
+                        <li class="fragment appear">A (critical) spatial analysis of non-English Twitter activity in Houston, Texas</li>
+                        <li class="fragment appear">How this research fits into ECU, Greenville, and the surrounding region</li>
+                    </ol>
+                    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                </section>
 
-</ol>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org25f6191">
-<h2 id="org25f6191">Location-based social media behavior and perceptions: Views of university students</h2>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orgdae4f0f">
-<h2 id="orgdae4f0f">VGI and LBSM</h2>
-<ul>
-<li>Volunteered geographic information (VGI; Goodchild 2007)</li>
-<li>Location-based social media (LBSM; see Evans 2015)</li>
-<li>Platform (e.g. Facebook, OpenStreetMap) biases (Bartoshek and Kebler
-2013; Stephens 2013; Mathews et al. 2013; Zickuhr 2013; Greenwood,
-Perrin, and Duggan 2016)</li>
-<li>Contributors' demographics have implications</li>
+<!-- SECTION 1 -->
+                <section data-background="./images/lbsm-giscience/social-media-apps.png">
+                    <h2 style="color: black;">
+                        1. Location-based social media behavior and perceptions: Views of university students
+                    </h2>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>VGI and LBSM</h2>
+                    <ul>
+                        <li>Volunteered geographic information (VGI; Goodchild 2007)</li>
+                        <li>Location-based social media (LBSM; see Evans 2015)</li>
+                        <li>Platform (e.g. Facebook, OpenStreetMap) biases (Bartoshek and Kebler
+                            2013; Stephens 2013; Mathews et al. 2013; Zickuhr 2013; Greenwood,
+                            Perrin, and Duggan 2016)</li>
+                        <li>Significance: contributors' demographics have implications</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>LBSM in the larger context of VGI</li>
+                            <li>Males are more active on OSM</li>
+                            <li>Males are more likely to post geotagged photographs</li>
+                            <li>Zickuhr finds more contributions by minorities and women</li>
+                            <li>Pew research studies?</li>
+                            <li>LBSM is one the principal ways people share locational information online</li>
+                            <li>Contributors' demographics have implications for analysis</li>
+                        </ul>
+                    </aside>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Research focus</h2>
+                    <ul>
+                        <li>Demographics, usage patterns, and perceptions</li>
+                        <li>Questions
+                            <ul>
+                                <li>Are there differences in terms of gender, race, and academic standing?</li>
+                                <li>Why do people contribute?</li>
+                                <li>What are the implications?</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Demographics, usage patterns, and perceptions of a group with high
+                                rates of contribution</li>
+                            <li>Questions
+                                <ul>
+                                    <li>Are there differences in terms of gender, race, and academic
+                                        standing in terms of both usage and perception?</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section>
+                        <h2>Data</h2>
+                        <ul>
+                            <li>Survey administered to 5000 random Oklahoma State students</li>
+                            <li>46 questions with 7 sections
+                                <ul>
+                                    <li>Demographics</li>
+                                    <li>Mobile phone and tablet use</li>
+                                    <li>Social media use</li>
+                                    <li>Geotagging on social media</li>
+                                    <li>Instagram use</li>
+                                    <li>Twitter use</li>
+                                    <li>LBSM perceptions</li>
+                                </ul>
+                            </li>
+                            <li><i>n</i> = 253</li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>LBSM perceptions - likert scale perception questions, open-ended
+                                    responses</li>
+                                <li>5% response rate</li>
+                                <li>Geotagging is the act of posting content on a social media site and
+                                    including geographical information about your current location. This
+                                    can be completed manually (for example, by "checking in" to a
+                                    location or writing where you are) or with the assistance of a
+                                    device's global positioning system (GPS) (for example, allowing your
+                                    device to automatically include your location on your post). Content
+                                    can be precise (a latitude-longituge point) or general (e.g.
+                                    Stillwater, OK or "Eskimo Joe's").</li>
 
-</ul>
-<aside class="notes">
-<ul>
-<li>LBSM in the larger context of VGI</li>
-<li>Males are more active on OSM</li>
-<li>Males are more likely to post geotagged photographs</li>
-<li>Zickuhr finds more contributions by minorities and women</li>
-<li>Pew research studies?</li>
-<li>LBSM is one the principal ways people share locational information online</li>
-<li>Contributors' demographics have implications for analysis</li>
+                            </ul>
+                        </aside>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+  <!-- slide -->
+                    <section>
+                        <p>
+                            Demographics of survey respondents
+                        </p>
+                        <div class="figure">
+                            <p><img src="./images/lbsm-survey/survey-respondents.png" alt="survey-respondents.png" height="600px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Methods</h2>
+                    <ul>
+                        <li>Differences in use:
+                            <ul>
+                                <li>Chi-square tests</li>
+                            </ul>
+                        </li>
+                        <li>Perception:
+                            <ul>
+                                <li>Likert-scale items: Ordinal logistic regression (OLR)</li>
+                                <li>Open-ended items: Qualitative summaries</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2></h2>
+                    <p>
+                        Use of Social Media and LBSM
+                        <img src="./images/lbsm-survey/social-media-and-lbsm-use.png" alt="social-media-and-lbsm-use.png" />
+                    </p>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <p>
+                        Use of Social Media and LBSM
+                    </p>
 
-</ul>
+                    <div class="figure">
+                        <p><img src="./images/lbsm-survey/social-media-and-lbsm-use-zoomed.png" alt="social-media-and-lbsm-use-zoomed.png" height="550px" />
+                        </p>
+                    </div>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section id="slide-orgb574249">
+                        <h2></h2>
+                        <p>
+                            Chi-squared tests for use of social media and LBSM
+                            <img src="./images/lbsm-survey/social-media-and-lbsm-tests.png" alt="social-media-and-lbsm-tests.png" />
+                        </p>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+                </section>
+                <section>
+                    <section id="slide-org79d25fa">
+                        <h2></h2>
+                        <p>
+                            Chi-squared tests for use of social media and LBSM
+                        </p>
+                        <div class="figure">
+                            <p><img src="./images/lbsm-survey/social-media-and-lbsm-tests-zoomed.png" alt="social-media-and-lbsm-tests-zoomed.png" height="550px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2></h2>
+                    <p>
+                        "Geotagging social media posts is a good way to let my friends and my
+                        followers know where I am and what I am up to."
+                    </p>
+                    <div class="figure">
+                        <p><img src="./images/lbsm-survey/geotagging-is-good-image.png" alt="geotagging-is-good-image.png" height="550px" />
+                        </p>
+                    </div>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div class="figure">
+                        <p><img src="./images/lbsm-survey/geotagging-is-good-table.png" alt="geotagging-is-good-table.png" />
+                        </p>
+                    </div>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                        <h2></h2>
+                        <p height="600px">
+                            "I feel that geotagging infringes on my privacy."
+                            <img src="./images/lbsm-survey/geotagging-privacy-image.png" alt="geotagging-privacy-image.png" height="600px" />
+                        </p>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div class="figure">
+                        <p><img src="./images/lbsm-survey/geotagging-privacy-table.png" alt="geotagging-privacy-table.png" />
+                        </p>
+                    </div>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section>
+                        <h2>"Locational journaling"</h2>
+                        <p>
+                            Why do you choose to geotag social media posts?
+                        </p>
+                        <ul>
+                            <li>"So that I can look back and remember where I was and what I was
+                                doing at certain times."</li>
+                            <li>"To remember where I was at the time of the post."</li>
+                            <li>"So I can remember where and what I did in my life."</li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>Six females (but zero males) mention using geotags as a type of
+                                    locational journal.</li>
 
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orga3f72c0">
-<h2 id="orga3f72c0">Research focus</h2>
-<ul>
-<li>Demographics, usage patterns, and perceptions</li>
-<li>Questions
-<ul>
-<li>Are there differences in terms of gender, race, and academic standing?</li>
-<li>Why do people contribute?</li>
-<li>What are the implications?</li>
-
-</ul></li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>Demographics, usage patterns, and perceptions of a group with high
-rates of contribution</li>
-<li>Questions
-<ul>
-<li>Are there differences in terms of gender, race, and academic
-standing in terms of both usage and perception?</li>
-
-</ul></li>
-
-</ul>
-
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org74a1c26">
-<h2 id="org74a1c26">Data</h2>
-<ul>
-<li>Survey administered to 5000 random Oklahoma State students</li>
-<li>46 questions with 7 sections
-<ul>
-<li>Demographics</li>
-<li>Mobile phone and tablet use</li>
-<li>Social media use</li>
-<li>Geotagging on social media</li>
-<li>Instagram use</li>
-<li>Twitter use</li>
-<li>LBSM perceptions</li>
-
-</ul></li>
-<li><i>n</i> = 253</li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>LBSM perceptions - likert scale perception questions, open-ended
-responses</li>
-<li>5% response rate</li>
-<li>Geotagging is the act of posting content on a social media site and
-including geographical information about your current location. This
-can be completed manually (for example, by "checking in" to a
-location or writing where you are) or with the assistance of a
-device's global positioning system (GPS) (for example, allowing your
-device to automatically include your location on your post). Content
-can be precise (a latitude-longituge point) or general (e.g.
-Stillwater, OK or "Eskimo Joe's").</li>
-
-</ul>
-
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-<section id="slide-org0504075">
-<h4 id="org0504075"></h4>
-<p>
-Demographics of survey respondents
-</p>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/survey-respondents.png" alt="survey-respondents.png" height="600px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org8664e3c">
-<h2 id="org8664e3c">Methods</h2>
-<ul>
-<li>Differences in use: 
-<ul>
-<li>Chi-square tests</li>
-
-</ul></li>
-<li>Perception:
-<ul>
-<li>Likert-scale items: Ordinal logistic regression (OLR)</li>
-<li>Open-ended items: Qualitative summaries</li>
-
-</ul></li>
-
-</ul>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org8f0f0f0">
-<h2 id="org8f0f0f0"></h2>
-<p>
-Use of Social Media and LBSM
-<img src="./images/lbsm-survey/social-media-and-lbsm-use.png" alt="social-media-and-lbsm-use.png" />
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org7c55baa">
-<h2 id="org7c55baa"></h2>
-<p>
-Use of Social Media and LBSM
-</p>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/social-media-and-lbsm-use-zoomed.png" alt="social-media-and-lbsm-use-zoomed.png" height="550px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orgb574249">
-<h2 id="orgb574249"></h2>
-<p>
-Chi-squared tests for use of social media and LBSM
-<img src="./images/lbsm-survey/social-media-and-lbsm-tests.png" alt="social-media-and-lbsm-tests.png" />
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org79d25fa">
-<h2 id="org79d25fa"></h2>
-<p>
-Chi-squared tests for use of social media and LBSM
-</p>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/social-media-and-lbsm-tests-zoomed.png" alt="social-media-and-lbsm-tests-zoomed.png" height="550px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org4a5b409">
-<h2 id="org4a5b409"></h2>
-<p>
-"Geotagging social media posts is a good way to let my friends and my
-followers know where I am and what I am up to."
-</p>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/geotagging-is-good-image.png" alt="geotagging-is-good-image.png" height="550px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org20997b8">
-<h2 id="org20997b8"></h2>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/geotagging-is-good-table.png" alt="geotagging-is-good-table.png" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org8ecd927">
-<h2 id="org8ecd927"></h2>
-<p height="600px">
-"I feel that geotagging infringes on my privacy."
-<img src="./images/lbsm-survey/geotagging-privacy-image.png" alt="geotagging-privacy-image.png" height="600px" />
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org5c603b0">
-<h2 id="org5c603b0"></h2>
-
-<div class="figure">
-<p><img src="./images/lbsm-survey/geotagging-privacy-table.png" alt="geotagging-privacy-table.png" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org79d7195">
-<h2 id="org79d7195">"Locational journaling"</h2>
-<p>
-Why do you choose to geotag social media posts?
-</p>
-<ul>
-<li>"So that I can look back and remember where I was and what I was
-doing at certain times."</li>
-<li>"To remember where I was at the time of the post."</li>
-<li>"So I can remember where and what I did in my life."</li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>Six females (but zero males) mention using geotags as a type of
-locational journal.</li>
-
-</ul>
-
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-<section id="slide-org68ba9ef">
-<h4 id="org68ba9ef">The importance of place</h4>
-<p>
-Why do you choose to geotag social media posts?
-</p>
-<ul>
-<li>"Usually it's just to further emphasize the caption."</li>
-<li>"[B]ecause where I am is important to the post."</li>
-<li>"Because where I am is part of the story being told by my post."</li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>Location as an important part of posts &#x2013; whether or not posts are geotagged</li>
-
-</ul>
-
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-<section id="slide-orgb00d419">
-<h4 id="orgb00d419"></h4>
-<p>
-Why do you choose to geotag social media posts?
-<img src="./images/lbsm-survey/why-geo-wordcloud.png" alt="why-geo-wordcloud.png" />
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orga701a4e">
-<h2 id="orga701a4e">Implications</h2>
-<ul>
-<li>Twitter is reasonably representative</li>
-<li>Most differences are between males and females</li>
-<li>Not all VGI principles apply to LBSM</li>
-<li>Motivating factor: locational journaling</li>
-<li>Users geotag content at places they visit infrequently</li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>Twitter is reasonably representative of the general population,
-albeit for this subset</li>
-<li>77% of users either agree or disagree with "I prefer to geotag from
-home (apt., dorm, etc.)</li>
-<li>Limitations
-<ul>
-<li>Shortage of responses by individual racial groups</li>
-<li>Lack of an intersectionality dimension</li>
-<li>In terms of privacy, who are people concerned about sharing their
-location with?</li>
-
-</ul></li>
-<li>All of these limitations offer great avenues for future research!</li>
-
-</ul>
-
-</aside>
-
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org7ce1d69">
-<h2 id="org7ce1d69"></h2>
-<p>
-Haffner, M., Mathews, A. J., Fekete, E., Finchum, G. A. 2017.
-Location-based social media behavior and perceptions: Views of
-university students. <i>Geographical Review</i> doi: 10.1111/gere.12250. <br />
-</p>
-
-<p>
-<img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
-<a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
-</p>
-
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orgbbf1108">
-<h2 id="orgbbf1108">A (critical) spatial analysis of non-English Twitter activity in Houston, Texas</h2>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org8199f53">
-<h2 id="org8199f53">Workflow</h2>
-<ul>
-<li>Operating system: Manjaro (Arch Linux derivative)</li>
-<li>Editors: Emacs/Vim</li>
-<li>Spatial data mining: Python</li>
-<li>Version control: Git (GitLab and GitHub)</li>
-<li>Database (NoSQL): ElasticSearch</li>
-<li>Data management tools: Bash, Sed, Python</li>
-<li>Spatial calculations: R and ElasticSearch</li>
-<li>Spatial visualization and mapping: R and QGIS</li>
-
-</ul>
-<aside class="notes">
-<ul>
-<li>Reproducibility</li>
-<li>Efficiency</li>
-<li>Freedom</li>
-
-</ul>
-
-</aside>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orga0c396e">
-<h2 id="orga0c396e"></h2>
-
-<div class="figure">
-<p><img src="./images/lbsm-validity/harris-county-in-texas.png" alt="harris-county-in-texas.png" width="700px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-orgbd47ffc">
-<h2 id="orgbd47ffc"></h2>
-
-<div class="figure">
-<p><img src="./images/lbsm-validity/netu1.png" alt="netu1.png" width="700px" />
-</p>
-</div>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org96c40d7">
-<h2 id="org96c40d7"></h2>
-
-<div class="figure">
-<p><img src="./images/lbsm-validity/netu2.png" alt="netu2.png" width="700px" />
-</p>
-</div>
-<aside class="notes">
-<ul>
-<li>Meaning; go back to ny.spatial.ly map</li>
-
-</ul>
+                            </ul>
+                        </aside>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+  <!-- slide -->
+                    <section>
+                        <h4>The importance of place</h4>
+                        <p>
+                            Why do you choose to geotag social media posts?
+                        </p>
+                        <ul>
+                            <li>"Usually it's just to further emphasize the caption."</li>
+                            <li>"[B]ecause where I am is important to the post."</li>
+                            <li>"Because where I am is part of the story being told by my post."</li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>Location as an important part of posts &#x2013; whether or not posts are geotagged</li>
+                            </ul>
+                        </aside>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+                    <section>
+                        <p>
+                            Why do you choose to geotag social media posts?
+                            <img src="./images/lbsm-survey/why-geo-wordcloud.png" alt="why-geo-wordcloud.png" />
+                        </p>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                    </section>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Implications/Conclusions</h2>
+                    <ul>
+                        <li>Twitter is reasonably representative</li>
+                        <li>Most differences are between males and females</li>
+                        <li>Not all VGI principles apply to LBSM</li>
+                        <li>Motivating factor: locational journaling</li>
+                        <li>Users geotag content at places they visit infrequently</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Twitter is reasonably representative of the general population,
+                                albeit for this subset</li>
+                            <li>77% of users either agree or disagree with "I prefer to geotag from
+                                home (apt., dorm, etc.)</li>
+                            <li>Limitations
+                                <ul>
+                                    <li>Shortage of responses by individual racial groups</li>
+                                    <li>Lack of an intersectionality dimension</li>
+                                    <li>In terms of privacy, who are people concerned about sharing their
+                                        location with?</li>
+                                </ul>
+                            </li>
+                            <li>All of these limitations offer great avenues for future research!</li>
+                        </ul>
+                    </aside>
+                    <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <p>
+                        Haffner, M., Mathews, A. J., Fekete, E., Finchum, G. A. 2017.
+                        Location-based social media behavior and perceptions: Views of
+                        university students. <i>Geographical Review</i> doi: 10.1111/gere.12250. <br />
+                    </p>
+                    <p>
+                        <img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
+                    </p>
+                        <div class="slide-footer">1. Location-based social media (LBSM) behaviors and perception</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>A (Critical) Spatial Analysis of Non-English Twitter Activity in Houston, Texas</h2>
+                    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Workflow</h2>
+                    <ul>
+                        <li>Operating system: Manjaro (Arch Linux derivative)</li>
+                        <li>Programming/editing: Emacs/Vim</li>
+                        <li>Version control: Git (GitLab and GitHub)</li>
+                        <li>Spatial data mining: Python</li>
+                        <li>Data storage: ElasticSearch (NoSQL) </li>
+                        <li>Data management: Bash, Python, and R</li>
+                        <li>Spatial statistics/analysis: R</li>
+                        <li>Visualization and mapping: R</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Reproducibility</li>
+                            <li>Efficiency</li>
+                            <li>Freedom</li>
+                        </ul>
+                    </aside>
+                    <div class="slide-footer">2. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section id="slide-orga0c396e">
+                        <h2></h2>
+                        <div class="figure">
+                            <p><img src="./images/lbsm-validity/harris-county-in-texas.png" alt="harris-county-in-texas.png" width="700px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                    </section>
+                </section>
+                <section>
+                    <section id="slide-orgbd47ffc">
+                        <div class="figure">
+                            <p><img src="./images/lbsm-validity/netu1.png" alt="netu1.png" width="700px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                    </section>
+                </section>
+                <section>
+                    <section id="slide-org96c40d7">
+                        <h2></h2>
+                        <div class="figure">
+                            <p><img src="./images/lbsm-validity/netu2.png" alt="netu2.png" width="700px" />
+                            </p>
+                        </div>
+                        <aside class="notes">
+                            <ul>
+                                <li>Meaning; go back to ny.spatial.ly map</li>
+                            </ul>
 
 </aside>
 
@@ -483,20 +420,25 @@ university students. <i>Geographical Review</i> doi: 10.1111/gere.12250. <br />
 <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
 </section>
 </section>
-<section>
-<section id="slide-org3baee4e">
-<h2 id="org3baee4e">Contributions to East Carolina University</h2>
-<ul>
-<li>Social media in disaster planning/preparedness</li>
-<li>Big data for modeling fluvial processes</li>
 
-</ul>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+<section class="purple-bg">
+    <h2>
+        <div style="color:#FEC923"> Contributions to East Carolina University </div>
+    </h2>
 </section>
+
+<section id="slide-org3baee4e">
+    <h2>Contributions to East Carolina University</h2>
+    <ul>
+        <li>Social media in disaster planning/preparedness</li>
+        <li>Big data for modeling fluvial processes</li>
+    </ul>
+    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
 </section>
+
 <section>
-<section id="slide-org1840b55">
-<h2 id="org1840b55">References</h2>
+    <section id="slide-org1840b55">
+<h2>References</h2>
 <p>
  <font size=6>
 </p>
@@ -529,7 +471,7 @@ Production of User-generated Cartographic Information. <i>GeoJournal</i>
 </section>
 <section>
 <section id="slide-org17fc823">
-<h2 id="org17fc823">Appendix</h2>
+<h2>Appendix</h2>
 <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
 </section>
 </section>
@@ -539,39 +481,28 @@ Production of User-generated Cartographic Information. <i>GeoJournal</i>
 <script src="./js/reveal.js"></script>
 
 <script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: true,
-keyboard: true,
-overview: true,
-width: 1200,
-height: 800,
-margin: 0.10,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
- { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-});
-</script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+          width: 1200,
+          height: 800,
+				  controls: true,
+				  progress: true,
+				  history: true,
+				  center: true,
+          touch: true,
+          slideNumber: true,
+				  transition: 'none', // none/fade/slide/convex/concave/zoom
+          transitionSpeed: 'fast',
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
 </body>
 </html>
