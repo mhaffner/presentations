@@ -1,0 +1,145 @@
+{
+  "created_at": "Sat Sep 03 05:00:55 +0000 2016",
+  "id": 771935984183304200,
+  "id_str": "771935984183304192",
+  "text": "Delicious. — Drinking a Flesh &amp; Blood IPA by @dogfishbeer @ Tommy's Pizza and Sports Pub  — https://t.co/qMExlnMRAb #photo",
+  "source": "<a href=\"https://untappd.com\" rel=\"nofollow\">Untappd</a>",
+  "truncated": false,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 306259370,
+    "id_str": "306259370",
+    "name": "Jack",
+    "screen_name": "",
+    "location": "Chicago",
+    "url": "",
+    "description": "An opinion and a sense of style are both testaments to a man's character. ~ ~ ~ ~ Notre Dame '16",
+    "protected": false,
+    "verified": false,
+    "followers_count": 596,
+    "friends_count": 478,
+    "listed_count": 14,
+    "favourites_count": 8050,
+    "statuses_count": 1015,
+    "created_at": "Fri May 27 15:27:39 +0000 2011",
+    "utc_offset": -18000,
+    "time_zone": "Central Time (US & Canada)",
+    "geo_enabled": true,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "D9BFBF",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/687477713/9b516d91b125035bdcff7ee62faed60f.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/687477713/9b516d91b125035bdcff7ee62faed60f.jpeg",
+    "profile_background_tile": true,
+    "profile_link_color": "009999",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/732951954272493568/Nai3SPNY_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/732951954272493568/Nai3SPNY_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/306259370/1425409876",
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": {
+    "type": "Point",
+    "coordinates": [
+      42.2892,
+      -87.9557
+    ]
+  },
+  "coordinates": {
+    "type": "Point",
+    "coordinates": [
+      -87.9557,
+      42.2892
+    ]
+  },
+  "place": {
+    "id": "6ee1546b87210801",
+    "url": "https://api.twitter.com/1.1/geo/id/6ee1546b87210801.json",
+    "place_type": "city",
+    "name": "Libertyville",
+    "full_name": "Libertyville, IL",
+    "country_code": "US",
+    "country": "United States",
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -88.019025,
+            42.24901
+          ],
+          [
+            -88.019025,
+            42.32843
+          ],
+          [
+            -87.896698,
+            42.32843
+          ],
+          [
+            -87.896698,
+            42.24901
+          ]
+        ]
+      ]
+    },
+    "attributes": {}
+  },
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "entities": {
+    "hashtags": [
+      {
+        "text": "photo",
+        "indices": [
+          120,
+          126
+        ]
+      }
+    ],
+    "urls": [
+      {
+        "url": "https://t.co/qMExlnMRAb",
+        "expanded_url": "http://untp.beer/s/c355916432",
+        "display_url": "untp.beer/s/c355916432",
+        "indices": [
+          96,
+          119
+        ]
+      }
+    ],
+    "user_mentions": [
+      {
+        "screen_name": "dogfishbeer",
+        "name": "Dogfish Head Brewery",
+        "id": 16721886,
+        "id_str": "16721886",
+        "indices": [
+          49,
+          61
+        ]
+      }
+    ],
+    "symbols": []
+  },
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "en",
+  "timestamp_ms": "1472878855163"
+}
