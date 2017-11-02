@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/reveal.css"/>
         <link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
         <link rel="stylesheet" href="./css/theme/osu.css" id="osu"/>
+        <link rel="stylesheet" href="./css/code/monokai-sublime.css"/>
     </head>
 
     <body>
@@ -47,6 +48,96 @@
                         <li class="fragment appear">Cognition of geographic phenomena</li>
                     </ul>
                     <div class="slide-footer">1. Research program overview</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div style="width:50%; float:left;">
+                        Precise location
+                    <pre>
+                        <code data-noescape>
+  ...
+  "coordinates": {
+    "type": "Point",
+    "coordinates": [
+      -109.517,
+      27.0167
+    ]
+  }
+  ...
+                        </code>
+                    </pre>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        Precise location
+                    <pre>
+                        <code data-noescape>
+  ...
+  "coordinates": {
+    "type": "Point",
+    "coordinates": [
+      -109.517,
+      27.0167
+    ]
+  }
+  ...
+                        </code>
+                    </pre>
+                    </div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section>
+                        <div style="width:50%; float:left;">
+                            General Location
+                            <pre>
+                                <code data-noescape>
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -97.187543,
+            33.128938
+          ],
+          [
+            -97.187543,
+            33.276053
+          ],
+          [
+            -97.041998,
+            33.276053
+          ],
+          [
+            -97.041998,
+            33.128938
+          ]
+        ]
+      ]
+    }
+                                </code>
+                            </pre>
+                        </div>
+                        <div style="width:50%; float:left;">
+                            Precise location
+                            <pre>
+                                <code data-noescape>
+  ...
+  "coordinates": {
+    "type": "Point",
+    "coordinates": [
+      -109.517,
+      27.0167
+    ]
+  }
+  ...
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+  <!-- slide -->
+                    <section>
+                        <a href="./data/tweet-sample.json">Tweet example</a>
+                    </section>
                 </section>
   <!-- slide -->
                 <section>
@@ -373,9 +464,63 @@
 <!-- SECTION 2 -->
                 <section data-background="./images/lbsm-giscience/houston-filter.png">
                     <h2 style="color: black;">
-                        3. A Critical) Spatial Analysis of Non-English Twitter Activity in Houston, Texas
+                        3. A (Critical) Spatial Analysis of Non-English Twitter Activity in Houston, Texas
                     </h2>
                 </section>
+  <!-- slide -->
+                <section>
+                    <h2>Introduction</h2>
+                    <ul>
+                        <li>"Abductive" reasoning (Miller 201X)</li>
+                        <li>Cheshire maps?</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Research Focus</h2>
+                </section>
+                <section>
+                    <div style="width:50%; float:left;">
+                        Tweet language
+                        <pre>
+                            <code data-noescape>
+  ...
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "es",
+  "timestamp_ms": "1472878853635"
+  ...
+                            </code>
+                        </pre>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        User language
+                        <pre>
+                            <code data-noescape>
+  "user": {
+    "id": 766302937,
+    "name": "",
+    "screen_name": "",
+    "location": "sonora mexico",
+    "url": "",
+    "description": "el señor es mi pastor",
+    "followers_count": 122,
+    "friends_count": 92,
+    "listed_count": 1,
+    "favourites_count": 124,
+    "statuses_count": 637,
+    "created_at": "Sat Aug 18 20:02:52 +0000 2012",
+    "time_zone": "Arizona",
+    "geo_enabled": true,
+    "lang": "en-gb",
+    ...
+   }
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+
   <!-- slide -->
                 <section>
                     <section id="slide-orga0c396e">
