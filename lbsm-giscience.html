@@ -38,55 +38,53 @@
                     </ol>
                     <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
                 </section>
+  <!-- slide -->
                 <section>
                     <h2>Research Program Overview</h2>
-                    <ul>
-                        <li class="fragment appear">Spatial data mining/capture</li>
-                        <li class="fragment appear">Programming</li>
-                        <li class="fragment appear">GIS Cyberfrastructure</li>
-                        <li class="fragment appear">Spatial statistics</li>
-                        <li class="fragment appear">Cognition of geographic phenomena</li>
-                    </ul>
+                    <div style="width:50%; float:left;">
+                        GIScience
+                        <div>
+                            <ul>
+                                <li class="fragment appear">Spatial data mining/capture</li>
+                                <li class="fragment appear">Programming</li>
+                                <li class="fragment appear">GIS Cyberfrastructure</li>
+                                <li class="fragment appear">Spatial statistics</li>
+                                <li class="fragment appear">Cognition of geographic phenomena</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        Geography
+                        <div>
+                            <ul>
+                                <li class="fragment appear">Scale</li>
+                                <li class="fragment appear">Aggregation</li>
+                                <li class="fragment appear">MAUP</li>
+                                <li class="fragment appear">Place</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="slide-footer">1. Research program overview</div>
                 </section>
   <!-- slide -->
                 <section>
-                    <div style="width:50%; float:left;">
-                        Precise location
-                    <pre>
-                        <code data-noescape>
-  ...
-  "coordinates": {
-    "type": "Point",
-    "coordinates": [
-      -109.517,
-      27.0167
-    ]
-  }
-  ...
-                        </code>
-                    </pre>
-                    </div>
-                    <div style="width:50%; float:left;">
-                        Precise location
-                    <pre>
-                        <code data-noescape>
-  ...
-  "coordinates": {
-    "type": "Point",
-    "coordinates": [
-      -109.517,
-      27.0167
-    ]
-  }
-  ...
-                        </code>
-                    </pre>
-                    </div>
-                </section>
-  <!-- slide -->
-                <section>
                     <section>
+                        <div style="width:50%; float:left;">
+                            Precise location
+                            <pre>
+                                <code data-noescape>
+  ...
+  "coordinates": {
+    "type": "Point",
+    "coordinates": [
+      -109.517,
+      27.0167
+    ]
+  }
+  ...
+                                </code>
+                            </pre>
+                        </div>
                         <div style="width:50%; float:left;">
                             General Location
                             <pre>
@@ -117,22 +115,7 @@
                                 </code>
                             </pre>
                         </div>
-                        <div style="width:50%; float:left;">
-                            Precise location
-                            <pre>
-                                <code data-noescape>
-  ...
-  "coordinates": {
-    "type": "Point",
-    "coordinates": [
-      -109.517,
-      27.0167
-    ]
-  }
-  ...
-                                </code>
-                            </pre>
-                        </div>
+                    <div class="slide-footer">1. Research program overview</div>
                     </section>
   <!-- slide -->
                     <section>
@@ -471,12 +454,22 @@
                 <section>
                     <h2>Introduction</h2>
                     <ul>
-                        <li>"Abductive" reasoning (Miller 201X)</li>
-                        <li>Cheshire maps?</li>
+                        <li>VGI data sources can supplement (or replace) conventional data sources(See et al. 2016)</li>
+                        <li>Cities are becoming more reliant on big data (Kitchen 2013)</li>
+                        <li>Signficance</li>
+                        <ul>
+                            <li>Local governments can use social media to meet the needs of its most vulnerable citizens</li>
+                            <li>However, the question of social media's validity in studying urban processes yet unestablished
+                        </ul>
                     </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
                 </section>
                 <section>
-                    <h2>Research Focus</h2>
+                    <h2>Research Objectives</h2>
+                    <ul>
+                        <li class="fragment appear">Focus: spatial patterns of non-English <i>users</i> rather than tweets</li>
+                    </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
                 </section>
                 <section>
                     <div style="width:50%; float:left;">
@@ -488,7 +481,7 @@
   "retweeted": false,
   "possibly_sensitive": false,
   "filter_level": "low",
-  "lang": "es",
+  "lang": "en",
   "timestamp_ms": "1472878853635"
   ...
                             </code>
@@ -513,14 +506,50 @@
     "created_at": "Sat Aug 18 20:02:52 +0000 2012",
     "time_zone": "Arizona",
     "geo_enabled": true,
-    "lang": "en-gb",
+    "lang": "es",
     ...
    }
                             </code>
                         </pre>
                     </div>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
                 </section>
-
+                <section>
+                    <h2>Research Objectives</h2>
+                    <ul>
+                        <li>Focus: spatial patterns of non-English <i>users</i> rather than tweets</li>
+                        <li class="fragment appear">Approach: "Abductive" reasoning (Miller and Goodchild 2015)</li>
+                        <li class="fragment appear">Questions:</li>
+                        <ul>
+                            <li class="fragment appear">Can conventional variables explain the production of Twitter activity by non-English users?</li>
+                            <li class="fragment appear">How does LBSM inform us about place and users' behaviors?</li>
+                        </ul>
+                    </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+                <section>
+                    <h2>Methods</h2>
+                    <ul>
+                        <li>Ordinary least squares (OLS) regression</li>
+                        <li>Spatial autoregressive models</li>
+                        <li>Geographically weighted regression (GWR)</li>
+                    </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Data</h2>
+                    <ul>
+                        <li class="fragment appear">Precisely located tweets from users with an account language other than English in Harris County, TX</li>
+                        <li class="fragment appear">Census data</li>
+                        <ul class="fragment appear">
+                            <li>American Community Survey (ACS)</li>
+                            <li>2014 Longitudinal origin-destination employment statistics</li>
+                            <li>Census tracts (<i>n</i> = 786); top 8 excluded</li>
+                        </ul>
+                    </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
   <!-- slide -->
                 <section>
                     <section id="slide-orga0c396e">
@@ -534,11 +563,56 @@
                 </section>
   <!-- slide -->
                 <section>
-                    <div class="figure">
-                        <p>
-                            <img src="./images/lbsm-giscience/PERWHTst-clusters.png" height="700px" />
-                        </p>
+                    <div data-markdown style="font-size:80%;">
+                    <script type="text/template">
+                        ## Variables
+                         | Variable        | Code           | Type  | Source |
+                         | ------------- |:-------------|:-----|
+                         | Population | POP | Independent | 2014 ACS (5-year) |
+                         | Population density | POPDENSITY |Independent |2014 ACS (5-year)|
+                         | Median income | MEDINC |Independent |2014 ACS (5-year) |
+                         | Median age    | MEDAGE |Independent |2014 ACS (5-year) |
+                         | Percent foreign born | PERFORBORN |Independent |2014 ACS (5-year) |
+                         | Percent white        | PERWHITE |Independent |2014 ACS (5-year) |
+                         | Number of employees  | JOBS |Independent |2014 Longitudinal origin-destination employment statistics |
+                         | Number of non-English Twitter users | NETU | Dependent | Streaming Twitter API |
+                         | Number of non-English Twitter users (transformed) | NETUTRANS | Dependent |Streaming Twitter API |
+                    </script>
                     </div>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div data-markdown style="font-size:80%;">
+                    <script type="text/template">
+                    ## User Language Counts
+                     | Rank | Language | Number of users | % |
+                     | ---- |:---------|:----------------|--:|
+                     | 1    | Spanish    |  4133 | 0.732 |
+                     | 2    | Portuguese | 377 | 0.067 |
+                     | 3    | Japanese | 223 | 0.040 |
+                     | 4    | Turkish | 216 | 0.038 |
+                     | 5    | Indonesian | 142 | 0.025 |
+                     | 6    | French | 139 | 0.025 |
+                     | 7    | Italian | 90 | 0.016 |
+                     | 8    | Arabic | 84 | 0.015 |
+                     | 9    | Russian  | 60 | 0.011 |
+                     | 10   | German | 54 | 0.010 |
+                    </script>
+                    </div>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Results</h2>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>GWR Results</h2>
+                    <p>
+                        <img src="./images/lbsm-giscience/gwr-variables.png" alt="harris-county-in-texas.png" height="600px" />
+                    </p>
                     <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
                 </section>
   <!-- slide -->
@@ -556,99 +630,128 @@
   <!-- slide -->
                 <section>
                     <div class="figure">
+                        <h2>
+                            Outliers
+                        </h2>
                         <p>
-                            <img src="./images/lbsm-giscience/greatest-netu-tracts.png" height="700px" />
+                            <img src="./images/lbsm-giscience/greatest-netu-tracts.png" height="600px" />
                         </p>
                     </div>
                     <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
                 </section>
-<!-- SECTION 3 -->
-<!-- SECTION 3 -->
-<!-- SECTION 3 -->
+  <!-- slide -->
+                <section>
+                    <div data-markdown style="font-size:80%;">
+                        <script type="text/template">
+                         ## NETU Outliers
+                         | NETU rank | NETU | POP | JOBS | Amenity |
+                         | --------- |------|:----|------|--------:|
+                         | 1 | 1,505 | 787 | 23,973 | George Bush International Airport |
+                         | 2 | 1,490 | 3,828 | 573 | Eleanor Tinsley Park |
+                         | 3 | 849 | 4,178 | 154,338 | Downtown Houston |
+                         | 4 | 471 | 2,984 | 5,839 | Space Center Houston |
+                         | 5 | 355 | 3,250 | 26,701 | The Galleria |
+                         | 6 | 305 | 3,451 | 14,516 | NRG Arena/Stadium |
+                         | 7 | 241 | 2,976 | 72,932 | Houston Zoo |
+                         | 8 | 112 | 3,472 | 27,608 | The Galleria |
+                        </script>
+                    </div>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Conclusions</h2>
+                    <ul>
+                        <li>Geotagged Twitter data at this scale likely says more about places than users</li>
+                        <li>Users tweet from locations they don't visit very often</li>
+                    </ul>
+                    <div class="slide-footer">3. A (critical) spatial analysis of non-English Twitter activity</div>
+                </section>
+<!-- SECTION 4 -->
+<!-- SECTION 4 -->
+<!-- SECTION 4 -->
                 <section data-background="./images/lbsm-giscience/greenville-filter.png">
                     <h2>
                         <div style="color:#FEC923">4. Contributions to East Carolina University </div>
                     </h2>
                 </section>
+  <!-- slide -->
+                <section>
+                    <h2>Application of LBSM at ECU</h2>
+                    <ul style="color:#b48fd6;">
+                        <li>Social media in disaster planning/preparedness/vulnerability</li>
+                        <li>Big data for modeling fluvial processes</li>
+                        <li>Role of programming in GIS education over time</li>
+                    </ul>
+                    <div class="slide-footer">4. Contributions to ECU and Greenville</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Application of GIScience at ECU</h2>
+                    <ul style="color:#b48fd6;">
+                        <li>Big data, high performance computing for modeling
+                        fluvial processes</li>
+                        <li>Role of programming in GIS education over time</li>
+                    </ul>
+                    <div class="slide-footer">4. Contributions to ECU and Greenville</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>References</h2>
+                    <p>
+                        <font size=6>
+                    </p>
+                    <ul>
+                        <li>Bartoschek, T. and C. Kebler. 2013. VGI in Education: From K-12 to
+                            Graduate Studies. In <i>Crowdsourcing Geographic Knowledge</i>, edited by
+                            D. Sui, M. F. Goodchild, and S. Elwood, 341-360. Dordrecht,
+                            Netherlands: Springer.</li>
+                        <li>Evans, Leighton. 2015. <i>Locative Social Media: Place in the Digital
+                            Age.</i> Baginstroke, U.K.: Palgrave-Macmillan.</li>
+                        <li>Goodchild, M. F. 2007. Citizens as Sensors: The World of Volunteered
+                            Geography. <i>GeoJournal</i> 39 (4): 211-221.</li>
+                        <li>Greenwood, S., A. Perrin, and M. Duggan. 2016. <i>Social Media Update
+                            2016</i>. Pew Research Center.
+                            [<a href="http://www.pewinternet.org/2016/11/11/social-media-update-2016/">http://www.pewinternet.org/2016/11/11/social-media-update-2016/</a>]</li>
+                        <li>Mathews, A., Y. Lu, M. Patton, N. Dede-Bamfo, and J. Chen. 2013.
+                            College Students' Consumption, Contribution, and Risk Awareness
+                            Related to Online Mapping Services and Social Media: Does Geography
+                            and GIS Knowledge Matter? <i>GeoJournal</i> 78 (4): 627-639.</li>
+                        <li>Stephens, M. 2013. Gender and the GeoWeb: Divisions in the
+                            Production of User-generated Cartographic Information. <i>GeoJournal</i>
+                            78: 981-996.</li>
+                    </ul>
+                    <p>
+                        </font>
+                    </p>
+                    <div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
+                </section>
 
-<section id="slide-org3baee4e">
-    <h2>Application of LBSM to Existing Departmental Strengths</h2>
-    <ul style="color:#b48fd6;">
-        <li>Social media in disaster planning/preparedness</li>
-        <li>Big data for modeling fluvial processes</li>
-        <li>High performance computing as a part of GIS education</li>
-        <li>Role of programming in GIS education over time</li>
-    </ul>
-    <div class="slide-footer">3. Contributions to ECU and Greenville</div>
-</section>
-
-<section>
-    <section id="slide-org1840b55">
-<h2>References</h2>
-<p>
- <font size=6>
-</p>
-<ul>
-<li>Bartoschek, T. and C. Kebler. 2013. VGI in Education: From K-12 to
-Graduate Studies. In <i>Crowdsourcing Geographic Knowledge</i>, edited by
-D. Sui, M. F. Goodchild, and S. Elwood, 341-360. Dordrecht,
-Netherlands: Springer.</li>
-<li>Evans, Leighton. 2015. <i>Locative Social Media: Place in the Digital
-Age.</i> Baginstroke, U.K.: Palgrave-Macmillan.</li>
-<li>Goodchild, M. F. 2007. Citizens as Sensors: The World of Volunteered
-Geography. <i>GeoJournal</i> 39 (4): 211-221.</li>
-<li>Greenwood, S., A. Perrin, and M. Duggan. 2016. <i>Social Media Update
-2016</i>. Pew Research Center.
-[<a href="http://www.pewinternet.org/2016/11/11/social-media-update-2016/">http://www.pewinternet.org/2016/11/11/social-media-update-2016/</a>]</li>
-<li>Mathews, A., Y. Lu, M. Patton, N. Dede-Bamfo, and J. Chen. 2013.
-College Students' Consumption, Contribution, and Risk Awareness
-Related to Online Mapping Services and Social Media: Does Geography
-and GIS Knowledge Matter? <i>GeoJournal</i> 78 (4): 627-639.</li>
-<li>Stephens, M. 2013. Gender and the GeoWeb: Divisions in the
-Production of User-generated Cartographic Information. <i>GeoJournal</i>
-78: 981-996.</li>
-
-</ul>
-<p>
- </font>
-</p>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-<section>
-<section id="slide-org17fc823">
-<h2>Appendix</h2>
-<div class="slide-footer">Location-based social media (LBSM) in a GIScience Context</div>
-</section>
-</section>
-</div>
-</div>
-<script src="./lib/js/head.min.js"></script>
-<script src="./js/reveal.js"></script>
-
-<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-          width: 1200,
-          height: 800,
-				  controls: true,
-				  progress: true,
-				  history: true,
-				  center: true,
-          touch: true,
-          slideNumber: true,
-				  transition: 'none', // none/fade/slide/convex/concave/zoom
-          transitionSpeed: 'fast',
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-</body>
+                <script src="./lib/js/head.min.js"></script>
+                <script src="./js/reveal.js"></script>
+                <script>
+			           // More info https://github.com/hakimel/reveal.js#configuration
+			           Reveal.initialize({
+                     width: 1200,
+                     height: 800,
+				             controls: true,
+				             progress: true,
+				             history: true,
+				             center: true,
+                     touch: true,
+                     slideNumber: true,
+				             transition: 'none', // none/fade/slide/convex/concave/zoom
+                     transitionSpeed: 'fast',
+				             // More info https://github.com/hakimel/reveal.js#dependencies
+				             dependencies: [
+					               { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					               { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					               { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					               { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					               { src: 'plugin/zoom-js/zoom.js', async: true },
+					               { src: 'plugin/notes/notes.js', async: true }
+				             ]
+			           });
+		            </script>
+    </body>
 </html>
