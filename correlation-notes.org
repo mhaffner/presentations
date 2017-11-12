@@ -1,0 +1,5 @@
+* Questions for Jon
+- Do you intend for me to demonstrate some examples with the formulas?
+- Are covariance and covariation the same concept?
+- Covariation slide:
+  - It says positive/negative/neutral /correlation/.. Should this be covariation?

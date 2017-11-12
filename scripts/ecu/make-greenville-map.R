@@ -1,5 +1,3 @@
-library(GISTools)
-library(rgdal)
 library(OpenStreetMap)
 
 image.dir <- '~/git-repos/presentations/images/lbsm-giscience'
