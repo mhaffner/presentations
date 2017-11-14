@@ -1,0 +1,84 @@
+.reveal .orange-bg {
+    background: #ffa64d;
+}
+
+.reveal .purple-bg {
+    color: #FEC923;
+    background: #41225E;
+   /* background: #592a8a */ /* lighter purple */
+}
+
+/* Centers items that aren't bulleted */
+.reveal p {
+    color:#edac1a; /* yellow */
+    text-align: center;
+}
+
+/* Bulleted items */
+.reveal ul {
+    color:#edac1a; /* yellow */
+    text-align: left;
+}
+
+/* Numbered items */
+.reveal ol {
+    color:#edac1a; /* yellow */
+    text-align: left;
+}
+
+/* HEADERS */
+
+.reveal h1 {
+    font-size: 0.5em;
+    font-variant: small-caps;
+}
+
+.reveal h2 {
+    font-size: 1.5em;
+}
+
+.reveal h3 {
+    font-size: 1.5em;
+}
+
+.reveal h4 {
+    font-size: 1.5em;
+}
+
+.reveal th {
+    font-weight: bold;
+    color: #ffa64d;
+    text-align: center;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid;
+    border-left: 1px solid transparent;
+}
+
+.reveal td {
+    text-align: left;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    font-size: 0.75em;
+    width: 400px;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+    border-spacing: 0;
+}
+
+/* FOOTER */
+.reveal .slide-footer {
+    font-size: 0.55em;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #999999;
+}

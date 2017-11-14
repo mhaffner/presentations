@@ -3,3 +3,5 @@
 - Are covariance and covariation the same concept?
 - Covariation slide:
   - It says positive/negative/neutral /correlation/.. Should this be covariation?
+- What will the students have to do in their homework? I want to show
+  enough to help them but not give everything away

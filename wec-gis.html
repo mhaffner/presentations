@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Point Patterns and Spatial Autocorrelation: QGIS and R</title>
+        <meta name="author" content="(Matthew Haffner)"/>
+        <style type="text/css">
+         .underline { text-decoration: underline; }
+        </style>
+        <link rel="stylesheet" href="./css/reveal.css"/>
+        <link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
+        <link rel="stylesheet" href="./css/theme/wec.css" id="wec"/>
+        <link rel="stylesheet" href="./css/code/monokai-sublime.css"/>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+<!-- Title slide -->
+                <section data-background="./images/lbsm-giscience/detroit-filter.png">
+                    <h2>Point Patterns and Spatial Autocorrelation: QGIS and R</h2>
+                    <p>
+                        Matthew Haffner <br />
+                        Department of Geography <br />
+                        Oklahoma State University
+                    </p>
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+
+                <section>
+                    <h2>Limitations Of This Approach</h2>
+                    <ul>
+                        <li class="fragment appear">Edge effects</li>
+                        <li class="fragment appear">Disproportionately sized counties</li>
+                        <li class="fragment appear">Data disconnect - polygon area vs. land area</li>
+                    </ul>
+                </section>
+<!-- Introduction -->
+
+                <script src="./lib/js/head.min.js"></script>
+                <script src="./js/reveal.js"></script>
+                <script>
+			           // More info https://github.com/hakimel/reveal.js#configuration
+			           Reveal.initialize({
+                     width: 1200,
+                     height: 800,
+				             controls: true,
+				             progress: true,
+				             history: true,
+				             center: true,
+                     touch: true,
+                     slideNumber: true,
+				             transition: 'none', // none/fade/slide/convex/concave/zoom
+                     transitionSpeed: 'fast',
+				             // More info https://github.com/hakimel/reveal.js#dependencies
+	                  math: {
+		                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		                config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	                  },
+                     dependencies: [
+					               { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					               { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					               { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					               { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					               { src: 'plugin/zoom-js/zoom.js', async: true },
+					               { src: 'plugin/notes/notes.js', async: true },
+		                     { src: 'plugin/math/math.js', async: true }
+				             ]
+			           });
+                 Reveal.configure({
+                     keyboard: {
+                         34: 'right',
+                         33: 'left',
+                     }
+                 });
+                </script>
+	              <script>
+	                  var link = document.createElement( 'link' );
+	                  link.rel = 'stylesheet';
+	                  link.type = 'text/css';
+	                  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	                  document.getElementsByTagName( 'head' )[0].appendChild( link );
+	              </script
+    </body>
+</html>
