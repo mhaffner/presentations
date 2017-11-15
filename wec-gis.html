@@ -36,22 +36,31 @@
                     <h2>
                         Overview
                     </h2>
-                    <ul>
+                    <ol>
                         <li class="fragment appear">Introduction to R</li>
                         <li class="fragment appear">Demonstration of R as a GIS</li>
                         <li class="fragment appear">Point patterns and spatial autocorrelation</li>
                         <li class="fragment appear">Demonstration of R for spatial analysis</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Why R?</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                    </ol>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>What is a GIS?</h2>
+                    <p class="fragment appear">"A geographic information system (GIS) lets us visualize,
+                    question, analyze, and interpret data to understand
+                    relationships, patterns, and trends." -ESRI</p>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>What is GIScience?</h2>
+                    <p class="fragment appear">" Geographic information science
+                    applies the concepts of information systems science,
+                    geography, geodesy, cognitive science, mathematics, physics,
+                    computer science, psychology, ethics, and related sciences
+                    to design tools and techniques for analyzing, displaying,
+                    visualizing, and communicating information about places,
+                    events, activities, and phenomena on or near the surface of
+                    the Earth." -Oregon State University</p>
                 </section>
   <!-- slide -->
                 <section>
@@ -138,8 +147,11 @@ plot(wisconsin, add = TRUE)
 fn <- function(a, b) {
   a * b
 }
-
-fn(6, 7)
+                            </code>
+                        </pre>
+                        <pre>
+                            <code style="font-size:80%;" data-noescape>
+> fn(6, 7)
 [1] 42
 >
                             </code>
@@ -156,6 +168,14 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                             </code>
                         </pre>
                     </div>
+                </section>
+                <section>
+                    <h2>Why R?</h2>
+                    <ul>
+                        <li class="fragment appear">Efficiency</li>
+                        <li class="fragment appear">Reproducibility</li>
+                        <li class="fragment appear">Freedom/openness</li>
+                    </ul>
                 </section>
   <!-- slide -->
                 <section>
