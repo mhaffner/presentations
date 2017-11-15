@@ -39,28 +39,9 @@
                     <ol>
                         <li class="fragment appear">Introduction to R</li>
                         <li class="fragment appear">Demonstration of R as a GIS</li>
-                        <li class="fragment appear">Point patterns and spatial autocorrelation</li>
+                        <li class="fragment appear">Spatial Autocorrelation</li>
                         <li class="fragment appear">Demonstration of R for spatial analysis</li>
                     </ol>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>What is a GIS?</h2>
-                    <p class="fragment appear">"A geographic information system (GIS) lets us visualize,
-                    question, analyze, and interpret data to understand
-                    relationships, patterns, and trends." -ESRI</p>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>What is GIScience?</h2>
-                    <p class="fragment appear">" Geographic information science
-                    applies the concepts of information systems science,
-                    geography, geodesy, cognitive science, mathematics, physics,
-                    computer science, psychology, ethics, and related sciences
-                    to design tools and techniques for analyzing, displaying,
-                    visualizing, and communicating information about places,
-                    events, activities, and phenomena on or near the surface of
-                    the Earth." -Oregon State University</p>
                 </section>
   <!-- slide -->
                 <section>
@@ -179,6 +160,27 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                 </section>
   <!-- slide -->
                 <section>
+                    <h2>Point Pattern Analysis</h2>
+                    <ul>
+                        <li>Quadrat analysis</li>
+                        <li>Nearest neighbor analysis</li>
+                        <li>Ripley's <i>k</i></li>
+                    </ul>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Spatial Autocorrelation</h2>
+                    <div class="fragment appear" style="width:50%; float:left;">
+                        <p>Points</p>
+                        <img src="./images/wec-gis/wi-torn.png" height="500px" />
+                    </div>
+                    <div class="fragment appear" style="width:50%; float:left;">
+                        <p>Polygons</p>
+                        <img src="./images/wec-gis/wi-tornado.jpg" height="500px" />
+                    </div>
+                </section>
+  <!-- slide -->
+                <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p>
                         <img src="./images/wec-gis/sac-2.jpg" height="400px" />
@@ -190,6 +192,37 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                 </section>
   <!-- slide -->
                 <section>
+                    <h2>Temporal Autocorrelation</h2>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Spatial Autocorrelation</h2>
+                    <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
+                    <p class="fragment appear"> -1 < Moran's Index of Spatial Autocorrelation < 1</p>
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div style="width:50%; float:left;">
+                        <p><img src="./images/wec-gis/wi-tornado.jpg" height="700px"></p>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        <p><img src="./images/wec-gis/wi-flood.jpg" height="700px"/></p>
+                    </div>
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <div style="width:50%; float:left;">
+                        <p><img src="./images/wec-gis/wi-tornado.jpg" height="700px"></p>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        <p><img src="./images/wec-gis/wi-hail.jpg" height="700px"/></p>
+                    </div>
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
                     <p class="web-source">Source: http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/GUID-5CCEE7E5-839C-46E8-A88B-FCD02F07B209-web.gif</p>
@@ -197,22 +230,40 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                 </section>
   <!-- slide -->
                 <section>
-                    <h2>Autocorrelation</h2>
+                    <h2>Who is my neighbor?</h2>
                 </section>
   <!-- slide -->
                 <section>
-                    <p><img src="./images/wec-gis/wi-flood.jpg" height="700px" />
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <h2>Extensions To This Analysis</h2>
+                    <ul>
+                        <li>Are the spatial patterns of earthquakes in Oklahoma
+                        clustered, dispersed or random?</li>
+                        <li>Is there are relationship between deaths in tornaoes/floods to income and race?</li>
+                    </ul>
                 </section>
   <!-- slide -->
                 <section>
-                    <p><img src="./images/wec-gis/wi-tornado.jpg" height="700px" />
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <h2>Visual Analysis of Spatial Autocorrelation</h2>
+                    <p>Which one is not like the others</p>
                 </section>
   <!-- slide -->
                 <section>
-                    <p><img src="./images/wec-gis/wi-hail.jpg" height="700px" />
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <h2>What is a GIS?</h2>
+                    <p class="fragment appear">"A geographic information system (GIS) lets us visualize,
+                    question, analyze, and interpret data to understand
+                    relationships, patterns, and trends." -ESRI</p>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>What is GIScience?</h2>
+                    <p class="fragment appear">" Geographic information science
+                    applies the concepts of information systems science,
+                    geography, geodesy, cognitive science, mathematics, physics,
+                    computer science, psychology, ethics, and related sciences
+                    to design tools and techniques for analyzing, displaying,
+                    visualizing, and communicating information about places,
+                    events, activities, and phenomena on or near the surface of
+                    the Earth." -Oregon State University</p>
                 </section>
   <!-- slide -->
                 <section>
