@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Point Patterns and Spatial Autocorrelation: QGIS and R</title>
+        <title>Using R as a GIS</title>
         <meta name="author" content="(Matthew Haffner)"/>
         <style type="text/css">
          .underline { text-decoration: underline; }
@@ -19,15 +19,182 @@
 
 <!-- Title slide -->
                 <section data-background="./images/lbsm-giscience/detroit-filter.png">
-                    <h2>Point Patterns and Spatial Autocorrelation: QGIS and R</h2>
+                    <h2>Using R as a GIS for Spatial Analysis</h2>
                     <p>
                         Matthew Haffner <br />
                         Department of Geography <br />
                         Oklahoma State University
                     </p>
+                    <div class="slide-footer">Using R as a GIS for Spatial Analysis</div>
+                </section>
+                <section>
+                    <p>
+                        Draw 20-25 points in a random spatial pattern
+                    </p>
+                </section>
+                <section>
+                    <h2>
+                        Overview
+                    </h2>
+                    <ul>
+                        <li class="fragment appear">Introduction to R</li>
+                        <li class="fragment appear">Demonstration of R as a GIS</li>
+                        <li class="fragment appear">Point patterns and spatial autocorrelation</li>
+                        <li class="fragment appear">Demonstration of R for spatial analysis</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Why R?</h2>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>What is a GIS?</h2>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>The R language</h2>
+                    <div style="width:50%; float:left;">
+                        <p>Variable Declaration (<-)</p>
+                        <pre>
+                            <code style="font-size:80%;" data-noescape>
+
+x <- 1
+y <- 2
+z <- x + y
+                            </code>
+                        </pre>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        <p>Variable Declaration (=)</p>
+                        <pre>
+                            <code style="font-size:80%;" data-noescape>
+
+x = 1
+y = 2
+z = x + y
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>The R language</h2>
+                    <p>Libraries and Data</p>
+                    <pre>
+                        <code style="font-size:80%;" data-noescape>
+install.packages('GISTools')
+library(GISTools)
+library(OpenStreetMap)
+library(rgdal)
+
+data(tornados)
+data(newhaven)
+data(georgia)
+data(mtcars)
+                        </code>
+                    </pre>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>The R language</h2>
+                    <p>Plotting</p>
+                    <pre>
+                        <code style="font-size:80%;" data-noescape>
+hist(tornadoes)
+hist(wisconsin.tornadoes)
+
+plot(wisconsin)
+plot(wisconsin.tonadoes, add = TRUE)
+                        </code>
+                    </pre>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>The R language</h2>
+                    <p>Comments</p>
+                    <pre>
+                        <code style="font-size:80%;" data-noescape>
+#anything following a '#' will not be executed
+#find tornadoes inside and within 25km of Wisconsin
+wisconsin_buf <- gBuffer(wisconsin, wisconsindth = 25000)
+wisconsin_buf_torn <- gIntersection(wisconsin_buf, torn2) # comment
+plot(wisconsin_buf) # comment
+plot(wisconsin_plus_buf_torn, add = TRUE)
+plot(wisconsin, add = TRUE)
+                        </code>
+                    </pre>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>The R language</h2>
+                    <p>Functions</p>
+                    <div style="width:50%; float:left;">
+                        <p>Simple example</p>
+                        <pre>
+                            <code style="font-size:80%;" data-noescape>
+fn <- function(a, b) {
+  a * b
+}
+
+fn(6, 7)
+[1] 42
+>
+                            </code>
+                        </pre>
+                    </div>
+                    <div style="width:50%; float:left;">
+                        <p>Practical example</p>
+                        <pre>
+                            <code style="font-size:80%;" data-noescape>
+library(GISTools)
+
+merged <- gUnion(wisconsin_counties, minnesota_counties)
+
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Spatial Autocorrelation</h2>
+                    <p>
+                        <img src="./images/wec-gis/sac-2.jpg" height="400px" />
+                    </p>
+                    <p class="web-source">
+                        Source: http://rfunctions.blogspot.com/2017/06/how-to-identify-and-remove-spatial.html
+                    </p>
                     <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
                 </section>
-
+  <!-- slide -->
+                <section>
+                    <h2>Spatial Autocorrelation</h2>
+                    <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
+                    <p class="web-source">Source: http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/GUID-5CCEE7E5-839C-46E8-A88B-FCD02F07B209-web.gif</p>
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Autocorrelation</h2>
+                </section>
+  <!-- slide -->
+                <section>
+                    <p><img src="./images/wec-gis/wi-flood.jpg" height="700px" />
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <p><img src="./images/wec-gis/wi-tornado.jpg" height="700px" />
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <p><img src="./images/wec-gis/wi-hail.jpg" height="700px" />
+                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                </section>
+  <!-- slide -->
                 <section>
                     <h2>Limitations Of This Approach</h2>
                     <ul>
@@ -35,6 +202,23 @@
                         <li class="fragment appear">Disproportionately sized counties</li>
                         <li class="fragment appear">Data disconnect - polygon area vs. land area</li>
                     </ul>
+                </section>
+                <section>
+                    <ul>
+                        <p>
+                            <img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
+                            <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
+                        </p>
+                    </ul>
+                </section>
+                <section data-background="./images/lbsm-giscience/detroit-filter.png">
+                    <h2>Using R as a GIS for Spatial Analysis</h2>
+                        <p>
+                            <img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
+                            <a href="https://github.com/mhaffner/wec-gis"
+                            <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
+                        </p>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
 <!-- Introduction -->
 

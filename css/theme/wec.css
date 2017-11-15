@@ -13,6 +13,11 @@
     color:#edac1a; /* yellow */
     text-align: center;
 }
+.reveal .web-source {
+    font-size: 40%;
+    color:#edac1a; /* yellow */
+    text-align: center;
+}
 
 /* Bulleted items */
 .reveal ul {
