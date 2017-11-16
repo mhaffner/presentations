@@ -198,7 +198,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                 <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
-                    <p class="fragment appear"> -1 < Moran's Index of Spatial Autocorrelation < 1</p>
+                    <p class="web-source">Source: http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/GUID-5CCEE7E5-839C-46E8-A88B-FCD02F07B209-web.gif</p>
                     <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
                 </section>
   <!-- slide -->
@@ -223,28 +223,32 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                 </section>
   <!-- slide -->
                 <section>
+                    <h2>Visually Identifying Spatial Autocorrelation</h2>
+                    <ul>
+                        <li>Visit <a href="http://50.116.31.25:8787">50.116.31.25:8787</a> in a web browser</li>
+                        <li>Example login:
+                        <ul>
+                            <li>User: user1</li>
+                            <li>Password: wec-gis</li>
+                        </ul>
+                            <li>Open the file "wec-gis/scripts/random-maps.R"</li>
+                        <li>Use the "Run" button to execute each line individually</li>
+                        <li>Once you get to the bottom of the file, maps should generate automatically</li>
+                        <li>Type "real.data" in the console to see which map holds the actual data
+                        <li>Put the cursor on line 39 to run the code again</li>
+                        <li>On line 39, replace "Flood" and "Purples" with other options</li>
+                    </ul>
+                </section>
+  <!-- slide -->
+                <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
-                    <p class="web-source">Source: http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/GUID-5CCEE7E5-839C-46E8-A88B-FCD02F07B209-web.gif</p>
+                    <p class="fragment appear"> -1 < Moran's Index of Spatial Autocorrelation < 1</p>
                     <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Who is my neighbor?</h2>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>Extensions To This Analysis</h2>
-                    <ul>
-                        <li>Are the spatial patterns of earthquakes in Oklahoma
-                        clustered, dispersed or random?</li>
-                        <li>Is there are relationship between deaths in tornaoes/floods to income and race?</li>
-                    </ul>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>Visual Analysis of Spatial Autocorrelation</h2>
-                    <p>Which one is not like the others</p>
                 </section>
   <!-- slide -->
                 <section>
@@ -274,25 +278,24 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                         <li class="fragment appear">Data disconnect - polygon area vs. land area</li>
                     </ul>
                 </section>
+  <!-- slide -->
                 <section>
+                    <h2>Extensions To This Analysis</h2>
                     <ul>
-                        <p>
-                            <img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
-                            <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
-                        </p>
+                        <li class="fragment appear">Are the spatial patterns of earthquakes in Oklahoma
+                        clustered, dispersed or random?</li>
+                        <li class="fragment appear">Is there are relationship between deaths in tornaoes/floods to income and race?</li>
                     </ul>
                 </section>
+  <!-- slide -->
                 <section data-background="./images/lbsm-giscience/detroit-filter.png">
                     <h2>Using R as a GIS for Spatial Analysis</h2>
-                        <p>
-                            <img src="./images/lbsm-survey/qr-code.jpg" alt="qr-code.jpg" /> <br />
-                            <a href="https://github.com/mhaffner/wec-gis"
-                            <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
-                        </p>
-                    <div class="slide-footer">Using R as a GIS</div>
+                    <p>
+                        <img src="./images/wec-gis/qr-code.jpg" alt="qr-code.jpg" /> <br />
+                        <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
+                    </p>
                 </section>
-<!-- Introduction -->
-
+   <!-- END OF PRESENTATION -->
                 <script src="./lib/js/head.min.js"></script>
                 <script src="./js/reveal.js"></script>
                 <script>
