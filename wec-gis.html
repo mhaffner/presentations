@@ -19,18 +19,19 @@
 
 <!-- Title slide -->
                 <section data-background="./images/lbsm-giscience/detroit-filter.png">
-                    <h2>Using R as a GIS for Spatial Analysis</h2>
+                    <h2>Using R as a GIS</h2>
                     <p>
                         Matthew Haffner <br />
                         Department of Geography <br />
                         Oklahoma State University
                     </p>
-                    <div class="slide-footer">Using R as a GIS for Spatial Analysis</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
                 <section>
                     <p>
-                        Draw 20-25 points in a random spatial pattern
+                        Draw 20-30 points in a random spatial pattern
                     </p>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
                 <section>
                     <h2>
@@ -40,8 +41,9 @@
                         <li class="fragment appear">Introduction to R</li>
                         <li class="fragment appear">Demonstration of R as a GIS</li>
                         <li class="fragment appear">Spatial Autocorrelation</li>
-                        <li class="fragment appear">Demonstration of R for spatial analysis</li>
+                        <li class="fragment appear">Interactive Exercises</li>
                     </ol>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -68,6 +70,7 @@ z = x + y
                             </code>
                         </pre>
                     </div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -86,6 +89,7 @@ data(georgia)
 data(mtcars)
                         </code>
                     </pre>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -100,6 +104,7 @@ plot(wisconsin)
 plot(wisconsin.tonadoes, add = TRUE)
                         </code>
                     </pre>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -116,6 +121,7 @@ plot(wisconsin_plus_buf_torn, add = TRUE)
 plot(wisconsin, add = TRUE)
                         </code>
                     </pre>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -125,8 +131,8 @@ plot(wisconsin, add = TRUE)
                         <p>Simple example</p>
                         <pre>
                             <code style="font-size:80%;" data-noescape>
-fn <- function(a, b) {
-  a * b
+fn <- function(arg1, arg2) {
+  arg1 * arg2
 }
                             </code>
                         </pre>
@@ -149,23 +155,30 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                             </code>
                         </pre>
                     </div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
+  <!-- slide -->
                 <section>
                     <h2>Why R?</h2>
                     <ul>
-                        <li class="fragment appear">Efficiency</li>
+                        <li class="fragment appear">Efficiency - avoid manual labor!</li>
                         <li class="fragment appear">Reproducibility</li>
                         <li class="fragment appear">Freedom/openness</li>
                     </ul>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Point Pattern Analysis</h2>
                     <ul>
+                        <li>Methods</li>
+                    <ul>
                         <li>Quadrat analysis</li>
                         <li>Nearest neighbor analysis</li>
                         <li>Ripley's <i>k</i></li>
                     </ul>
+                    </ul>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -178,6 +191,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                         <p>Polygons</p>
                         <img src="./images/wec-gis/wi-tornado.jpg" height="500px" />
                     </div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -188,18 +202,19 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                     <p class="web-source">
                         Source: http://rfunctions.blogspot.com/2017/06/how-to-identify-and-remove-spatial.html
                     </p>
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Temporal Autocorrelation</h2>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
                     <p class="web-source">Source: http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/GUID-5CCEE7E5-839C-46E8-A88B-FCD02F07B209-web.gif</p>
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -209,7 +224,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                     <div style="width:50%; float:left;">
                         <p><img src="./images/wec-gis/wi-flood.jpg" height="700px"/></p>
                     </div>
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -219,13 +234,14 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                     <div style="width:50%; float:left;">
                         <p><img src="./images/wec-gis/wi-hail.jpg" height="700px"/></p>
                     </div>
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Visually Identifying Spatial Autocorrelation</h2>
-                    <ul>
-                        <li>Visit <a href="http://50.116.31.25:8787">50.116.31.25:8787</a> in a web browser</li>
+                    <ul style="font-size: 80%;">
+                        <li>Visit <a href="http://geo-haffner.com">http://geo-haffner.com</a> in a web browser</li>
+                        <li>Visit <a href="http://50.116.18.101:8787">http://50.116.18.101:8787</a> in a web browser</li>
                         <li>Example login:
                         <ul>
                             <li>User: user1</li>
@@ -238,17 +254,47 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                         <li>Put the cursor on line 39 to run the code again</li>
                         <li>On line 39, replace "Flood" and "Purples" with other options</li>
                     </ul>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Spatial Autocorrelation</h2>
                     <p><img src="./images/wec-gis/sac-1.gif" height="150px" /></p>
                     <p class="fragment appear"> -1 < Moran's Index of Spatial Autocorrelation < 1</p>
-                    <div class="slide-footer">Point Patterns and Spatial Autocorrelation: QGIS and R</div>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
                     <h2>Who is my neighbor?</h2>
+                    <div class="slide-footer">Using R as a GIS</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Iterative Approach to Moran's <i>I</i></h2>
+                    <div class="slide-footer">Using R as a GIS</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <section>
+                        <h2>Extensions To This Analysis</h2>
+                        <ul>
+                            <li class="fragment appear">Are the spatial patterns of earthquakes in Oklahoma
+                                clustered, dispersed or random?</li>
+                            <li class="fragment appear">Is there are relationship between deaths in tornaoes/floods to income and race?</li>
+                        </ul>
+                        <div class="slide-footer">Using R as a GIS</div>
+                    </section>
+   <!-- slide -->
+                    <section>
+                        <h2>Limitations Of This Approach</h2>
+                        <ul>
+                            <li class="fragment appear">Edge effects</li>
+                            <li class="fragment appear">Disproportionately sized counties</li>
+                            <li class="fragment appear">Data disconnect - polygon area vs. land area</li>
+                            <li class="fragment appear">The map is not projected</li>
+                        </ul>
+                        <div class="slide-footer">Using R as a GIS</div>
+                    </section>
                 </section>
   <!-- slide -->
                 <section>
@@ -256,6 +302,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                     <p class="fragment appear">"A geographic information system (GIS) lets us visualize,
                     question, analyze, and interpret data to understand
                     relationships, patterns, and trends." -ESRI</p>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section>
@@ -268,24 +315,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                     visualizing, and communicating information about places,
                     events, activities, and phenomena on or near the surface of
                     the Earth." -Oregon State University</p>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>Limitations Of This Approach</h2>
-                    <ul>
-                        <li class="fragment appear">Edge effects</li>
-                        <li class="fragment appear">Disproportionately sized counties</li>
-                        <li class="fragment appear">Data disconnect - polygon area vs. land area</li>
-                    </ul>
-                </section>
-  <!-- slide -->
-                <section>
-                    <h2>Extensions To This Analysis</h2>
-                    <ul>
-                        <li class="fragment appear">Are the spatial patterns of earthquakes in Oklahoma
-                        clustered, dispersed or random?</li>
-                        <li class="fragment appear">Is there are relationship between deaths in tornaoes/floods to income and race?</li>
-                    </ul>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
   <!-- slide -->
                 <section data-background="./images/lbsm-giscience/detroit-filter.png">
@@ -294,6 +324,7 @@ merged <- gUnion(wisconsin_counties, minnesota_counties)
                         <img src="./images/wec-gis/qr-code.jpg" alt="qr-code.jpg" /> <br />
                         <a href="https://mhaffner.github.io">https://mhaffner.github.io</a>
                     </p>
+                    <div class="slide-footer">Using R as a GIS</div>
                 </section>
    <!-- END OF PRESENTATION -->
                 <script src="./lib/js/head.min.js"></script>
