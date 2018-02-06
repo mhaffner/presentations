@@ -1,0 +1,83 @@
+Content-Type: text/enriched
+Text-Width: 70
+
+<x-color><param>#9f8766</param>#+REVEAL_THEME: black</x-color>
+<x-color><param>#9f8766</param>#+reveal_title_slide: nil</x-color>
+<x-color><param>#9f8766</param>#+OPTIONS: reveal_width:1200 reveal_height:800</x-color>
+<x-color><param>#9f8766</param>#+REVEAL_TRANS: linear</x-color>
+<x-color><param>#9f8766</param>#+REVEAL_HLEVEL: 2</x-color>
+<x-color><param>#9f8766</param>#+REVEAL_MARGIN: 0.1</x-color>
+<x-color><param>#9f8766</param>#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil</x-color>
+<x-color><param>#9f8766</param>#+REVEAL_EXTRA_CSS: ./css/theme/osu.css</x-color>
+
+
+<x-bg-color><param>#373040</param><x-color><param>#827591</param>#+BEGIN_COMMENT
+</x-color></x-bg-color>Title slide<x-color><param>#9f8766</param>
+</x-color><x-bg-color><param>#373040</param><x-color><param>#827591</param>#+END_COMMENT
+</x-color></x-bg-color><x-color><param>#4f97d7</param>* Topology</x-color>
+
+Matthew Haffner
+
+
+<x-color><param>#2aa1ae</param>[[https://mhaffner.github.io/presentations/topology.html]]</x-color>
+<x-color><param>#4f97d7</param>* Topology in mathematics</x-color>
+- Spatial relationships between objects
+<x-color><param>#4f97d7</param>* Origins</x-color>
+- Leonard Euler and the Konigsberg Bridges
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/euler.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* Bridges of Konigsberg</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/konig-1.png]]</x-color>
+<x-color><param>#4f97d7</param>* Bridges of Konigsberg</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/konig-2.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* Bridges of Konigsberg</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/konig-3.png]]</x-color>
+<x-color><param>#4f97d7</param>* Topology in mathematics</x-color>
+- Spatial relationships between objects
+- Example:
+  - Mobius strip
+  - Knot theory
+<x-color><param>#4f97d7</param>* Mobius strip</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/mobius.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* MC Escher</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/escher-1.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* MC Escher</x-color>
+<x-color><param>#9f8766</param>#+ATTR_HTML: :height 600px</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/escher-2.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* MC Escher</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/escher-3.jpg]]</x-color>
+<x-color><param>#4f97d7</param>* Knot theory</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/knot.png]]</x-color>
+
+<x-color><param>#4f97d7</param>* Topology Exercise</x-color>
+<x-color><param>#4f97d7</param>* Article</x-color>
+<x-color><param>#4f97d7</param>* RDBMS</x-color>
+- SQL
+- PostgreSQL, MySQL, MSSQL Server
+<x-color><param>#4f97d7</param>* RDBMS</x-color>
+- Example:
+
+  - Customers at a bank
+  - Historical properties in Oklahoma
+<x-color><param>#4f97d7</param>* NoSQL</x-color>
+- "Not only SQL"
+- Cassandra, MongoDB, Elasticsearch, CouchDB, BigTable
+<x-color><param>#4f97d7</param>* Sharding</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/shard-1.png]]</x-color>
+<x-color><param>#4f97d7</param>* Sharding</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/shard-2.png]]</x-color>
+<x-color><param>#4f97d7</param>* Alternative spatial data formats</x-color>
+- GeoHash
+- GEOJSON
+- Database formats
+<x-color><param>#4f97d7</param>* GeoHash</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/geohash-1.png]]</x-color>
+<x-color><param>#4f97d7</param>* GeoHash</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/geohash-2.png]]</x-color>
+<x-color><param>#4f97d7</param>* GeoHash</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/geohash-3.png]]</x-color>
+
+<x-color><param>#4f97d7</param>* GeoJSON</x-color>
+<x-color><param>#2aa1ae</param>[[./images/adv-gis/geojson.png]]</x-color>
+
+<x-color><param>#4f97d7</param>* Ethics</x-color>
+<x-color><param>#4f97d7</param>* Conclusion</x-color>
