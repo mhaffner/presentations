@@ -45,7 +45,8 @@
                     <h2>Introduction</h2>
                     <ul>
                         <li class="fragment appear">Big data</li>
-                        <li class="fragment appear">Volunteered geographic information (VGI) and geographic information science (GIScience)</li>
+                        <li class="fragment appear">Geographic information science</li>
+                        <li class="fragment appear">Volunteered geographic information (VGI) (Goodchild 2007)</li>
                         <li class="fragment appear">Location-based social media (LBSM)</li>
                         <li class="fragment appear">Data quality</li>
                         <ul>
@@ -53,6 +54,21 @@
                             <li class="fragment appear">Validity</li>
                         </ul>
                     </ul>
+                    <div class="slide-footer">Introduction</div>
+                </section>
+  <!-- slide -->
+                <section>
+                    <h2>Introduction</h2>
+                    <ul>
+                        <li class="fragment appear">Approach: "Abductive reasoning" (Miller and Goodchild 2015)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Dissertation Structure</h2>
+                    <div class="figure">
+                        <p><img src="./images/dissertation-defense/dissertation-structure.png" alt="survey-respondents.png" height="600px" />
+                        </p>
+                    </div>
                     <div class="slide-footer">Introduction</div>
                 </section>
 
@@ -71,11 +87,11 @@
                 <section>
                     <h2>Article 1</h2>
                     <ul>
-                        <li class="fragment appear">Demographics, usage patterns, and perceptions</li>
+                        <li class="fragment appear">Focus: demographics, usage patterns, and perceptions</li>
                         <li class="fragment appear">Questions
                             <ul>
                                 <li class="fragment appear">Are there differences in terms of gender, race, and academic standing?</li>
-                                <li class="fragment appear">Why do people contribute?</li>
+                                <li class="fragment appear">How do people engage with place?</li>
                                 <li class="fragment appear">What are the implications?</li>
                             </ul>
                         </li>
@@ -90,7 +106,7 @@
                             <li class="fragment appear">Females and underclassmen are the most likely contributors</li>
                             <li class="fragment appear">Few racial differences exist</li>
                             <li class="fragment appear">Twitter is reasonably representative</li>
-                            <li class="fragment appear">Females are less concerned about privacy</li>
+                            <li class="fragment appear">Users geotag at significant locations away from home</li>
                         </ul>
                         <div class="slide-footer">Article 1: Location-based social media (LBSM) behaviors and perception</div>
                     </section>
@@ -243,8 +259,9 @@
                 <section>
                     <h2>Article 2</h2>
                     <ul>
-                        <li>Focus: Spatial patterns of non-English <i>users</i> rather than tweets</li>
-                        <li class="fragment appear">Approach: "Abductive" reasoning (Miller and Goodchild 2015)</li>
+                        <li class="fragment appear">Twitter location type: precise (lat/lon)</li>
+                        <li class="fragment appear">Twitter subpopulation: users with an account language other than English</li>
+                        <li class="fragment appear">Unit of analysis: census tracts</li>
                         <li class="fragment appear">Questions:</li>
                         <ul>
                             <li class="fragment appear">Can conventional variables explain the production of Twitter activity by non-English users?</li>
@@ -256,12 +273,23 @@
   <!-- slide -->
                 <section>
                     <section>
-                    <h2>GWR Results</h2>
-                    <p>
-                        <img src="./images/lbsm-giscience/gwr-variables.png" alt="harris-county-in-texas.png" height="600px" />
-                    </p>
-                    <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
-                </section>
+                        <h2>
+                            Non-stationarity
+                        </h2>
+                        <div class="figure">
+                            <p>
+                                <img src="./images/lbsm-giscience/PERWHTst-clusters.png" height="600px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
+                    </section>
+                    <section>
+                        <h2>GWR Results</h2>
+                        <p>
+                            <img src="./images/lbsm-giscience/gwr-variables.png" alt="harris-county-in-texas.png" height="600px" />
+                        </p>
+                        <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
+                    </section>
                     <section>
                         <h2>User/tweet language</h2>
                         <pre>
@@ -540,35 +568,23 @@
                     </section>
                 </section>
   <!-- slide -->
-                <section>
-                    <h2>
-                        Dependent Variable Non-stationarity
-                    </h2>
-                    <div class="figure">
-                        <p>
-                            <img src="./images/lbsm-giscience/PERWHTst-clusters.png" height="600px" />
-                        </p>
-                    </div>
-                    <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
-                </section>
-  <!-- slide -->
-                <section>
-                    <div class="figure">
-                        <h2>
-                            Outliers
-                        </h2>
-                        <p>
-                            <img src="./images/lbsm-giscience/greatest-netu-tracts.png" height="600px" />
-                        </p>
-                    </div>
-                    <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
-                </section>
+                    <section>
+                        <div class="figure">
+                            <h2>
+                                Outliers
+                            </h2>
+                            <p>
+                                <img src="./images/lbsm-giscience/greatest-netu-tracts.png" height="600px" />
+                            </p>
+                        </div>
+                        <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
+                    </section>
   <!-- slide -->
                 <section>
                     <h2>Findings</h2>
                     <ul>
-                        <li class="fragment appear">The effect of JOBS is much stronger than the effect of POP</li>
-                        <li class="fragment appear">Indepdent variables vary wildly within the top 8 NETU tracts</li>
+                        <li class="fragment appear">The effect of the number of employees is much stronger than the effect of residential population</li>
+                        <li class="fragment appear">Independent variables vary wildly within the top 8 NETU tracts</li>
                         <li class="fragment appear">Place vs. users</li>
                     </ul>
                     <div class="slide-footer">Article 2: A spatial analysis of non-English Twitter activity</div>
@@ -586,7 +602,9 @@
                 <section>
                     <h2>Article 3</h2>
                     <ul>
-                        <li class="fragment appear">Focus: Users referencing #BlackLivesMatter or #AllLivesMatter in the text of a tweet or their Twitter profile</li>
+                        <li class="fragment appear">Twitter location type: general (e.g., city or neighborhood)</li>
+                        <li class="fragment appear">Twitter subpopulation: users referencing #BlackLivesMatter or #AllLivesMatter in the text of a tweet or their profile description</li>
+                        <li class="fragment appear">Unit of analysis: incorporated places and census designated places (i.e. cities)</li>
                         <li class="fragment appear">Questions:</li>
                             <ul>
                                 <li class="fragment appear">Which conventional variables explain the production of counter/protest content in LA and TX cities?</li>
@@ -596,16 +614,9 @@
                     </ul>
                     <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                 </section>
-  <!-- slide -->
+<!-- section -->
                 <section>
-                    <h2></h2>
-                    <div class="figure">
-                        <p><img src="./images/dissertation-defense/july-2016.png" height="550px"/></p>
-                    </div>
-                    <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
-                </section>
   <!-- slide -->
-                <section>
                     <section>
                         <h2></h2>
                         <div class="figure">
@@ -613,6 +624,7 @@
                         </div>
                         <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                     </section>
+  <!-- slide -->
                     <section>
                         <h2></h2>
                         <div class="figure">
@@ -620,6 +632,7 @@
                         </div>
                         <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                     </section>
+  <!-- slide -->
                     <section>
                         <h2></h2>
                         <div class="figure">
@@ -627,10 +640,126 @@
                         </div>
                         <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                     </section>
+  <!-- slide -->
                     <section>
                         <h2></h2>
                         <div class="figure">
                             <p><img src="./images/dissertation-defense/blmprofres.png" height="550px"/></p>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                </section>
+<!-- section -->
+                <section>
+  <!-- slide -->
+                    <section>
+                        <h2></h2>
+                        <div class="figure">
+                            <p><img src="./images/dissertation-defense/july-2016.png" height="550px"/></p>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <h2></h2>
+                        <div class="figure">
+                            <p><img src="./images/dissertation-defense/regression-diagnostics.png" height="550px"/></p>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## Counts of users referencing each phrase and possessing the phrase in their Twitter profile
+                                |                   | Text of a tweet | Twitter Profile |
+                                |-------------------|-----------------|---------|
+                                | #BlackLivesMatter |            6695 |    2702 |
+                                | #AllLivesMatter   |            2382 |     127 |
+                            </script>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## BLMTWEPERCAP regression results
+                                |               |  Estimate | Std. Error| t-value| p-value|
+                                |---------------|----------:|----------:|--------:|------:|
+                                |(Intercept)    |-2.619 | 0.328 | -7.977|  0.000|
+                                |log(POP)       | 0.094 | 0.011 |  8.598|  0.000|
+                                |MEDAGE         |-0.005 | 0.002 | -2.119|  0.034|
+                                |PERWHITE       |-0.004 | 0.001 | -5.198|  0.000|
+                                |log(MEDFAMINC) | 0.230 | 0.032 |  7.118|  0.000|
+                                |log(PERUNEMP)  | 0.032 | 0.024 |  1.360|  0.174|
+                                |ST             | 0.117 | 0.031 |  3.756|  0.000|
+                            </script>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## ALMTWEPERCAP regression results
+                                |               |  Estimate | Std. Error| t-value| p-value|
+                                |---------------|----------:|----------:|--------:|------:|
+                                | (Intercept)   | -1.946|  0.264|  -7.376 | 0.000|
+                                | log(POP)      |  0.095|  0.009|  10.827 | 0.000|
+                                | MEDAGE        | -0.002|  0.002|  -0.956 | 0.340|
+                                | PERWHITE      | -0.001|  0.001|  -2.396 | 0.017|
+                                | log(MEDFAMINC)|  0.134|  0.026|   5.169 | 0.000|
+                                | log(PERUNEMP) |  0.002|  0.019|   0.103 | 0.918|
+                                | ST            |  0.034|  0.025|   1.361 | 0.174|
+                            </script>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## BLMPROFPERCAP regression results
+                                |               |  Estimate | Std. Error| t-value| p-value|
+                                |---------------|----------:|----------:|--------:|------:|
+                                | (Intercept)   | -3.355|  0.394|  -8.521| 0.000 |
+                                | log(POP)      |  0.046|  0.013|   3.493| 0.001 |
+                                | MEDAGE        | -0.000|  0.003|  -0.059| 0.953 |
+                                | PERWHITE      | -0.006|  0.001|  -6.610| 0.000 |
+                                | log(MEDFAMINC)|  0.356|  0.039|   9.174| 0.000 |
+                                | log(PERUNEMP) |  0.019|  0.028|   0.670| 0.503 |
+                                | ST            |  0.082|  0.037|   2.193| 0.029 |
+                            </script>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## ALMPROFPERCAP regression results
+                                |               |  Estimate | Std. Error| t-value| p-value|
+                                |---------------|----------:|----------:|--------:|------:|
+                                |  (Intercept)   | -0.756|  0.180|  -4.201| 0.000|
+                                |  log(POP)      |  0.044|  0.006|   7.357| 0.000|
+                                |  MEDAGE        | -0.000|  0.001|  -0.141| 0.888|
+                                |  PERWHITE      | -0.001|  0.000|  -1.669| 0.096|
+                                |  log(MEDFAMINC)|  0.048|  0.018|   2.681| 0.008|
+                                |  log(PERUNEMP) | -0.021|  0.013|  -1.644| 0.101|
+                                |  ST            |  0.021|  0.017|   1.223| 0.222|
+                            </script>
+                        </div>
+                        <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
+                    </section>
+                    <section>
+                        <div data-markdown style="font-size:80%;">
+                            <script type="text/template">
+                                ## BLMPROFPERCAP regression results
+                                |               |  Estimate | Std. Error| t-value| p-value|
+                                |---------------|----------:|----------:|--------:|------:|
+                                | (Intercept)   | -3.355|  0.394|  -8.521| 0.000 |
+                                | log(POP)      |  0.046|  0.013|   3.493| 0.001 |
+                                | MEDAGE        | -0.000|  0.003|  -0.059| 0.953 |
+                                | PERWHITE      | -0.006|  0.001|  -6.610| 0.000 |
+                                | log(MEDFAMINC)|  0.356|  0.039|   9.174| 0.000 |
+                                | log(PERUNEMP) |  0.019|  0.028|   0.670| 0.503 |
+                                | ST            |  0.082|  0.037|   2.193| 0.029 |
+                            </script>
                         </div>
                         <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                     </section>
@@ -640,24 +769,16 @@
                     <h2>Findings</h2>
                     <ul>
                         <li class="fragment appear">The effect of PERWHITE is negative in all models but much stronger in the #BlackLivesMatter models</li>
-                        <li class="fragment appear">Geolocated Twitter data meshes well with color-blind racial theory</li>
+                        <li class="fragment appear">The outliers </li>
                     </ul>
                     <div class="slide-footer">Article 3: A place-based analysis of #BlackLivesMatter</div>
                 </section>
   <!-- slide -->
                 <section>
-                    <h2>Conclusion</h2>
-                    <ul>
-                        <li>Is LBSM valid in studying spatial processes?</li>
-                    </ul>
-                    <div class="slide-footer">Conclusion</div>
-                </section>
-  <!-- slide -->
-                <section>
                     <h2>Key contributions</h2>
                     <ul>
-                        <li class="fragment appear">Varied scales reveal different kinds of processes</li>
-                        <li class="fragment appear">General location seems more useful than precise location</li>
+                        <li class="fragment appear">Various scales are the result different processes</li>
+                        <li class="fragment appear">General location appears more useful than precise location</li>
                         <li class="fragment appear">Profile information vs. tweet text</li>
                     </ul>
                     <div class="slide-footer">Dissertation Defense</div>
@@ -674,11 +795,19 @@
                 </section>
   <!-- slide -->
                 <section>
-                    <h2>Acknowledgements</h2>
+                    <h2>Conclusion</h2>
+                    <ul>
+                        <li>Is LBSM valid in studying spatial processes?</li>
+                    </ul>
                     <div class="slide-footer">Dissertation Defense</div>
                 </section>
 <!-- MAIN PRESENTATION END -->
                 <section>
+                    <h2>Assessing the Validity of Location-based Social Media in the Study of Spatial Processes</h2>
+                        <div class="figure">
+                            <p><img src="./images/dissertation-defense/qr-code.jpg" height="400px" />
+                            </p>
+                        </div>
                     <p>
                         https://mhaffner.github.io/presentations/dissertation-defense.html
                     </p>
