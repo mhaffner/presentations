@@ -19,7 +19,7 @@ Text-Width: 70
 Matthew Haffner
 
 
-<x-color><param>#2aa1ae</param>[[https://mhaffner.github.io/presentations/topology.html]]</x-color>
+<x-color><param>#2aa1ae</param>[[https://mhaffner.github.io/presentations/adv-gis.html]]</x-color>
 <x-color><param>#4f97d7</param>* Topology in mathematics</x-color>
 - Spatial relationships between objects
 <x-color><param>#4f97d7</param>* Origins</x-color>
