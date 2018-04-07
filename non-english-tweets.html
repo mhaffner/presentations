@@ -130,7 +130,7 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-#A spatial analysis of non-English Twitter activity
+#A spatial analysis of non-English Twitter activity in Houston, TX
 Matthew Haffner
 
 Department of Geography
@@ -145,9 +145,9 @@ layout: false
 ]
 
 .right-column[
-- Cities are becoming more reliant on big data (Kitchin 2014)
+- Volunteered/user-contributed data sources can supplement (or replace) conventional data sources (See et al. 2016)
 
-- VGI data sources can supplement (or replace) conventional data sources (See et al. 2016)
+- Cities in particular are becoming more reliant on big data (Kitchin 2014)
 
 - Significance: Governments can use social media to address needs of underrepresented groups
 
@@ -159,9 +159,11 @@ layout: false
   ### - Data Quality
 ]
 .right-column[
-- A wealth of research has been conducted on the _accuracy_ of explicitly geographic VGI/CGI platforms
+- User-contribued sources of geographic information suffer from a number of shortcomings
 
-- Much less has research examined _validity_ of implicitly geographic VGI/CGI platforms (e.g., Location-based social media (LBSM) sources like Twitter)
+- A wealth of research has been conducted on the _accuracy_ of explicitly geographic CGI platforms
+
+- Much less has examined _validity_ of implicitly geographic VGI/CGI platforms (e.g., Location-based social media (LBSM) sources like Twitter)
 ]
 ---
 .left-column[
@@ -185,6 +187,8 @@ layout: false
   ### - Approach
 ]
 .right-column[
+- Counts of _users_ rather than _tweets_
+
 - _Account_ language rather than _tweet_ language
 
 ```json
@@ -285,6 +289,8 @@ layout: false
 1. Can conventional variables explain the production of Twitter activity by non-English users?
 
 2. How does LBSM inform us about place and users' behaviors?
+
+3. Is LBSM valid for studying spatial processes?
 ]
 ---
 .left-column[
@@ -294,11 +300,13 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data/methods
 ]
 .right-column[
-- Counts of users with an account language other than English (i.e. non-English Twitter users) within
-  census tracts in Harris County, Texas (Houston area) from October 2015 - November 2016.
+- Counts of users with an account language other than English (i.e. non-English Twitter users) who
+  produced a geotagged tweet within census tracts in Harris County, Texas (Houston area) from October 2015 - November 2016.
+
+- Geographically weighted regression (GWR)
 ]
 ---
 .left-column[
@@ -308,7 +316,7 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data & methods
 ]
 .right-column[
 <img src="./images/non-english-tweets/variables.png" width="100%" />
@@ -321,7 +329,7 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data & methods
   ## Results
 ]
 .right-column[
@@ -335,7 +343,7 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data & methods
   ## Results
 ]
 .right-column[
@@ -349,7 +357,7 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data & methods
   ## Results
 ]
 .right-column[
@@ -363,13 +371,23 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ##Data & methods
   ## Results
   ## Conclusion
 ]
 .right-column[
-- Users day-to-day behaviors versus something else
-- Number of tracts per user
+### Words of caution
+
+- The effect of the number of employees is much stronger than the effect of residential population
+
+- Independent variables vary wildly within the top 8 NETU tracts
+
+- Scale cannot be ignored
+
+- Number of tracts per user: 2.1
+
+- LBSM's representativeness of users' day-to-day lives
+
 ]
 ---
 .left-column[
@@ -379,13 +397,31 @@ layout: false
   ## Research focus
   ### - Approach
   ### - Questions
-  ## Data
+  ## Data & methods
   ## Results
   ## Conclusion
 ]
 .right-column[
+### Words of caution
+
 - The effect of the number of employees is much stronger than the effect of residential population
+
 - Independent variables vary wildly within the top 8 NETU tracts
+
+- Scale cannot be ignored
+
+- Number of tracts per user: 2.1
+
+- LBSM's representativeness of users' day-to-day lives
+
+### Positive findings
+
+- Information on place versus users
+
+- Differences between data sources means something... right?
+
+- Relative abundance of Turkish users
+
 ]
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
