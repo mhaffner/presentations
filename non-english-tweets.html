@@ -6,17 +6,34 @@
     <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
     <title>AAG - Haffner</title>
     <style>
-     @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+     @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
+     /*/* For viewing presentation offline
+
+     /* @font-face{
+        font-family: 'Source Serif Pro';
+        src: url('fonts/SourceSerifPro-Regular.ttf');
+        }
+
+        @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('fonts/YanoneKaffeesatz-Regular.ttf');
+        }
+
+        @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-Regular.ttf');
+        } */
+
      body {
-         font-family: 'Droid Serif';
+         font-family: 'Source Serif Pro';
      }
      h1, h2, h3, h4 {
          font-family: 'Yanone Kaffeesatz';
          font-weight: 400;
-         margin-bottom: 0;
+         margin-bottom: 10;
      }
      table {
          font-size: 70%;
@@ -111,9 +128,10 @@
           color: #777;
           width: 20%;
           height: 92%;
-          line-height: 33px;
+          line-height: 31px;
           float: left;
       }
+
         .left-column h2:last-of-type, .left-column h3:last-child {
           color: #000;
         }
@@ -420,8 +438,6 @@ layout: false
 
 - The varying nature of location types
 
-- LBSM's representativeness of users' day-to-day behaviors
-
 - Information on place versus users
 ]
 ---
@@ -444,8 +460,6 @@ layout: false
 - The effect of the number of employees (JOBS) is much stronger than the effect of residential population (POP)
 
 - The varying nature of location types
-
-- LBSM's representativeness of users' day-to-day behaviors
 
 - Information on place versus users
 
@@ -470,8 +484,11 @@ https://mhaffner.github.io/presentations/non-english-tweets.html
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
-    <!-- <script src="remark/remark-latest.min.js"> -->
-    <!-- </script> -->
+
+    <!-- For viewing presentation offline -->
+    <!-- <script src="remark/remark-latest.min.js">
+         </script>
+       -->
     <script>
      var slideshow = remark.create({
          highlightStyle: 'monokai',
