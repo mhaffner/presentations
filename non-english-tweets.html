@@ -6,13 +6,15 @@
     <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
     <title>AAG - Haffner</title>
     <style>
+     /*
      @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      */
 
-     /*/* For viewing presentation offline
+    /* For viewing presentation offline */
 
-     /* @font-face{
+     @font-face{
         font-family: 'Source Serif Pro';
         src: url('fonts/SourceSerifPro-Regular.ttf');
         }
@@ -25,7 +27,7 @@
         @font-face{
         font-family: 'Ubuntu Mono';
         src: url('fonts/UbuntuMono-Regular.ttf');
-        } */
+        }
 
      body {
          font-family: 'Source Serif Pro';
@@ -167,11 +169,11 @@ layout: false
 ]
 
 .right-column[
-- Volunteered (Goodchild 2007) or contributed (Harvey 2013) geographic information can supplement (or replace) conventional data sources (See et al. 2016)
+- Volunteered (Goodchild 2007) or contributed (Harvey 2013) geographic information (VGI/CGI) can supplement (or replace) conventional data sources (See et al. 2016)
 
 - Cities in particular are becoming more reliant on big data (Kitchin 2014)
 
-- Significance: Governments can use social media to address the needs of underrepresented groups
+- CGI is becoming more representative of the general population (Zickuhr 2013; SOURCE)
 
 ]
 ---
@@ -183,9 +185,7 @@ layout: false
 .right-column[
 - User-contribued sources of geographic information suffer from a number of shortcomings
 
-- A wealth of research has been conducted on the _accuracy_ of explicitly geographic CGI platforms
-
-- Much less has examined _validity_ of implicitly geographic VGI/CGI platforms (e.g., Location-based social media (LBSM) sources like Twitter)
+- A wealth of research has been conducted on VGI/CGI _accuracy_, but much less has examined its _validity_ (specifically location-based social media; LBSM) in studying spatial processes
 ]
 ---
 .left-column[
@@ -193,6 +193,23 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
+  ### - Questions
+]
+.right-column[
+
+1. Can conventional variables explain the production of Twitter activity by non-English users?
+
+2. How does LBSM inform us about users' behaviors?
+
+3. Is LBSM valid for studying spatial processes?
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data Quality
+  ## Research focus
+  ### - Questions
   ### - Approach
 ]
 .right-column[
@@ -206,6 +223,7 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
+  ### - Questions
   ### - Approach
 ]
 .right-column[
@@ -244,6 +262,7 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
+  ### - Questions
   ### - Approach
 ]
 .right-column[
@@ -255,6 +274,7 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
+  ### - Questions
   ### - Approach
 ]
 .right-column[
@@ -304,16 +324,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
-]
-.right-column[
-
-1. Can conventional variables explain the production of Twitter activity by non-English users?
-
-2. How does LBSM inform us about place and users' behaviors?
-
-3. Is LBSM valid for studying spatial processes?
+  ### - Approach
 ]
 ---
 .left-column[
@@ -321,8 +333,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
   ## Data & methods
 ]
 .right-column[
@@ -337,8 +349,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
   ## Data & methods
 ]
 .right-column[
@@ -352,25 +364,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
-  ## Data & methods
-  ## Results
-]
-.right-column[
-.center[GWR Results
-<br/>
-<br/>
-<img src="./images/non-english-tweets/gwr-variables.png" width="75%" />
-]]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data Quality
-  ## Research focus
   ### - Approach
-  ### - Questions
   ## Data & methods
   ## Results
 ]
@@ -387,8 +382,25 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+.center[GWR Results
+<br/>
+<br/>
+<img src="./images/non-english-tweets/gwr-variables.png" width="75%" />
+]]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data Quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
   ## Data & methods
   ## Results
 ]
@@ -405,8 +417,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
   ## Data & methods
   ## Results
 ]
@@ -423,8 +435,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
   ##Data & methods
   ## Results
   ## Conclusion
@@ -446,8 +458,8 @@ layout: false
   ### - VGI/CGI
   ### - Data Quality
   ## Research focus
-  ### - Approach
   ### - Questions
+  ### - Approach
   ## Data & methods
   ## Results
   ## Conclusion
@@ -482,13 +494,14 @@ https://mhaffner.github.io/presentations/non-english-tweets.html
 <img src="images/non-english-tweets/qr-code.png" width="30%" />
 ---
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
-
-    <!-- For viewing presentation offline -->
-    <!-- <script src="remark/remark-latest.min.js">
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js">
          </script>
        -->
+    <!-- For viewing presentation offline -->
+
+    <script src="remark/remark-latest.min.js">
+    </script>
+
     <script>
      var slideshow = remark.create({
          highlightStyle: 'monokai',
