@@ -6,15 +6,13 @@
     <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
     <title>AAG - Haffner</title>
     <style>
-     /*
      @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      */
 
     /* For viewing presentation offline */
 
-     @font-face{
+     /* @font-face{
         font-family: 'Source Serif Pro';
         src: url('fonts/SourceSerifPro-Regular.ttf');
         }
@@ -28,6 +26,7 @@
         font-family: 'Ubuntu Mono';
         src: url('fonts/UbuntuMono-Regular.ttf');
         }
+      */
 
      body {
          font-family: 'Source Serif Pro';
@@ -180,7 +179,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
 ]
 .right-column[
 - User-contribued sources of geographic information suffer from a number of shortcomings
@@ -191,7 +190,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
 ]
@@ -207,7 +206,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -221,7 +220,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -260,7 +259,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -272,7 +271,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -316,22 +315,11 @@ layout: false
     }
 ```
 ]
-
-
 ---
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -347,7 +335,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -362,25 +350,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-  ## Data & methods
-  ## Results
-]
-.right-column[
-<br/>
-<br/>
-.center[Standardized GWR Coefficients]
-<br/>
-<img src="./images/non-english-tweets/gwr-coefficients.png" width="100%" />
-]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -397,7 +367,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -415,7 +385,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -433,16 +403,16 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
-  ##Data & methods
+  ## Data & methods
   ## Results
   ## Conclusion
 ]
 .right-column[
-### Overarching thoughts/words of caution
+Overarching thoughts/words of caution
 
 - Independent variables vary wildly within the top 8 NETU tracts
 
@@ -456,7 +426,7 @@ layout: false
 .left-column[
   ## Introduction
   ### - VGI/CGI
-  ### - Data Quality
+  ### - Data quality
   ## Research focus
   ### - Questions
   ### - Approach
@@ -480,12 +450,9 @@ layout: false
 - Differences between data sources means something... right?
 
 - Relative abundance of Turkish users
-
 ]
 ---
-name: inverse
-layout: true
-class: center, middle, inverse
+template: inverse
 
 Haffner, M. 2018. A spatial analysis of non-English Twitter activity in Houston, TX. Accepted for publication in _Transactions in GIS_.
 
@@ -494,13 +461,13 @@ https://mhaffner.github.io/presentations/non-english-tweets.html
 <img src="images/non-english-tweets/qr-code.png" width="30%" />
 ---
     </textarea>
-    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-         </script>
-       -->
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+
     <!-- For viewing presentation offline -->
 
-    <script src="remark/remark-latest.min.js">
-    </script>
+    <!-- <script src="remark/remark-latest.min.js">
+    </script>  -->
 
     <script>
      var slideshow = remark.create({
