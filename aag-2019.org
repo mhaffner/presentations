@@ -1,0 +1,33 @@
+#+Title: AAG 2019
+
+#+REVEAL_THEME: black
+#+reveal_title_slide: nil
+#+OPTIONS: reveal_width:1200 reveal_height:800 reveal_rolling_links:t
+#+REVEAL_TRANS: none
+#+REVEAL_HLEVEL: 2
+#+REVEAL_MARGIN: 0.1
+#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
+#+REVEAL_EXTRA_CSS: ../style/reveal/uwec.css
+#+REVEAL_SLIDE_FOOTER: A place-based analysis of #BlackLivesMatter
+#+REVEAL_INIT_SCRIPT: center: false
+
+#+BEGIN_COMMENT
+Title slide
+#+END_COMMENT
+* A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter
+:PROPERTIES:
+:reveal_extra_attr: class=center
+:reveal_background: ../img/detroit-filter.png
+:END:
+Dr. Matthew Haffner \\ 
+Department of Geography and Anthropology \\ 
+University of Wisconsin - Eau Claire
+* Context
+* Study Area
+#+ATTR_REVEAL: :frag (appear)
+- Incorporated and census designated places in Texas and Louisiana
+* Research questions
+* Data
+* Methods
+* Major findings
+* Future directions
