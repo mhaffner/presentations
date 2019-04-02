@@ -1,0 +1,147 @@
+/* override the default .css file */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+.reveal {
+    font-family: "Source Serif Pro";
+    font-weight: normal;
+    font-size: 42px;
+    color: #fff; }
+
+.reveal .orange-bg {
+    background: #ffa64d;
+}
+
+.reveal .purple-bg {
+    color: #FEC923;
+    background: #41225E;
+   /* background: #592a8a */ /* lighter purple */
+}
+
+/* Centers items that aren't bulleted */
+.reveal p {
+    color: #cc99ff; /* lighter orange than default */
+    text-align: center;
+}
+
+/* Bulleted items */
+.reveal ul {
+    color: #FEC923;
+    text-align: left;
+}
+
+/* Numbered items */
+.reveal ol {
+    color: #809fff;
+    text-align: left;
+}
+
+.reavel a:link {
+    color: ;
+}
+
+/* HEADERS */
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word; }
+
+.reveal h1 {
+    font-size: 60px;
+    position: absolute;
+    top: 50px;
+}
+
+.reveal h2 {
+    font-size: 60px;
+}
+
+.reveal h3 {
+    font-size: 1.5em;
+}
+
+.reveal h4 {
+    font-size: 1.5em;
+}
+
+/* TABLES */
+.reveal th {
+    font-weight: bold;
+    color: #ffa64d;
+    text-align: center;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid;
+    border-left: 1px solid transparent;
+}
+
+.reveal td {
+    text-align: left;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    font-size: 0.75em;
+    width: 400px;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+    border-spacing: 0;
+}
+
+/* FOOTER */
+.reveal .slide-footer {
+    font-size: 0.55em;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #999999;
+}
+
+/* TWO COLUMN */
+.column-left{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+.column-right{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+/* for images */
+.standard-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+
+
+.no-write ul, ol, p {
+    color: #00e68a;
+}
