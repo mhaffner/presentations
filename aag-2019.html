@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>AAG 2019</title>
+<meta name="author" content="(Matthew Haffner)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="./style/reveal/uwec.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<section id="slide-org0a15b79" data-background="./img/detroit-filter.png" class=center>
+<h2 id="org0a15b79">A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter</h2>
+<p>
+Matthew Haffner <br />
+Department of Geography and Anthropology <br />
+University of Wisconsin - Eau Claire
+</p>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf269cee">
+<h2 id="orgf269cee">Context</h2>
+<ul>
+<li>Very few tweets have precise location (lat/lon)</li>
+<li>"Abductive reasoning" (Miller 2010)</li>
+<li>The potential of using big spatial data to elicit patterns of
+inequality (Shelton et al. 2014)</li>
+<li>Color-blind racism (Bonilla-Silva 2003)</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-orga59bcf8">
+<h2 id="orga59bcf8">Research question</h2>
+<ul>
+<li class="fragment appear">Which demographic variables are best at predicting the production of
+#BlackLivesMatter and #AllLivesMatter Twitter content in (a) tweet
+text and (b) Twitter profiles?</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-org53a4cd6">
+<h2 id="org53a4cd6">Study area and data</h2>
+<ul>
+<li class="fragment appear">All geolocated tweets produced by users within incorporated and
+census designated places in Texas and Louisiana between October 2015
+and November 2016</li>
+<li class="fragment appear">Significant race-related events occurred in both states over the
+study period</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-org74789ec">
+<h2 id="org74789ec">Methods</h2>
+<ul>
+<li>Correlation and regression</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-org8cb35ca">
+<h2 id="org8cb35ca">Data</h2>
+<ul>
+<li class="fragment appear">DVs:
+<ul>
+<li>Counts of tweets per capita containing #BlackLivesMatter or
+#AllLivesMatter in either (a) tweet text or (b) Twitter profile</li>
+
+</ul></li>
+<li class="fragment appear">IVs:</li>
+
+</ul>
+<div class="column" style="float:left; width: 50%">
+<ul>
+<li class="fragment appear">Percent black</li>
+<li class="fragment appear">Percent white</li>
+<li class="fragment appear">Percent Hispanic</li>
+<li class="fragment appear">Percent Asian</li>
+<li class="fragment appear">Percent multiracial</li>
+
+</ul>
+</div>
+<div class="column" style="float:right; width: 50%">
+<ul>
+<li class="fragment appear">Population</li>
+<li class="fragment appear">Median age</li>
+<li class="fragment appear">Median family income</li>
+<li class="fragment appear">Percent unemployed</li>
+<li class="fragment appear">State (TX or LA)</li>
+
+</ul>
+</div>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-orgdaaa3fe">
+<h2 id="orgdaaa3fe">Correlation results</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">BLM in text</th>
+<th scope="col" class="org-right">ALM in text</th>
+<th scope="col" class="org-right">BLM in profile</th>
+<th scope="col" class="org-right">ALM in profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Percent black</td>
+<td class="org-right">0.35</td>
+<td class="org-right">0.20</td>
+<td class="org-right">0.36</td>
+<td class="org-right">0.16</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent white</td>
+<td class="org-right">-0.30</td>
+<td class="org-right">-0.17</td>
+<td class="org-right">-0.30</td>
+<td class="org-right">-0.15</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent Hisp.</td>
+<td class="org-right">-0.26</td>
+<td class="org-right">-0.13</td>
+<td class="org-right">-0.29</td>
+<td class="org-right">-0.06</td>
+</tr>
+
+<tr>
+<td class="org-left">Percent Asian</td>
+<td class="org-right">0.35</td>
+<td class="org-right">0.33</td>
+<td class="org-right">0.37</td>
+<td class="org-right">0.35</td>
+</tr>
+</tbody>
+</table>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-org28d4ffd">
+<h2 id="org28d4ffd">Results</h2>
+<ul>
+<li class="fragment appear">"[sic] #AllLivesMatter, will be true once #BlackLivesMatter is
+included&#x2026;"</li>
+<li class="fragment appear">"#BlackLivesMatter does not mean we Only matter of mean more or less
+than #AllLivesMatter or #BlueLivesMatter it means we Matter Too."</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-org3e247b3">
+<h2 id="org3e247b3">Results</h2>
+
+<div class="figure">
+<p><img src="./img/tx-la-users.png" alt="tx-la-users.png" />
+</p>
+</div>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-orgeab3875">
+<h2 id="orgeab3875">Conclusion</h2>
+<ul>
+<li class="fragment appear">Percent black and percent Asian are most strongly associated with</li>
+<li class="fragment appear">#AllLivesMatter is not really used as a counter-protest narrative.</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf01e25f">
+<h2 id="orgf01e25f">Future directions</h2>
+<ul>
+<li class="fragment appear">#TCOT</li>
+<li class="fragment appear">Place-based sentiment analysis</li>
+
+</ul>
+<div class="slide-footer">A place-based analysis of #BlackLivesMatter</div>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+,center: false});
+</script>
+</body>
+</html>
