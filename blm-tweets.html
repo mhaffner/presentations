@@ -143,6 +143,43 @@
         padding-top: 1em;
       }
 
+     th {
+         font-weight: bold;
+         text-align: center;
+         padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+         border-top: 1px solid transparent;
+         border-right: 1px solid transparent;
+         border-bottom: 1px solid;
+         border-left: 1px solid transparent;
+     }
+
+     td {
+         text-align: left;
+         padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+         border-left: 1px solid transparent;
+         border-right: 1px solid transparent;
+         width: 400px;
+     }
+
+     table {
+         margin: auto;
+         border-collapse: collapse;
+         border-bottom: 1px solid;
+         border-spacing: 0;
+     }
+
+     blockquote {
+         background: #f9f9f9;
+         border-left: 10px solid #ccc;
+         margin: 1.5em 10px;
+         padding: 0.5em 10px;
+         font-style: italic;
+         quotes: "\201C""\201D""\2018""\2019";
+     }
+
+     blockquote p {
+         display: inline;
+     }
     </style>
   </head>
   <body>
@@ -151,7 +188,7 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-#A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter
+#A place-based analysis of \#BlackLivesMatter and counter-protest content on Twitter
 Matthew Haffner
 
 Department of Geography and Anthropology
@@ -189,168 +226,150 @@ layout: false
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
 ]
 .right-column[
 
-1. Can conventional variables explain the production of Twitter activity by non-English users?
+1. Which demographic variables are best at predicting the production of \#BlackLivesMatter and \#AllLivesMatter Twitter content?
 
-2. How does LBSM inform us about users' behaviors?
-
-3. Is LBSM valid for studying spatial processes?
+2. What are the characteristics of the outliers, and what can content in those places tell us about racial discourse?
 ]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
 ]
 .right-column[
+- "Abductive reasoning" (Miller 2010)
+
 - Counts of _users_ rather than _tweets_
 
-- _Account_ language rather than _tweet_ language
-]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-]
-.right-column[
-- Counts of _users_ rather than _tweets_
-
-- _Account_ language rather than _tweet_ language
+- _General_ location rather than _precise_ location
 
 ```json
   "_source": {
-    "created_at": "Sat Sep 03 11:57:06 +0000 2016",
-    "text": "So happy to spend my senior year by your side 💓 @ Green Lake, Wisconsin https://t.co/BLWIObnrxD",
-    "user": {
-      "location": "WI, USA",
-      "description": "livin' life, like I lived twice",
-      "followers_count": 786,
-      "friends_count": 638,
-      "favourites_count": 4758,
-      "statuses_count": 9052,
-      "time_zone": "Madrid",
-*     "lang": "es"
-    },
     "geo": {
-      "type": "Point",
-      "coordinates": [
-        43.84277778,
-        -88.95777778
-      ]
-    },
-*   "lang": "en"
-}
-```
-]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-]
-.right-column[
-- _Precise_ location as opposed to _general_
-]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-]
-.right-column[
-- _Precise_ location as opposed to _general_
-
-```json
-    "geo": {
-      "type": "Point",
-*      "coordinates": [
-*        43.84277778,
-*        -88.95777778
-      ]
-    },
-    "place": {
-      "full_name": "Wisconsin, USA",
-      "bounding_box": {
-        "type": "Polygon",
-*        "coordinates": [
-*          [
-*            [
-*              -92.889433,
-*              42.491921
-*            ],
-*            [
-*              -92.889433,
-*              47.309715
-*            ],
-*            [
-*              -86.24955,
-*              47.309715
-*            ],
-*            [
-*              -86.24955,
-*              42.491921
+            "type": "Point",
+            "coordinates": [
+              39.5687,
+              2.6509
             ]
-          ]
-        ]
-      }
+          },
+          "coordinates": {
+            "type": "Point",
+            "coordinates": [
+              2.6509,
+              39.5687
+            ]
+          },
+          "place": {
+            "id": "6c1be133511970bc",
+            "url": "https://api.twitter.com/1.1/geo/id/6c1be133511970bc.json",
+*           "place_type": "city",
+            "name": "Palma de Maiorca",
+*           "full_name": "Palma de Maiorca, Espanha",
+            "country_code": "ES",
+            "country": "Espanha"
+            }
     }
 ```
 ]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
-  ## Data & methods
 ]
 .right-column[
-- Counts of users with an account language other than English (i.e. non-English Twitter users) who
-  produced a geotagged tweet within census tracts in Harris County, Texas (Houston area) from October 2015 - November 2016.
 
-- Geographically weighted regression (GWR)
+- References within tweet text _and_ profile
+
+```json
+  "_source": {
+    "created_at": "Sat Sep 03 11:57:06 +0000 2016",
+*   "text": "#BlackLivesMatter",
+    "user": {
+      "location": "Washington, D.C.",
+*     "description": "#BlackLivesMatter",
+      "followers_count": 786,
+      "friends_count": 638,
+      "favourites_count": 4758,
+      "statuses_count": 9052,
+      "time_zone": "Madrid",
+     "lang": "es"
+    }
+  }
+```
 ]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
   ## Data & methods
 ]
 .right-column[
-.center[Variables]
-        <br/>
-<img src="./images/non-english-tweets/variables.png" width="100%" />
+### Correlation and regression
+
+### Dependent variables
+- Dependent variables were derived from all geolocated tweets produced by users
+referencing \#BlackLivesMatter and/or #AllLivesMatter within incorporated and
+census designated places in Texas and Louisiana between October 2015 and
+November 2016
+
+- BLMTWEPERCAP
+
+- BLMPROFPERCAP
+
+- ALMTWEPERCAP
+
+- ALMPROFPERCAP
+]
+
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+]
+.right-column[
+### Correlation and regression
+
+### Indpendent variables
+
+- Percent black
+- Percent white
+- Percent Hispanic
+- Percent Asian
+- Percent multiracial
+- Population
+- Median age
+- Median family income
+- Percent unemployed
+- State (TX or LA)
 ]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
@@ -358,16 +377,18 @@ layout: false
   ## Results
 ]
 .right-column[
-.center[GWR Results
-<br/>
-<br/>
-<img src="./images/non-english-tweets/gwr-variables.png" width="75%" />
-]]
+### Number of users by phrase and type
+
+|                    |       In text | In profile |
+| -------------      | ------------- |      ----- |
+| \#BlackLivesMatter |          6595 |       2702 |
+| \#AllLivesMatter   |          2382 |        127 |
+]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
@@ -375,17 +396,13 @@ layout: false
   ## Results
 ]
 .right-column[
-<br/>
-.center[Percent White GWR Results
-<br/>
-<br/>
-<img src="./images/lbsm-giscience/PERWHTst-clusters.png" width="100%" />
-]]
+<img src="./img/blmtwepercap-map.png" width="100%" />
+]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
@@ -393,17 +410,92 @@ layout: false
   ## Results
 ]
 .right-column[
-<br/>
-.center[Outliers of Non-English Twitter Users
-<br/>
-<br/>
-<img src="./images/lbsm-giscience/greatest-netu-tracts.png" width="100%" />
-]]
+<img src="./img/blmprofpercap-map.png" width="100%" />
+]
 ---
 .left-column[
   ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
+  ### - LBSM
+  ### - Race
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+### Correlation results
+
+|                  | BLM in text | ALM in text | BLM in profile | ALM in profile |
+|------------------|-------------|-------------|----------------|----------------|
+| Percent black    |        0.35 |        0.20 |           0.36 |           0.16 |
+| Percent white    |       -0.30 |       -0.17 |          -0.30 |          -0.15 |
+| Percent Hisp.    |       -0.26 |       -0.13 |          -0.29 |          -0.06 |
+| Percent Asian    |        0.35 |        0.33 |           0.37 |           0.35 |
+]
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+### Tweets mentioning both \#BlackLivesMatter and \#AllLivesMatter
+
+> [sic] \#AllLivesMatter, will be true once #BlackLivesMatter is included...
+
+<br>
+
+> \#BlackLivesMatter does not mean we Only matter of mean more or less than #AllLivesMatter or #BlueLivesMatter it means we Matter Too.
+]
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+### Tweets produced in Prairie View, Texas
+
+> \#PrayersforMizzou #BlackLivesMatter #PVAMU19...
+
+<br>
+
+> \#ConcernedStudent1950 #BlackLivesMatter #PVSandswithMizzou #PrayForMizzou...
+
+<br>
+
+> \#Dallas #BlackLivesMatter #propaganda #PrayForPeace...
+]
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+<img src="./img/july-2016.png" width="100%" />
+]
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
   ## Research focus
   ### - Questions
   ### - Approach
@@ -412,60 +504,20 @@ layout: false
   ## Conclusion
 ]
 .right-column[
-### Overarching thoughts/words of caution
+### Main findings
+- \#AllLivesMatter is not really used as a prominent counter protest narrative
 
-- Independent variables vary wildly within the top 8 NETU tracts
+- LBSM enables new types of relationships
 
-- The effect of the number of employees (JOBS) is much stronger than the effect of residential population (POP)
+### Future directions
 
-- Information on place versus users
+- What drives a person to tag their location in the wake of a race-related event?
+
+- \#TCOT?
+
+- Place-based sentiment analysis
+
 ]
----
-.left-column[
-  ## Introduction
-  ### - VGI/CGI
-  ### - Data quality
-  ## Research focus
-  ### - Questions
-  ### - Approach
-  ## Data & methods
-  ## Results
-  ## Conclusion
-]
-.right-column[
-### Overarching thoughts/words of caution
-
-- Independent variables vary wildly within the top 8 NETU tracts
-
-- The effect of the number of employees (JOBS) is much stronger than the effect of residential population (POP)
-
-- Information on place versus users
-
-### Positive findings
-
-- Differences between data sources means something... right?
-
-- Appearance of some unexpected languages
-]
----
-template: inverse
-
-Haffner, M. 2018. A spatial analysis of non-English Twitter activity in Houston, TX. Accepted for publication in _Transactions in GIS_.
-
-https://mhaffner.github.io/presentations/non-english-tweets.html
-
-<img src="images/non-english-tweets/qr-code.png" width="30%" />
----
-# References
-- Goodchild, M. F. (2007). Citizens as sensors: The world of volunteered geography. _GeoJournal_, 69(4), 211–221.
-
-- Kitchin, R. (2013). The real-time city? Big data and smart urbanism. _GeoJournal_, 79(1), 1–14.
-
-- Harvey, F. (2013). To volunteer or contribute locational information? Towards truth in labeling crowdsourced geographic information. In D. Sui, S. Elwood, & M. F. Goodchild (Eds.), _Crowdsourcing geographic knowledge_ (pp. 31–42). Dordrecht, Netherlands: Springer.
-
-- Kitchin, R. (2013). The real-time city? Big data and smart urbanism. _GeoJournal_, 79(1), 1–14.
-
-- Zickuhr, K. (2013). Location-based services. Washington, DC: Pew Research Center.
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
