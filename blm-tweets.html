@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <title>AAG - Haffner</title>
+    <style>
+     /*
+     @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+     @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+     @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        */
+
+    /* For viewing presentation offline */
+
+      @font-face{
+        font-family: 'Source Serif Pro';
+        src: url('fonts/SourceSerifPro-Regular.ttf');
+        }
+
+        @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('fonts/YanoneKaffeesatz-Regular.ttf');
+        }
+
+        @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-Regular.ttf');
+        }
+
+     body {
+         font-family: 'Source Serif Pro';
+     }
+     h1, h2, h3, h4 {
+         font-family: 'Yanone Kaffeesatz';
+         font-weight: 400;
+         margin-bottom: 10;
+     }
+     table {
+         font-size: 70%;
+     }
+
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        font-size: 80%;
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 14px }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+          color: #777;
+          width: 20%;
+          height: 92%;
+          line-height: 31px;
+          float: left;
+      }
+
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+#A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter
+Matthew Haffner
+
+Department of Geography and Anthropology
+
+University of Wisconsin - Eau Claire
+
+https://mhaffner.github.io
+
+.footnote[created with remark.js]
+---
+layout: false
+.left-column[
+  ## Introduction
+  ### - LBSM
+]
+
+.right-column[
+- The internet has become an integral part of social activism.
+
+- Location-based social media (LBSM) is now an important data source.
+
+- The #BlackLivesMatter movement has been studied extensively, but research on its spatial manifestation is lacking.
+]
+---
+.left-column[
+  ## Introduction
+  ### - LBSM
+  ### - Race
+]
+.right-column[
+- There is significant potential in using big spatial data to elicit patterns of inequality (Shelton et al. 2014).
+
+- Color-blind racism (Bonilla-Silva 2003).
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+]
+.right-column[
+
+1. Can conventional variables explain the production of Twitter activity by non-English users?
+
+2. How does LBSM inform us about users' behaviors?
+
+3. Is LBSM valid for studying spatial processes?
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+]
+.right-column[
+- Counts of _users_ rather than _tweets_
+
+- _Account_ language rather than _tweet_ language
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+]
+.right-column[
+- Counts of _users_ rather than _tweets_
+
+- _Account_ language rather than _tweet_ language
+
+```json
+  "_source": {
+    "created_at": "Sat Sep 03 11:57:06 +0000 2016",
+    "text": "So happy to spend my senior year by your side 💓 @ Green Lake, Wisconsin https://t.co/BLWIObnrxD",
+    "user": {
+      "location": "WI, USA",
+      "description": "livin' life, like I lived twice",
+      "followers_count": 786,
+      "friends_count": 638,
+      "favourites_count": 4758,
+      "statuses_count": 9052,
+      "time_zone": "Madrid",
+*     "lang": "es"
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        43.84277778,
+        -88.95777778
+      ]
+    },
+*   "lang": "en"
+}
+```
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+]
+.right-column[
+- _Precise_ location as opposed to _general_
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+]
+.right-column[
+- _Precise_ location as opposed to _general_
+
+```json
+    "geo": {
+      "type": "Point",
+*      "coordinates": [
+*        43.84277778,
+*        -88.95777778
+      ]
+    },
+    "place": {
+      "full_name": "Wisconsin, USA",
+      "bounding_box": {
+        "type": "Polygon",
+*        "coordinates": [
+*          [
+*            [
+*              -92.889433,
+*              42.491921
+*            ],
+*            [
+*              -92.889433,
+*              47.309715
+*            ],
+*            [
+*              -86.24955,
+*              47.309715
+*            ],
+*            [
+*              -86.24955,
+*              42.491921
+            ]
+          ]
+        ]
+      }
+    }
+```
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+]
+.right-column[
+- Counts of users with an account language other than English (i.e. non-English Twitter users) who
+  produced a geotagged tweet within census tracts in Harris County, Texas (Houston area) from October 2015 - November 2016.
+
+- Geographically weighted regression (GWR)
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+]
+.right-column[
+.center[Variables]
+        <br/>
+<img src="./images/non-english-tweets/variables.png" width="100%" />
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+.center[GWR Results
+<br/>
+<br/>
+<img src="./images/non-english-tweets/gwr-variables.png" width="75%" />
+]]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+<br/>
+.center[Percent White GWR Results
+<br/>
+<br/>
+<img src="./images/lbsm-giscience/PERWHTst-clusters.png" width="100%" />
+]]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+]
+.right-column[
+<br/>
+.center[Outliers of Non-English Twitter Users
+<br/>
+<br/>
+<img src="./images/lbsm-giscience/greatest-netu-tracts.png" width="100%" />
+]]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+  ## Conclusion
+]
+.right-column[
+### Overarching thoughts/words of caution
+
+- Independent variables vary wildly within the top 8 NETU tracts
+
+- The effect of the number of employees (JOBS) is much stronger than the effect of residential population (POP)
+
+- Information on place versus users
+]
+---
+.left-column[
+  ## Introduction
+  ### - VGI/CGI
+  ### - Data quality
+  ## Research focus
+  ### - Questions
+  ### - Approach
+  ## Data & methods
+  ## Results
+  ## Conclusion
+]
+.right-column[
+### Overarching thoughts/words of caution
+
+- Independent variables vary wildly within the top 8 NETU tracts
+
+- The effect of the number of employees (JOBS) is much stronger than the effect of residential population (POP)
+
+- Information on place versus users
+
+### Positive findings
+
+- Differences between data sources means something... right?
+
+- Appearance of some unexpected languages
+]
+---
+template: inverse
+
+Haffner, M. 2018. A spatial analysis of non-English Twitter activity in Houston, TX. Accepted for publication in _Transactions in GIS_.
+
+https://mhaffner.github.io/presentations/non-english-tweets.html
+
+<img src="images/non-english-tweets/qr-code.png" width="30%" />
+---
+# References
+- Goodchild, M. F. (2007). Citizens as sensors: The world of volunteered geography. _GeoJournal_, 69(4), 211–221.
+
+- Kitchin, R. (2013). The real-time city? Big data and smart urbanism. _GeoJournal_, 79(1), 1–14.
+
+- Harvey, F. (2013). To volunteer or contribute locational information? Towards truth in labeling crowdsourced geographic information. In D. Sui, S. Elwood, & M. F. Goodchild (Eds.), _Crowdsourcing geographic knowledge_ (pp. 31–42). Dordrecht, Netherlands: Springer.
+
+- Kitchin, R. (2013). The real-time city? Big data and smart urbanism. _GeoJournal_, 79(1), 1–14.
+
+- Zickuhr, K. (2013). Location-based services. Washington, DC: Pew Research Center.
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+
+    <!-- For viewing presentation offline -->
+
+    <!-- <script src="remark/remark-latest.min.js">
+    </script>  -->
+
+    <script>
+     var slideshow = remark.create({
+         highlightStyle: 'monokai',
+         highlightLanguage: 'json',
+         highlightLines: true
+     });
+    </script>
+  </body>
+</html>
