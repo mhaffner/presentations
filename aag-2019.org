@@ -29,11 +29,12 @@ University of Wisconsin - Eau Claire
 - The potential of using big spatial data to elicit patterns of
   inequality (Shelton et al. 2014)
 - Color-blind racism (Bonilla-Silva 2003)
-* Research question
+* Research questions
 #+ATTR_REVEAL: :frag (appear)
 - Which demographic variables are best at predicting the production of
   #BlackLivesMatter and #AllLivesMatter Twitter content in (a) tweet
   text and (b) Twitter profiles?
+- What can the outliers tell us?
 * Study area and data
 #+ATTR_REVEAL: :frag (appear)
 - All geolocated tweets produced by users within incorporated and
