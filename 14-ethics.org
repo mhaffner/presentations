@@ -1,0 +1,326 @@
+#+Title: GEOG-337
+
+#+REVEAL_THEME: black
+#+reveal_title_slide: nil
+#+OPTIONS: reveal_width:1200 reveal_height:800 reveal_rolling_links:t
+#+REVEAL_TRANS: none
+#+REVEAL_HLEVEL: 2
+#+REVEAL_MARGIN: 0.1
+#+OPTIONS: num:nil toc:nil date:nil reveal_title_slide:nil
+#+REVEAL_EXTRA_CSS: ./style/reveal/uwec.css
+#+REVEAL_ROOT: ./reveal.js
+#+REVEAL_SLIDE_FOOTER: Geospatial ethics
+
+* Schedule
+* Survey
+* Why discuss ethics?
+#+ATTR_REVEAL: :frag (appear)
+- You **will** be confronted with ethically challenging situations.
+- Software, digital data, code, and spatial data present a slew of
+  interrelated ethical challenges.
+* In the following scenarios, did the person act ethically?
+* 1. 
+#+REVEAL_HTML: <div class="no-write">
+- Ava owns a copyrighted book that she bought on Amazon. When she
+  finishes reading the book, she gives it to a friend and doesn't ever
+  ask for it back.
+#+REVEAL_HTML: </div>
+* 2.
+#+REVEAL_HTML: <div class="no-write">
+- Claire owns a copyrighted book that she bought on Amazon that also
+  comes with a digital .pdf. In the book's opening pages, the
+  publisher states that redistributing the .pdf is strictly
+  prohibited. She prefers hard copies of books, so she reads the
+  physical book in whole. When she's done, she emails the .pdf to a
+  friend who reads it, then deletes it. Claire never reads the book
+  again after she gives it to her friend.
+#+REVEAL_HTML: </div>
+* 3.
+#+REVEAL_HTML: <div class="no-write">
+- Ivan owns a copyrighted book that he bought on Amazon that also
+  comes with a digital .pdf. In the book's opening pages, the
+  publisher states that redistributing the .pdf is strictly
+  prohibited. He sells the hard copy to a used book store for $1 then
+  reads the .pdf.
+#+REVEAL_HTML: </div>
+* 4.
+#+REVEAL_HTML: <div class="no-write">
+- Ellie watches a Brewer's game on TV, and observes a game-saving
+  catch in the ninth inning. A week later, she recounts the play to a
+  friend.
+#+REVEAL_HTML: </div>
+* 5.
+#+REVEAL_HTML: <div class="no-write">
+- Bryce owns a cookbook of BBQ recipes. From this, he makes pulled
+  pork sandwiches at his latest dinner party which turn out to be a
+  hit. A friend at the party asks for the recipe. He willingly agrees,
+  scribbles the recipe on a napkin, and gives it to the friend.
+#+REVEAL_HTML: </div>
+* 6.
+#+REVEAL_HTML: <div class="no-write">
+- Sydney uses a cheap proprietary computer program to run the lights
+  during her annual post-finals week party. With a bit of work, she is
+  able to reverse engineer the code, written in C++. She rewrites it
+  in 7 lines of Python code and shares it with a friend for him to use
+  at his New Year's party.
+#+REVEAL_HTML: </div>
+* 7.
+#+REVEAL_HTML: <div class="no-write">
+- Carlos uses a cheap proprietary computer program to run the lights
+  during his annual post-finals week party. He copies the program onto
+  a flash drive and gives it to a friend for her to use.
+#+REVEAL_HTML: </div>
+* 8. 
+#+REVEAL_HTML: <div class="no-write">
+- Linda runs a small consulting gig in which she primarily uses ERDAS
+  IMAGINE software. A friend, who does similar work, asks Linda to
+  give him a copy of the software. She does so freely.
+#+REVEAL_HTML: </div>
+* 9.
+#+REVEAL_HTML: <div class="no-write">
+- Adrian previously ran a small consulting gig in which he primarily used
+  ERDAS IMAGINE software. A friend, who does similar work, asks Adrian
+  to copy the software for him. Adrian does so, and has never since
+  opened ERDAS IMAGINE on his computer.
+#+REVEAL_HTML: </div>
+* 10.
+#+REVEAL_HTML: <div class="no-write">
+- Esther used to run a small consulting gig in which she used a number
+  of software programs including LP360, MATLAB, SAS, and NVivo. After
+  quitting these side projects due to more full time work with a
+  company, she sells her computer to an old friend from grad school
+  without re-imaging the hard drive.
+#+REVEAL_HTML: </div>
+* 11.
+#+REVEAL_HTML: <div class="no-write">
+- Dawn works for the Chippewa Falls GIS department and purchases a
+  proprietary LiDAR dataset for the entire county. Under the terms of
+  the license agreement, the data cannot be used outside of her
+  office. A friend in Bloomer, also in Chippewa County, asks for a
+  copy of the database. Dawn gives it to her.
+#+REVEAL_HTML: </div>
+* 12. 
+#+REVEAL_HTML: <div class="no-write">
+- Levi works for the Dane County, Wisconsin GIS department and
+  purchases a detailed road network database for the entire state.
+  Under the terms of the license agreement, the network cannot be used
+  outside of his office. A friend at the GIS office in Milwaukee
+  County asks for a copy of the database to help improve their 911
+  network. Recently, an independent organization determined that three
+  deaths could have been prevented last month if response times had
+  been better during emergencies. Levi opts not to share the database
+  so that he remains in compliance with the license.
+#+REVEAL_HTML: </div>
+* 13.
+#+REVEAL_HTML: <div class="no-write">
+- Exxon Mobile heavily relies on Google Earth for targeting potential
+  drilling sites in the Indian Ocean. They have a team of engineers
+  who use the software from an exploratory approach before conducting
+  feasibility tests in person. Cheryl, who works for BP, wants to
+  bypass the exploratory steps, so she works out a deal with Google to
+  purchase a list of Exxon's recent location searches. As a result, BP
+  buys the rights to several of these sites and begins extracting oil
+  before Exxon Mobile.
+#+REVEAL_HTML: </div>
+* 14. 
+#+REVEAL_HTML: <div class="no-write">
+- Julian has taken on a redistricting project with the Eau Claire
+  school district. He has created an algorithm that minimizes the
+  number of students who have to change schools in the upcoming school
+  year. However, the district has requested that he create an
+  interactive tool that allows them to reposition the district lines
+  as they see fit. Not wanting to lose the project, Julian complies
+  with their request.
+#+REVEAL_HTML: </div>
+* Therac-25
+[[../img/therac-25-01.jpg]]
+* Therac-25's problems
+#+ATTR_REVEAL: :frag (appear)
+- The code was written by one programmer
+- The code was not well documented
+- There was no external code review
+- There were no hardware interlocks
+* Takeaway
+#+ATTR_REVEAL: :frag (appear)
+- Code can kill.
+* /Growth in a Time of Debt/
+#+ATTR_HTML: :height 500px
+[[../img/growth-in-a-time-of-debt-01.gif]]
+* Takeaway
+#+ATTR_REVEAL: :frag (appear)
+- Research has /real/ consequences. 
+* Deontological ethics
+#+ATTR_REVEAL: :frag (appear)
+- Never use people as a means to an end.
+* Utilititarian ethics
+#+ATTR_REVEAL: :frag (appear)
+- Minimize harm/suffering, maximize benefit to society
+* Classic deontological vs. utilitarian problem
+#+REVEAL_HTML: <div class="no-write">
+#+ATTR_REVEAL: :frag (appear)
+- You see a runaway trolley moving toward five tied-up (or otherwise
+  incapacitated) people lying on the tracks. You are standing next to
+  a lever that controls a switch. If you pull the lever, the trolley
+  will be redirected onto a side track and the five people on the main
+  track will be saved. However, there is a single person lying on the
+  side track. You have two options: 
+  - Do nothing and allow the trolley to kill the five people on the
+    main track. 
+  - Pull the lever, diverting the trolley onto the side track where it
+    will kill one person.
+#+REVEAL_HTML: </div>
+* Modern deontological vs. utilitarian problem
+#+ATTR_REVEAL: :frag (appear)
+- Autonomous vehicles
+* Ethical "authorities" in the GIS world
+#+ATTR_REVEAL: :frag (appear)
+- GIS Certification Institute
+- American Society for Photogrammetry and Remote Sensing (ASPRS)
+- Christopher Goranson and Francis Harvey (academia)
+- David DiBiase and Dawn Wright (ESRI)
+* Ethical proselytes in the software world
+#+ATTR_REVEAL: :frag (appear)
+- Free Software Foundation (FSF)
+- Richard Stallman
+- Lawrence Lessig
+* Openness
+- "Open source"
+* Reproducibility
+#+ATTR_REVEAL: :frag (appear)
+- Computational reproducibility
+- Code sharing
+- Data sharing
+- Media sharing (Markdown, LaTeX, PDF)
+* Libre (free) vs. open source
+- Copyleft: all rights reversed
+- Preserving the rights of the users
+* Open source vs. open data
+* In the following scenarios, did the person act ethically?
+* 1. 
+#+REVEAL_HTML: <div class="no-write">
+- Ava owns a copyrighted book that she bought on Amazon. When she
+  finishes reading the book, she gives it to a friend and doesn't ever
+  ask for it back.
+#+REVEAL_HTML: </div>
+* 2.
+#+REVEAL_HTML: <div class="no-write">
+- Claire owns a copyrighted book that she bought on Amazon that also
+  comes with a digital .pdf. In the book's opening pages, the
+  publisher states that redistributing the .pdf is strictly
+  prohibited. She prefers hard copies of books, so she reads the
+  physical book in whole. When she's done, she emails the .pdf to a
+  friend who reads it, then deletes it. Claire never reads the book
+  again after she gives it to her friend.
+#+REVEAL_HTML: </div>
+* 3.
+#+REVEAL_HTML: <div class="no-write">
+- Ivan owns a copyrighted book that he bought on Amazon that also
+  comes with a digital .pdf. In the book's opening pages, the
+  publisher states that redistributing the .pdf is strictly
+  prohibited. He sells the hard copy to a used book store for $1 then
+  reads the .pdf.
+#+REVEAL_HTML: </div>
+* 4.
+#+REVEAL_HTML: <div class="no-write">
+- Ellie watches a Brewer's game on TV, and observes a game-saving
+  catch in the ninth inning. A week later, she recounts the play to a
+  friend.
+#+REVEAL_HTML: </div>
+* 5.
+#+REVEAL_HTML: <div class="no-write">
+- Bryce owns a cookbook of BBQ recipes. From this, he makes pulled
+  pork sandwiches at his latest dinner party which turn out to be a
+  hit. A friend at the party asks for the recipe. He willingly agrees,
+  scribbles the recipe on a napkin, and gives it to the friend.
+#+REVEAL_HTML: </div>
+* 6.
+#+REVEAL_HTML: <div class="no-write">
+- Sydney uses a cheap proprietary computer program to run the lights
+  during her annual post-finals week party. With a bit of work, she is
+  able to reverse engineer the code, written in C++. She rewrites it
+  in 7 lines of Python code and shares it with a friend for him to use
+  at his New Year's party.
+#+REVEAL_HTML: </div>
+* 7.
+#+REVEAL_HTML: <div class="no-write">
+- Carlos uses a cheap proprietary computer program to run the lights
+  during his annual post-finals week party. He copies the program onto
+  a flash drive and gives it to a friend for her to use.
+#+REVEAL_HTML: </div>
+* 8. 
+#+REVEAL_HTML: <div class="no-write">
+- Linda runs a small consulting gig in which she primarily uses ERDAS
+  IMAGINE software. A friend, who does similar work, asks Linda to
+  give him a copy of the software. She does so freely.
+#+REVEAL_HTML: </div>
+* 9.
+#+REVEAL_HTML: <div class="no-write">
+- Adrian previously ran a small consulting gig in which he primarily used
+  ERDAS IMAGINE software. A friend, who does similar work, asks Adrian
+  to copy the software for him. Adrian does so, and has never since
+  opened ERDAS IMAGINE on his computer.
+#+REVEAL_HTML: </div>
+* 10.
+#+REVEAL_HTML: <div class="no-write">
+- Esther used to run a small consulting gig in which she used a number
+  of software programs including LP360, MATLAB, SAS, and NVivo. After
+  quitting these side projects due to more full time work with a
+  company, she sells her computer to an old friend from grad school
+  without re-imaging the hard drive.
+#+REVEAL_HTML: </div>
+* 11.
+#+REVEAL_HTML: <div class="no-write">
+- Dawn works for the Chippewa Falls GIS department and purchases a
+  proprietary LiDAR dataset for the entire county. Under the terms of
+  the license agreement, the data cannot be used outside of her
+  office. A friend in Bloomer, also in Chippewa County, asks for a
+  copy of the database. Dawn gives it to her.
+#+REVEAL_HTML: </div>
+* 12. 
+#+REVEAL_HTML: <div class="no-write">
+- Levi works for the Dane County, Wisconsin GIS department and
+  purchases a detailed road network database for the entire state.
+  Under the terms of the license agreement, the network cannot be used
+  outside of his office. A friend at the GIS office in Milwaukee
+  County asks for a copy of the database to help improve their 911
+  network. Recently, an independent organization determined that three
+  deaths could have been prevented last month if response times had
+  been better during emergencies. Levi opts not to share the database
+  so that he remains in compliance with the license.
+#+REVEAL_HTML: </div>
+* 13
+#+REVEAL_HTML: <div class="no-write">
+Exxon Mobile heavily relies on Google Earth for targeting potential
+drilling sites in the Indian Ocean. They have a team of engineers who
+use the software from an exploratory approach before conducting
+feasibility tests in person. Cheryl, who works for BP, wants to bypass
+the exploratory steps, so she works out a deal with Google to purchase
+a list of Exxon's recent location searches. As a result, BP buys the
+rights to several of these sites and begins extracting oil before
+Exxon Mobile.
+#+REVEAL_HTML: </div>
+* 14. 
+#+REVEAL_HTML: <div class="no-write">
+- Julian has taken on a redistricting project with the Eau Claire
+  school district. He has created an algorithm that minimizes the
+  number of students who have to change schools in the upcoming school
+  year. However, the district has requested that he create an
+  interactive tool that allows them to reposition the district lines
+  as they see fit. Not wanting to lose the project, Julian complies
+  with their request.
+  school district.
+#+REVEAL_HTML: </div>
+* Why do copyright and patents exist?
+#+ATTR_REVEAL: :frag (appear)
+- To spur innovation
+- To benefit society
+* The problem with software patents
+- Retroactive suits
+* Rights of users vs. creators
+* Openness and accessibility as ethical issues
+* Rights of redistribution
+* Changing the status quo
+"You never change things by fighting the existing reality. To change
+something, build a new model that makes the existing model
+obsolete." - Buckminster Fuller
+* Publishing system of journals

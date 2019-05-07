@@ -1,0 +1,163 @@
+/* override the default .css file */
+
+/* some spacemacs colors
+
+found these here: https://github.com/nashamri/spacemacs-theme/blob/master/spacemacs-common.el
+
+        (aqua          (if (eq variant 'dark) (if (true-color-p) "#2d9574" "#2aa198") (if (true-color-p) "#2d9574" "#2aa198")))
+        (aqua-bg       (if (eq variant 'dark) (if (true-color-p) "#293235" "#262626") (if (true-color-p) "#edf2e9" "#ffffff")))
+        (green         (if (eq variant 'dark) (if (true-color-p) "#67b11d" "#67b11d") (if (true-color-p) "#67b11d" "#5faf00")))
+        (green-bg      (if (eq variant 'dark) (if (true-color-p) "#293235" "#262626") (if (true-color-p) "#edf2e9" "#ffffff")))
+        (green-bg-s    (if (eq variant 'dark) (if (true-color-p) "#29422d" "#262626") (if (true-color-p) "#dae6d0" "#ffffff")))
+        (cyan          (if (eq variant 'dark) (if (true-color-p) "#28def0" "#00ffff") (if (true-color-p) "#21b8c7" "#008080")))
+        (red           (if (eq variant 'dark) (if (true-color-p) "#f2241f" "#d70000") (if (true-color-p) "#f2241f" "#d70008")))
+        (red-bg        (if (eq variant 'dark) (if (true-color-p) "#3c2a2c" "#262626") (if (true-color-p) "#faede4" "#ffffff")))
+        (red-bg-s      (if (eq variant 'dark) (if (true-color-p) "#512e31" "#262626") (if (true-color-p) "#eed9d2" "#ffffff")))
+        (blue          (if (eq variant 'dark) (if (true-color-p) "#4f97d7" "#268bd2") (if (true-color-p) "#3a81c3" "#268bd2")))
+        (blue-bg       (if (eq variant 'dark) (if (true-color-p) "#293239" "#262626") (if (true-color-p) "#edf1ed" "#d7d7ff")))
+        (blue-bg-s     (if (eq variant 'dark) (if (true-color-p) "#2d4252" "#262626") (if (true-color-p) "#d1dcdf" "#d7d7ff")))
+        (magenta       (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
+        (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
+        (yellow-bg (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff")))
+
+
+favorites:
+- aqua #2d9574
+- cyan #28def0
+- blue #4f97d7
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+.reveal {
+    font-family: "Source Serif Pro";
+    font-weight: normal;
+    font-size: 42px;
+    background: #292b2e;
+    color: #fff; }
+
+.reveal .orange-bg {
+    background: #ffa64d;
+}
+
+.reveal .purple-bg {
+    color: #FEC923;
+    background: #41225E;
+   /* background: #592a8a */ /* lighter purple */
+}
+
+/* Centers items that aren't bulleted */
+.reveal p {
+    color: #2d9574; /* aqua */
+    text-align: center;
+}
+
+/* Bulleted items */
+.reveal ul {
+    color: #2d9574; /* aqua */
+    text-align: left;
+}
+
+/* Numbered items */
+.reveal ol {
+    color: #28def0; /* cyan */
+    text-align: left;
+}
+
+.reavel a:link {
+    color: ;
+}
+
+/* HEADERS */
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word; }
+
+.reveal h1 {
+    font-size: 60px;
+    position: absolute;
+    top: 50px;
+}
+
+.reveal h2 {
+    font-size: 60px;
+}
+
+.reveal h3 {
+    font-size: 1.5em;
+}
+
+.reveal h4 {
+    font-size: 1.5em;
+}
+
+/* TABLES */
+.reveal th {
+    font-weight: bold;
+    color: #ffa64d;
+    text-align: center;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid;
+    border-left: 1px solid transparent;
+}
+
+.reveal td {
+    text-align: left;
+    padding: 0.1em 0.5em 0.1em 0.5em; /*top right bottom left */
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    font-size: 0.75em;
+    width: 400px;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+    border-spacing: 0;
+}
+
+/* FOOTER */
+.reveal .slide-footer {
+    font-size: 0.55em;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #999999;
+}
+
+/* TWO COLUMN */
+.column-left{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+.column-right{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    text-align: left;
+}

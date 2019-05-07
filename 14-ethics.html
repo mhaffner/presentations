@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>GEOG-337</title>
+<meta name="author" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="./style/reveal/uwec.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+nil
+</section>
+
+<section>
+<section id="slide-org2bcd711">
+<h2 id="org2bcd711">Schedule</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgd43a78d">
+<h2 id="orgd43a78d">Survey</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgee99971">
+<h2 id="orgee99971">Why discuss ethics?</h2>
+<ul>
+<li class="fragment appear">You <b><b>will</b></b> be confronted with ethically challenging situations.</li>
+<li class="fragment appear">Software, digital data, code, and spatial data present a slew of
+interrelated ethical challenges.</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org35c1d65">
+<h2 id="org35c1d65">In the following scenarios, did the person act ethically?</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgdb43fe9">
+<h2 id="orgdb43fe9">1.</h2>
+<div class="no-write">
+<ul>
+<li>Ava owns a copyrighted book that she bought on Amazon. When she
+finishes reading the book, she gives it to a friend and doesn't ever
+ask for it back.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgedb018e">
+<h2 id="orgedb018e">2.</h2>
+<div class="no-write">
+<ul>
+<li>Claire owns a copyrighted book that she bought on Amazon that also
+comes with a digital .pdf. In the book's opening pages, the
+publisher states that redistributing the .pdf is strictly
+prohibited. She prefers hard copies of books, so she reads the
+physical book in whole. When she's done, she emails the .pdf to a
+friend who reads it, then deletes it. Claire never reads the book
+again after she gives it to her friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org278d599">
+<h2 id="org278d599">3.</h2>
+<div class="no-write">
+<ul>
+<li>Ivan owns a copyrighted book that he bought on Amazon that also
+comes with a digital .pdf. In the book's opening pages, the
+publisher states that redistributing the .pdf is strictly
+prohibited. He sells the hard copy to a used book store for $1 then
+reads the .pdf.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf0cbf74">
+<h2 id="orgf0cbf74">4.</h2>
+<div class="no-write">
+<ul>
+<li>Ellie watches a Brewer's game on TV, and observes a game-saving
+catch in the ninth inning. A week later, she recounts the play to a
+friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgaca3d18">
+<h2 id="orgaca3d18">5.</h2>
+<div class="no-write">
+<ul>
+<li>Bryce owns a cookbook of BBQ recipes. From this, he makes pulled
+pork sandwiches at his latest dinner party which turn out to be a
+hit. A friend at the party asks for the recipe. He willingly agrees,
+scribbles the recipe on a napkin, and gives it to the friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgeb5656e">
+<h2 id="orgeb5656e">6.</h2>
+<div class="no-write">
+<ul>
+<li>Sydney uses a cheap proprietary computer program to run the lights
+during her annual post-finals week party. With a bit of work, she is
+able to reverse engineer the code, written in C++. She rewrites it
+in 7 lines of Python code and shares it with a friend for him to use
+at his New Year's party.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf0f11dc">
+<h2 id="orgf0f11dc">7.</h2>
+<div class="no-write">
+<ul>
+<li>Carlos uses a cheap proprietary computer program to run the lights
+during his annual post-finals week party. He copies the program onto
+a flash drive and gives it to a friend for her to use.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orga186a7f">
+<h2 id="orga186a7f">8.</h2>
+<div class="no-write">
+<ul>
+<li>Linda runs a small consulting gig in which she primarily uses ERDAS
+IMAGINE software. A friend, who does similar work, asks Linda to
+give him a copy of the software. She does so freely.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgbc771a3">
+<h2 id="orgbc771a3">9.</h2>
+<div class="no-write">
+<ul>
+<li>Adrian previously ran a small consulting gig in which he primarily used
+ERDAS IMAGINE software. A friend, who does similar work, asks Adrian
+to copy the software for him. Adrian does so, and has never since
+opened ERDAS IMAGINE on his computer.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf5b2af0">
+<h2 id="orgf5b2af0">10.</h2>
+<div class="no-write">
+<ul>
+<li>Esther used to run a small consulting gig in which she used a number
+of software programs including LP360, MATLAB, SAS, and NVivo. After
+quitting these side projects due to more full time work with a
+company, she sells her computer to an old friend from grad school
+without re-imaging the hard drive.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org9cc6734">
+<h2 id="org9cc6734">11.</h2>
+<div class="no-write">
+<ul>
+<li>Dawn works for the Chippewa Falls GIS department and purchases a
+proprietary LiDAR dataset for the entire county. Under the terms of
+the license agreement, the data cannot be used outside of her
+office. A friend in Bloomer, also in Chippewa County, asks for a
+copy of the database. Dawn gives it to her.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orga553b9e">
+<h2 id="orga553b9e">12.</h2>
+<div class="no-write">
+<ul>
+<li>Levi works for the Dane County, Wisconsin GIS department and
+purchases a detailed road network database for the entire state.
+Under the terms of the license agreement, the network cannot be used
+outside of his office. A friend at the GIS office in Milwaukee
+County asks for a copy of the database to help improve their 911
+network. Recently, an independent organization determined that three
+deaths could have been prevented last month if response times had
+been better during emergencies. Levi opts not to share the database
+so that he remains in compliance with the license.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orga34d054">
+<h2 id="orga34d054">13.</h2>
+<div class="no-write">
+<ul>
+<li>Exxon Mobile heavily relies on Google Earth for targeting potential
+drilling sites in the Indian Ocean. They have a team of engineers
+who use the software from an exploratory approach before conducting
+feasibility tests in person. Cheryl, who works for BP, wants to
+bypass the exploratory steps, so she works out a deal with Google to
+purchase a list of Exxon's recent location searches. As a result, BP
+buys the rights to several of these sites and begins extracting oil
+before Exxon Mobile.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org8db4a2d">
+<h2 id="org8db4a2d">14.</h2>
+<div class="no-write">
+<ul>
+<li>Julian has taken on a redistricting project with the Eau Claire
+school district. He has created an algorithm that minimizes the
+number of students who have to change schools in the upcoming school
+year. However, the district has requested that he create an
+interactive tool that allows them to reposition the district lines
+as they see fit. Not wanting to lose the project, Julian complies
+with their request.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgaa1198e">
+<h2 id="orgaa1198e">Therac-25</h2>
+
+<div class="figure">
+<p><img src="../img/therac-25-01.jpg" alt="therac-25-01.jpg" />
+</p>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org3acfe26">
+<h2 id="org3acfe26">Therac-25's problems</h2>
+<ul>
+<li class="fragment appear">The code was written by one programmer</li>
+<li class="fragment appear">The code was not well documented</li>
+<li class="fragment appear">There was no external code review</li>
+<li class="fragment appear">There were no hardware interlocks</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org06494a5">
+<h2 id="org06494a5">Takeaway</h2>
+<ul>
+<li class="fragment appear">Code can kill.</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgda66246">
+<h2 id="orgda66246"><i>Growth in a Time of Debt</i></h2>
+
+<div class="figure">
+<p><img src="../img/growth-in-a-time-of-debt-01.gif" alt="growth-in-a-time-of-debt-01.gif" height="500px" />
+</p>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org38a6cf1">
+<h2 id="org38a6cf1">Takeaway</h2>
+<ul>
+<li class="fragment appear">Research has <i>real</i> consequences.</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org928b33e">
+<h2 id="org928b33e">Deontological ethics</h2>
+<ul>
+<li class="fragment appear">Never use people as a means to an end.</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org064081b">
+<h2 id="org064081b">Utilititarian ethics</h2>
+<ul>
+<li class="fragment appear">Minimize harm/suffering, maximize benefit to society</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org64baf7f">
+<h2 id="org64baf7f">Classic deontological vs. utilitarian problem</h2>
+<div class="no-write">
+<ul>
+<li class="fragment appear">You see a runaway trolley moving toward five tied-up (or otherwise
+incapacitated) people lying on the tracks. You are standing next to
+a lever that controls a switch. If you pull the lever, the trolley
+will be redirected onto a side track and the five people on the main
+track will be saved. However, there is a single person lying on the
+side track. You have two options: 
+<ul>
+<li>Do nothing and allow the trolley to kill the five people on the
+main track.</li>
+<li>Pull the lever, diverting the trolley onto the side track where it
+will kill one person.</li>
+
+</ul></li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org8f36dff">
+<h2 id="org8f36dff">Modern deontological vs. utilitarian problem</h2>
+<ul>
+<li class="fragment appear">Autonomous vehicles</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org05faeb0">
+<h2 id="org05faeb0">Ethical "authorities" in the GIS world</h2>
+<ul>
+<li class="fragment appear">GIS Certification Institute</li>
+<li class="fragment appear">American Society for Photogrammetry and Remote Sensing (ASPRS)</li>
+<li class="fragment appear">Christopher Goranson and Francis Harvey (academia)</li>
+<li class="fragment appear">David DiBiase and Dawn Wright (ESRI)</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgabd4043">
+<h2 id="orgabd4043">Ethical proselytes in the software world</h2>
+<ul>
+<li class="fragment appear">Free Software Foundation (FSF)</li>
+<li class="fragment appear">Richard Stallman</li>
+<li class="fragment appear">Lawrence Lessig</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgfce3534">
+<h2 id="orgfce3534">Openness</h2>
+<ul>
+<li>"Open source"</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org0e74c85">
+<h2 id="org0e74c85">Reproducibility</h2>
+<ul>
+<li class="fragment appear">Computational reproducibility</li>
+<li class="fragment appear">Code sharing</li>
+<li class="fragment appear">Data sharing</li>
+<li class="fragment appear">Media sharing (Markdown, LaTeX, PDF)</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org662b13d">
+<h2 id="org662b13d">Libre (free) vs. open source</h2>
+<ul>
+<li>Copyleft: all rights reversed</li>
+<li>Preserving the rights of the users</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org628e586">
+<h2 id="org628e586">Open source vs. open data</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org6708633">
+<h2 id="org6708633">In the following scenarios, did the person act ethically?</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgba0226d">
+<h2 id="orgba0226d">1.</h2>
+<div class="no-write">
+<ul>
+<li>Ava owns a copyrighted book that she bought on Amazon. When she
+finishes reading the book, she gives it to a friend and doesn't ever
+ask for it back.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgec68f12">
+<h2 id="orgec68f12">2.</h2>
+<div class="no-write">
+<ul>
+<li>Claire owns a copyrighted book that she bought on Amazon that also
+comes with a digital .pdf. In the book's opening pages, the
+publisher states that redistributing the .pdf is strictly
+prohibited. She prefers hard copies of books, so she reads the
+physical book in whole. When she's done, she emails the .pdf to a
+friend who reads it, then deletes it. Claire never reads the book
+again after she gives it to her friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org3412ff7">
+<h2 id="org3412ff7">3.</h2>
+<div class="no-write">
+<ul>
+<li>Ivan owns a copyrighted book that he bought on Amazon that also
+comes with a digital .pdf. In the book's opening pages, the
+publisher states that redistributing the .pdf is strictly
+prohibited. He sells the hard copy to a used book store for $1 then
+reads the .pdf.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgad17bba">
+<h2 id="orgad17bba">4.</h2>
+<div class="no-write">
+<ul>
+<li>Ellie watches a Brewer's game on TV, and observes a game-saving
+catch in the ninth inning. A week later, she recounts the play to a
+friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org485c193">
+<h2 id="org485c193">5.</h2>
+<div class="no-write">
+<ul>
+<li>Bryce owns a cookbook of BBQ recipes. From this, he makes pulled
+pork sandwiches at his latest dinner party which turn out to be a
+hit. A friend at the party asks for the recipe. He willingly agrees,
+scribbles the recipe on a napkin, and gives it to the friend.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org58daf3c">
+<h2 id="org58daf3c">6.</h2>
+<div class="no-write">
+<ul>
+<li>Sydney uses a cheap proprietary computer program to run the lights
+during her annual post-finals week party. With a bit of work, she is
+able to reverse engineer the code, written in C++. She rewrites it
+in 7 lines of Python code and shares it with a friend for him to use
+at his New Year's party.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org3929e2b">
+<h2 id="org3929e2b">7.</h2>
+<div class="no-write">
+<ul>
+<li>Carlos uses a cheap proprietary computer program to run the lights
+during his annual post-finals week party. He copies the program onto
+a flash drive and gives it to a friend for her to use.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org043e30c">
+<h2 id="org043e30c">8.</h2>
+<div class="no-write">
+<ul>
+<li>Linda runs a small consulting gig in which she primarily uses ERDAS
+IMAGINE software. A friend, who does similar work, asks Linda to
+give him a copy of the software. She does so freely.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf623740">
+<h2 id="orgf623740">9.</h2>
+<div class="no-write">
+<ul>
+<li>Adrian previously ran a small consulting gig in which he primarily used
+ERDAS IMAGINE software. A friend, who does similar work, asks Adrian
+to copy the software for him. Adrian does so, and has never since
+opened ERDAS IMAGINE on his computer.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orge3c0b77">
+<h2 id="orge3c0b77">10.</h2>
+<div class="no-write">
+<ul>
+<li>Esther used to run a small consulting gig in which she used a number
+of software programs including LP360, MATLAB, SAS, and NVivo. After
+quitting these side projects due to more full time work with a
+company, she sells her computer to an old friend from grad school
+without re-imaging the hard drive.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org6e7bc55">
+<h2 id="org6e7bc55">11.</h2>
+<div class="no-write">
+<ul>
+<li>Dawn works for the Chippewa Falls GIS department and purchases a
+proprietary LiDAR dataset for the entire county. Under the terms of
+the license agreement, the data cannot be used outside of her
+office. A friend in Bloomer, also in Chippewa County, asks for a
+copy of the database. Dawn gives it to her.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org3f38c91">
+<h2 id="org3f38c91">12.</h2>
+<div class="no-write">
+<ul>
+<li>Levi works for the Dane County, Wisconsin GIS department and
+purchases a detailed road network database for the entire state.
+Under the terms of the license agreement, the network cannot be used
+outside of his office. A friend at the GIS office in Milwaukee
+County asks for a copy of the database to help improve their 911
+network. Recently, an independent organization determined that three
+deaths could have been prevented last month if response times had
+been better during emergencies. Levi opts not to share the database
+so that he remains in compliance with the license.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org66d9b6a">
+<h2 id="org66d9b6a">13</h2>
+<div class="no-write">
+<p>
+Exxon Mobile heavily relies on Google Earth for targeting potential
+drilling sites in the Indian Ocean. They have a team of engineers who
+use the software from an exploratory approach before conducting
+feasibility tests in person. Cheryl, who works for BP, wants to bypass
+the exploratory steps, so she works out a deal with Google to purchase
+a list of Exxon's recent location searches. As a result, BP buys the
+rights to several of these sites and begins extracting oil before
+Exxon Mobile.
+</p>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgb4d8d0b">
+<h2 id="orgb4d8d0b">14.</h2>
+<div class="no-write">
+<ul>
+<li>Julian has taken on a redistricting project with the Eau Claire
+school district. He has created an algorithm that minimizes the
+number of students who have to change schools in the upcoming school
+year. However, the district has requested that he create an
+interactive tool that allows them to reposition the district lines
+as they see fit. Not wanting to lose the project, Julian complies
+with their request.
+school district.</li>
+
+</ul>
+</div>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgdec3ca5">
+<h2 id="orgdec3ca5">Why do copyright and patents exist?</h2>
+<ul>
+<li class="fragment appear">To spur innovation</li>
+<li class="fragment appear">To benefit society</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org97ceca8">
+<h2 id="org97ceca8">The problem with software patents</h2>
+<ul>
+<li>Retroactive suits</li>
+
+</ul>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgb804340">
+<h2 id="orgb804340">Rights of users vs. creators</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-orgfc95cd8">
+<h2 id="orgfc95cd8">Openness and accessibility as ethical issues</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org2f5603a">
+<h2 id="org2f5603a">Rights of redistribution</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org1849279">
+<h2 id="org1849279">Changing the status quo</h2>
+<p>
+"You never change things by fighting the existing reality. To change
+something, build a new model that makes the existing model
+obsolete." - Buckminster Fuller
+</p>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+<section>
+<section id="slide-org6d51a07">
+<h2 id="org6d51a07">Publishing system of journals</h2>
+<div class="slide-footer">Geospatial ethics</div>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
