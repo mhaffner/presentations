@@ -133,7 +133,7 @@
   with their request.
 #+REVEAL_HTML: </div>
 * Therac-25
-[[../img/therac-25-01.jpg]]
+[[./img/therac-25-01.jpg]]
 * Therac-25's problems
 #+ATTR_REVEAL: :frag (appear)
 - The code was written by one programmer
@@ -145,7 +145,7 @@
 - Code can kill.
 * /Growth in a Time of Debt/
 #+ATTR_HTML: :height 500px
-[[../img/growth-in-a-time-of-debt-01.gif]]
+[[./img/growth-in-a-time-of-debt-01.gif]]
 * Takeaway
 #+ATTR_REVEAL: :frag (appear)
 - Research has /real/ consequences. 
